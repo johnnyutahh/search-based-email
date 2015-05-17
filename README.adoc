@@ -58,8 +58,8 @@ provide this (core) functionality appear to be:
 1. http://notmuch.org[notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
 
-[id='problem_details',reftext='Problem Details']
-### Problem Details
+[id='problem_details']
+## Appendix: Problem Details
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
