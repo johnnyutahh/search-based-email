@@ -1,3 +1,5 @@
+% True Happiness
+
 # tag-based-email
 
 ## The Problem
@@ -13,9 +15,27 @@
       from multiple servers/accounts
         + doesn't include pruned/archived emails, whose indexing/searching
           also desired
-    
 
-### Problem Details (not required reading)
+See [Problem Details](#problem-details) for more details.
+    
+## The Solutions
+
+I'm currently, as of 2015-05-16, seeking:
+
+1. fast search on my entire maildir collection (my "email database"),
+2. leverage tag-based categorization, and
+3. integrate with external-to-MUA text-process tools.
+
+This probably means a a tag-based-message-classification,
+fast-index-search toolset that integrates with a
+lower-level/text-primitive MUA (read mutt vs TB). The only
+reasonbly-available, competitive mechanisms that I've yet found to
+provide this (core) functionality appear to be:
+
+1. [notmuch](http://notmuch.org)
+2. [mu (maildir-utils)](http://www.djcbsoftware.nl/code/mu/)
+
+### Problem Details
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
@@ -45,19 +65,9 @@ not close-to-impossible to integrate with the external tools.
 
 In short, it's time to move on from Thunderbird.
 
-## The Solutions
 
-I'm currently, as of 2015-05-16, seeking:
 
-1. fast search on my entire maildir collection (my "email database"),
-2. leverage tag-based categorization, and
-3. integrate with external-to-MUA text-process tools.
 
-This probably means a a tag-based-message-classification,
-fast-index-search toolset that integrates with a
-lower-level/text-primitive MUA (read mutt vs TB). The only
-reasonbly-available, competitive mechanisms that I've yet found to
-provide this (core) functionality appear to be:
-
-1. [notmuch](http://notmuch.org)
-2. [mu (maildir-utils)](http://www.djcbsoftware.nl/code/mu/)
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
