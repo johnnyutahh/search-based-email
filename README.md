@@ -2,13 +2,18 @@
 
 ## The Problem
 
-I, johnnyutahh, have ~4300 IMAP-based email folders with ~1MM mail msgs
-(although many are duplicates) from multiple servers and accounts,
-and that's not including the pruned/archived email database I'd also
-like to (re)index one day, but haven't, in part due to email-tool
-limitations. Up until now (2015-05-16), I've predominantly employed
-Mozilla Thunderbird (TB) on Mac OS X to handle my email management,
-"categorizing" email into separate folders--hence the 4300.
++ user with lots of email seeking upgrade from IMAP-folder-only email management
++ existing (2015-05-17) +
+  environment
+    + Primary [MUA](http://en.wikipedia.org/wiki/Email_client) =
+      Mozilla Thunderbird 17.0.11
+    + OS = Mac OS 10.9.5
+    + no tagging
+    + ~4300 IMAP-based email folders with ~1MM mail msgs
+      from multiple servers/accounts
+        + doesn't include pruned/archived emails, whose indexing/searching
+          also desired
+    
 
 ### Problem Details (not required reading)
 
