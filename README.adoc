@@ -19,7 +19,12 @@ author github.com@johnnyutahh.com
 0.x, May 2015:
 Last updated {docdate} {doctime}
 
-{toc}
+toc::[]
+
+<<<
+:numbered:
+
+<<<
 
 ## The Problem
 
