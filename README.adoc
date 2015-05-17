@@ -1,22 +1,39 @@
-% True Happiness
+// vim: set syntax=asciidoc:
 
-# tag-based-email
+// set asciidoc attributes
+:toc:       1
+:numbered:  1
+:data-uri:  1
+:icons:     1
+:sectids:   1
+:iconsdir: /usr/local/etc/asciidoc/images/icons
+
+// create blank lines, from: http://bit.ly/1PeszRa
+:blank: pass:[ +]
+
+:sectlinks: 1
+//:sectanchors: 1
+
+# One User's Convert-to-Tag-Based-Email Saga
+author github.com@johnnyutahh.com
+0.x, May 2015:
+Last updated {docdate} {doctime}
 
 ## The Problem
 
-+ user with lots of email seeking upgrade from IMAP-folder-only email management
-+ existing (2015-05-17) +
+. user with lots of email seeking upgrade from IMAP-folder-only email management
+. existing (2015-05-17) +
   environment
-    + Primary [MUA](http://en.wikipedia.org/wiki/Email_client) =
-      Mozilla Thunderbird 17.0.11
-    + OS = Mac OS 10.9.5
-    + no tagging
-    + ~4300 IMAP-based email folders with ~1MM mail msgs
-      from multiple servers/accounts
-        + doesn't include pruned/archived emails, whose indexing/searching
-          also desired
+** Primary [MUA](http://en.wikipedia.org/wiki/Email_client) =
+   Mozilla Thunderbird 17.0.11
+** OS = Mac OS 10.9.5
+** no tagging
+** ~4300 IMAP-based email folders with ~1MM mail msgs
+   from multiple servers/accounts
+*** doesn't include pruned/archived emails, whose indexing/searching
+    also desired
 
-See [Problem Details](#problem-details) for more details.
+See <<problem_details>> for more context.
     
 ## The Solutions
 
@@ -35,6 +52,7 @@ provide this (core) functionality appear to be:
 1. [notmuch](http://notmuch.org)
 2. [mu (maildir-utils)](http://www.djcbsoftware.nl/code/mu/)
 
+[id='problem_details',reftext='Problem Details']
 ### Problem Details
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
@@ -65,9 +83,51 @@ not close-to-impossible to integrate with the external tools.
 
 In short, it's time to move on from Thunderbird.
 
-
-
-
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
+{blank}
