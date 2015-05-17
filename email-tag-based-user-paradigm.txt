@@ -4,21 +4,21 @@ converting from IMAP-folder-only paradigm
   tagging based upon folders
     in particular: 'inbox' and 'spam' [auto?] tags/folders
 
-mailutils (mu) vs notmuch
+maildir-utils (mu) vs notmuch
   re-indexing the same maildir's
     https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146
     notmuch   = 11-15 seconds
-    mailutils = 170-190 seconds
+    maildir-utils = 170-190 seconds
     +10 for notmuch
-  mailutils (mu) embeds data in IMAP server, notmuch does not
-    +1 for mailutils
+  maildir-utils (mu) embeds data in IMAP server, notmuch does not
+    +1 for maildir-utils
     muchsync enables notmuch syncing across machines
       even if not as convenient
       +0.75 for notmuch
   for me (johnnyutahh), it's not even close
-    notmuch is so much faster indexing (10-15 times faster) than mailutils,
+    notmuch is so much faster indexing (10-15 times faster) than maildir-utils,
       that I'll happily jump through extra syncing (muchsync, etc) hoops
-  question - am I not configuring/executing mailutils correctly?
+  question - am I not configuring/executing maildir-utils correctly?
     could that explain its poor performance?
 
 email tools
@@ -28,7 +28,7 @@ email tools
     offlineimap
   indexing
     notmuch
-    mailutils
+    maildir-utils
   notmuch-specific (mostly MUA's)
     afew
       https://readthedocs.org/projects/afew/

@@ -39,9 +39,9 @@ toc::[]
 *** doesn't include pruned/archived emails, whose indexing/searching
     also desired
 
-See <<problem_details>> for more context.
+See <<problem_details>> and https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes] for more context.
     
-## The Solutions
+## The Possible Solutions
 
 I'm currently, as of 2015-05-16, seeking:
 
@@ -58,7 +58,22 @@ provide this (core) functionality appear to be:
 1. http://notmuch.org[notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
 
+## Choosing
+
+1. Initial tests show
+   https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[notmuch
+   performing 10-15 times faster than mu].
+   ** Question: were this tests configured and executed correctly? The
+      performance difference is remarkable, and concerns about correct
+      application setup, environment.
+2. mu can embed its metadata (tags, etc) "natively" into
+   the IMAP content/messages. notmuch can not. However,
+   http://www.muchsync.org/[muchsync] can replicate this metadata, but
+   it takes additional procuess+infrastructure.
+3. #1 greatly outweights #2. As of now, notmuch "wins."
+
 More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes].
+
 
 [id='problem_details']
 ## Appendix: Problem Details
