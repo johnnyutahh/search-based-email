@@ -14,7 +14,7 @@
 :sectlinks: 1
 //:sectanchors: 1
 
-# One User's Convert-to-Tag-Based-Email Saga
+# One User's Convert-to-Tag-Based-Email Challenges
 author github.com@johnnyutahh.com
 0.x, May 2015:
 Last updated {docdate} {doctime}
@@ -39,7 +39,9 @@ toc::[]
 *** doesn't include pruned/archived emails, whose indexing/searching
     also desired
 
-See <<problem_details>> and https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes] for more context.
+See <<problem_details>> and
+http://bit.ly/email-tag-based-user-paradigm[investigation notes]
+for more context.
     
 ## The Possible Solutions
 
@@ -66,17 +68,43 @@ provide this (core) functionality appear to be:
    ** Question: were this tests configured and executed correctly? The
       performance difference is remarkable, and concerns about correct
       application setup, environment.
+
 2. mu can embed its metadata (tags, etc) "natively" into
    the IMAP content/messages. notmuch can not. However,
-   http://www.muchsync.org/[muchsync] can replicate this metadata, but
-   it takes additional procuess+infrastructure.
+   http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
+   this metadata, but it takes additional procuess+infrastructure.
+
 3. #1 greatly outweights #2. As of now, notmuch "wins."
 
 More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes].
 
+## Implementation
+
+Tools:
+
+1. email-to-maildir gathering: mbsync [solved]
+2. notmuch initial setup [solved]
+
+3. MUA setup [in progress]
+
+** currently both
+http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
+https://github.com/pazz/alot[alot] are being configured, investigated
+
+4. 
+
+## User-adoption Challenges
+
+My adjustment of my workflow/paradigm appears to be the primary
+challenge for my adoption of this tag-based system. This includes but
+may not be limited to:
+
+Hopefully tools 
 
 [id='problem_details']
 ## Appendix: Problem Details
+
+(DISCLAIMER: This sections is under construction, and not complete.)
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as

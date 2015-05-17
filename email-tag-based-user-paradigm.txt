@@ -58,7 +58,7 @@ initial notmuch tagging
   tagging IMAP folders
     https://readthedocs.org/projects/afew
 
-notmuch features
+notmuch: not-yet-solved user requirements
 
   moving msgs after applying tags?
     https://lists.fedoraproject.org/pipermail/mutt-kz/2012-April/000043.html
@@ -73,6 +73,10 @@ notmuch features
       https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
       https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
     http://www.muchsync.org
+
+  IMAP folders as tags
+    http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+      http://notmuchmail.org/pipermail/notmuch/2010/003250.html
 
   notmuch folder-based searching
     http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
