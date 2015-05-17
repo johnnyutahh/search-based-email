@@ -1,0 +1,82 @@
+# <!-- vim: set syntax=mediawiki sw=2 ts=2: -->
+
+converting from IMAP-folder-only paradigm
+  tagging based upon folders
+    in particular: 'inbox' and 'spam' [auto?] tags/folders
+
+mailutils (mu) vs notmuch
+  re-indexing the same maildir's
+    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146
+    notmuch   = 11-15 seconds
+    mailutils = 170-190 seconds
+    +10 for notmuch
+  mailutils (mu) embeds data in IMAP server, notmuch does not
+    +1 for mailutils
+    muchsync enables notmuch syncing across machines
+      even if not as convenient
+      +0.75 for notmuch
+  for me (johnnyutahh), it's not even close
+    notmuch is so much faster indexing (10-15 times faster) than mailutils,
+      that I'll happily jump through extra syncing (muchsync, etc) hoops
+  question - am I not configuring/executing mailutils correctly?
+    could that explain its poor performance?
+
+email tools
+  fetching
+    mbsync
+    getmail
+    offlineimap
+  indexing
+    notmuch
+    mailutils
+  notmuch-specific (mostly MUA's)
+    afew
+      https://readthedocs.org/projects/afew/
+      https://github.com/teythoon/afew
+    alot
+    muchsync (sync entire notmuch databse across machines)
+    notmuchsync (minor)
+    mutt-kz
+      http://notmuchmail.org/mutttips
+
+setup guides
+  http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html
+  mutt-kz
+    http://notmuchmail.org/mutttips
+    https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
+    https://kzak.redcrew.org/doku.php?id=mutt:start
+  mutt + notmuch (non-integrated)
+    http://stevelosh.com/blog/2012/10/the-homely-mutt/
+      may get replaced by mutt-kz, but other things possibly still useful:
+        http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts
+        http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts
+        http://stevelosh.com/blog/2012/10/the-homely-mutt/#full-text-searching
+  http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
+    
+initial notmuch tagging
+  http://notmuchmail.org/initial_tagging
+  tagging IMAP folders
+    https://readthedocs.org/projects/afew
+
+notmuch features
+
+  moving msgs after applying tags?
+    https://lists.fedoraproject.org/pipermail/mutt-kz/2012-April/000043.html
+
+  sync notmuch tags with maildir flags
+    https://github.com/spaetz/notmuchsync
+
+  syncing notmuch tags across machines
+    http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+      http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+    http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
+      https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
+      https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
+    http://www.muchsync.org
+
+  notmuch folder-based searching
+    http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
+    http://bit.ly/notmuch-folder-based-searching-nabble-2011
+
+  using procmail to set tags
+    http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
