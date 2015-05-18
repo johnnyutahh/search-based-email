@@ -143,13 +143,19 @@ limited to a notmuch-specific implementation/tools/etc.
 
 ### email-to-maildir gathering, fetching
 
-Currently solved with http://isync.sourceforge.net/[mbsync, aka isync].
+notmuch seems to work best (or maybe requires?)
+the http://en.wikipedia.org/wiki/Maildir[Maildir]
+format. The following tools (presumably) all sync an
+http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol[IMAP]
+server to a Maildir filesystem.
 
 Options
 
 * http://isync.sourceforge.net/[mbsync, aka isync]
 * http://offlineimap.org[offlineimap]
 * http://pyropus.ca/software/getmail[getmail]
+
+I've chosen http://isync.sourceforge.net/[mbsync, aka isync].
 
 Comments
 
