@@ -30,7 +30,7 @@ toc::[]
 
 ### Summary
 
-https://github.com/johnnyutahh[I] am new to what I call "tag-based
+<<my_user_profile,I>> am new to what I call "tag-based
 email" systems, and I'm investigating the transition from a "large
 IMAP folder collection" to a tag-based system. I wrote this initial
 document draft because:
