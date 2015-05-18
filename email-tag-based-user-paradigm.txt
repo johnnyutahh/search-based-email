@@ -2,8 +2,5 @@
 
 README.adoc TODOs
   better summarize my user profile
-  convert all the "investigation notes" to README.adoc?
-    https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes].
   address all the 'TODO's in README.adoc
-  clarify: community members need not reply to -all- issues up front
-    small responses on invidual points welcome
+  vim notmuch frontend MUA option?

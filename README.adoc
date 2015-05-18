@@ -36,35 +36,47 @@ IMAP folder collection" to a tag-based system. I wrote this initial
 document draft because:
 
 . Near-term: it hopefully provides the best chance for an efficient
-  sand uccessful transition - if the tag-based community can provide
+  and successful transition -- if the tag-based community can provide
   significant and timely feedback.
+
+** Community members need not wait to reply to -all- issues presented;
+   small responses on invidual points welcome, even preferred.
+
+** Most important questions: what if anything am I missing? For any of
+   my descriptions below, is there a better way/tool/approach/workflow?
 
 . Longer-term: the tag-based email community might reuse this content
   (which will hopefully mature as the problems are solved) to better
-  help others like me in the future. I couldn't find a resource like
-  this elsewhere, so maybe this content might be useful as a basis to
-  help fill some gaps. To this end, I strongly encourage forks + pull
-  requests of this content.
+  help others like me in the future.
 
+** I couldn't find a resource like this elsewhere, so maybe this content
+   might be useful as a basis to help fill some gaps. To this end, I
+   strongly encourage forks + pull requests of this content.
+
+DISCLAIMER: this document may be in flux as I learn this domain.
+
+[id='my_user_profile']
 TODO:
 + summarize my user profile/background here?
 
-### Details
 
-However, the tag-based-classification paradigm seems _significantly_
-different, and may (or may not?) take some time to master, or at least
+
+### More Details
+
+TODO: flesh out this section
+
+The tag-based-classification paradigm seems _significantly_
+different and a bit daunting to this "old school IMAP-folder
+user", and may (or may not?) take some time to master, or at least
 assimilate. See <<user_adoption_challenges>>. Specifically, opening
 https://github.com/pazz/alot[alot] for the first time and looking at a
 staggering 50k+ emails in my "inbox" can give someone pause; hopefully
 <<initial_tagging>> will take care of that.
 
-Further, the tag-based (as I call it) resources to document new-user
-(like me) paradigm shifts and list available toolsets seem to be
-scattered. Hence this document, as a "draft" precursor.
-
-Most-important considerations/questions form the "tag-based" email
-community: what if anything am I missing? For any of my descriptions
-below, is there a better way/tool/approach/workflow?
+Further, the tag-based (as I call it) resources--to document
+new-user-paradigm-shifts and list available toolsets--seem scattered,
+disjointed, or non-existent for many scenarios. Hence this document, as
+a "draft" precursor.
 
 I'd prefer not to spin my wheels trying to solve problems with my
 custom/unique workflow/solutions that may have been automatically solved
@@ -137,7 +149,9 @@ functionality appear to be:
 Since notmuch <<Choosing,won>>, the following outlines but may not be
 limited to a notmuch-specific implementation/tools/etc.
 
-### email-to-maildir gathering, fetching: mbsync [solved]
+### email-to-maildir gathering, fetching
+
+Currently solved with http://isync.sourceforge.net/[mbsync, aka isync].
 
 Options
 
@@ -158,9 +172,9 @@ Comments
   website] seems to primarily (?) pitch it as a
   http://sourceforge.net/projects/fetchmail/[fetchmail] replacement.
 
-### notmuch initial installation and setup [solved]
+### notmuch initial installation and setup
 
-* http://notmuch.org[notmuch]
+* Currently solved: http://notmuch.org[notmuch]
 
 ### notmuch initial + automated tagging
 
@@ -168,27 +182,46 @@ Comments
 * http://www.procmail.org/[procmail]?
 * See <<initial_tagging>> and <<auto_tagging>> for more.
 
-### Auto-check if mbsync replay is needed [implementation not yet started]
-*  mbsync-watcher
-**   https://github.com/tim-smart/node-mbsync-watcher
-**   https://www.npmjs.com/package/mbsync-watcher
-**   my take: it's good for client->server updates, and not vice versa
+### Auto-check if mbsync replay is needed
+
+(This implementation has not yet started.)
+
+#### client->server checking
+
+* mbsync-watcher
+** https://github.com/tim-smart/node-mbsync-watcher
+** https://www.npmjs.com/package/mbsync-watcher
+** my take: it's good for client->server updates, and not vice versa
+** Problem: I do _not_ want it to sync _all_ my 4k+ folders every 5
+   minutes, as that's too much overhead. Hopefully there's a way to disable
+   this.
+
+#### server->client checking
+
 *  https://github.com/athoune/imapidle
 *  mswatch
 **   http://mswatch.sourceforge.net
 **   requires IMAP-server-side shell access - difficult
 **   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
+**   this might also be a client->server option
 
-### MUA setup [in progress]
+### MUA setup
+
+(Implementation currently in progress.)
 
 * currently both
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] are being configured, investigated
 
-### Message-tagging tool(s) [implementation not yet started]
+### Message-tagging
+
+(This implementation has not yet started.)
+
 * http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
-### Replicating+synchronizing notmuch metadata across machines [implementation not yet started]
+### Replicating+synchronizing notmuch metadata across machines
+
+(Implementation currently in progress.)
 
 * http://www.muchsync.org[muchsync] currently looks best.
 
@@ -203,15 +236,46 @@ challenge for my adoption of this tag-based system. This includes but
 may not be limited to (listed in priority-first order):
 
 ### Which MUA(s)?
+
 * http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
 ** seems to be the most-popular MUA in this space
 ** http://notmuchmail.org/mutttips
 ** https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
+
+* vim front-end for notmuch
+** http://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README
+** http://notmuchmail.org/vimtips/
+
+** <<my_user_profile,I'm a heavy vim user>>, and while this approached
+   seemed initially appealing, the depth seems so small, that I haven't
+   even bothered to try this. Am I overlooking a useful (in comparison
+   to the others) tool?
+
 * https://github.com/pazz/alot[alot]
-** TODO: describe the 1) promise and 2) challenges I experience with alot
+
+** https://github.com/pazz/alot[alot] looks tremendously promising,
+   possibly my best long-term solution, especially given
+   <<my_user_profile,my user profile>> (namely I'm a vim user and a
+   Python programmer--seems to mirror well). However, the available
+   documentation/resources are far more sparse. The user-manual content
+   is almost impeccable, and pazz seems to do a great job to stay on top
+   of all issues. But it's hard to find practical resources like example
+   config files, procedural setup, blog/setup guides, etc. Maybe in part
+   because it's not as widely used.
+
+*** Speculating: a smaller effort to provide setup + config-file
+    examples might go a long way to solve this problem.
+
+* There's other http://notmuchmail.org/frontends[frontends]...
+
+** ...but none seem as appealing to <<my_user_profile,me>> as the
+   above. Am I overlooking any solutions that might fit well with my
+   <<my_user_profile,user profile>>?
 
 ### Support old-style IMAP-folder paradigm
-** TODO
+
+* While I may be be moving to a a tag-based paradigm, I still need to
+  access
 
 [id='initial_tagging']
 ### Initial tagging
