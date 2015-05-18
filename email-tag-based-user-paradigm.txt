@@ -57,16 +57,3 @@ setup guides
         http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts
         http://stevelosh.com/blog/2012/10/the-homely-mutt/#full-text-searching
   http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
-
-notmuch: not-yet-solved user requirements
-
-  syncing notmuch tags across machines
-    http://notmuchmail.org/pipermail/notmuch/2010/003249.html
-      http://notmuchmail.org/pipermail/notmuch/2010/003250.html
-    http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
-      https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
-      https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
-    http://www.muchsync.org
-
-  using procmail to set tags
-    http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055

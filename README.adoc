@@ -34,16 +34,17 @@ toc::[]
    Mozilla Thunderbird 17.0.11
 ** OS = Mac OS 10.9.5
 ** no tagging
-** \~4300 IMAP-based email folders with \~1MM mail msgs
+** approx 4300 IMAP-based email folders with approx 1 million mail msgs
    from multiple servers/accounts
 *** doesn't include pruned/archived emails, whose indexing/searching
     also desired
 
-See <<problem_details>> and
-http://bit.ly/email-tag-based-user-paradigm[investigation notes]
-for more context.
+See <<problem_details>> (includes my
+user profile/demographic/background) and
+http://bit.ly/email-tag-based-user-paradigm[investigation notes] for
+more context.
     
-## The Possible Solutions
+## The Solution Options
 
 I'm currently, as of 2015-05-16, seeking:
 
@@ -80,7 +81,8 @@ More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/em
 
 ## Implementation
 
-Since notmuch <<Choosing,wins>>, I make a notmuch-specific implementation.
+Since notmuch <<Choosing,wins>>, the following outlines a notmuch-specific
+implementation.
 
 Tools:
 
@@ -101,7 +103,7 @@ Tools:
 **  mswatch
 ***   http://mswatch.sourceforge.net
 ***   requires IMAP-server-side shell access - difficult
-***   wrapping 'imapidle' with a 'mbsync' trigger seems like good alternative
+***   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
 
 . MUA setup [in progress]
 
@@ -122,11 +124,20 @@ https://github.com/pazz/alot[alot] are being configured, investigated
 My adjustment of my workflow/paradigm appears to be the primary
 challenge for my adoption of this tag-based system. This includes but
 may not be limited to (listed in priority-first order):
-    
-. initial tagging
+
+. Which MUA(s)?
+** alot
+** mutt-kz
+** TODO
+
+. Support old-style IMAP-folder paradigm
+** TODO
+
+. Initial tagging
 ** http://notmuchmail.org/initial_tagging
-** "tagging" IMAP folders
-*** Can https://readthedocs.org/projects/afew[afew] do this?
+** "tagging" my large set of IMAP folders
+** in particular: `Inbox` and `Spam` folders -> tags
+** Is https://readthedocs.org/projects/afew[afew] best for this?
 
 . http://bit.ly/1Edr8fp[Moving msgs after applying tags].
 
@@ -156,13 +167,25 @@ may not be limited to (listed in priority-first order):
 ** http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
 ** http://bit.ly/notmuch-folder-based-searching-nabble-2011
 
-. sync notmuch tags with maildir flags
+. Sync notmuch tags with maildir flags
 ** https://github.com/spaetz/notmuchsync
 
-. using procmail to set tags
-** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
+. Managing message attachments
+** forwarding emails with attachments
+** opening attachments from MUA
+** TODO
 
-. syncing notmuch tags across machines
+. Automatically tagging new messages
+** using procmail to set tags
+*** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
+
+. Forwarding messages
+** TODO
+
+. Writing HTML-formatted messages
+** TODO
+
+. Syncing notmuch metadata across machines
 ** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
 *** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
 ** http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
@@ -175,6 +198,8 @@ may not be limited to (listed in priority-first order):
 ## Appendix: Problem Details
 
 (DISCLAIMER: This sections is under construction, and not complete.)
+
+TODO: describe my user profile/context/demographic/background.
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
