@@ -138,7 +138,7 @@ http://www.djcbsoftware.nl/code/mu[mu] over http://notmuch.org[notmuch]?
 
 ## Implementation
 
-Since notmuch <<Choosing,won>>, the following outlines but may not be
+Since notmuch <<choosing,won>>, the following outlines but may not be
 limited to a notmuch-specific implementation/tools/etc.
 
 ### email-to-maildir gathering, fetching
