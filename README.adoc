@@ -80,29 +80,41 @@ More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/em
 
 ## Implementation
 
-Since notmuch wins, I make a notmuch-specific implementation.
+Since notmuch <<Choosing,wins>>, I make a notmuch-specific implementation.
 
 Tools:
 
-1. email-to-maildir gathering: http://isync.sourceforge.net/[mbsync] [solved]
+. email-to-maildir gathering: http://isync.sourceforge.net/[mbsync] [solved]
 
 ** I'm not (yet, at least) looking to debate this choice here.
    For now, I seem to have mbsync working nicely. Search
    http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to read more.
 
-2. http://notmuch.org[notmuch] initial setup [solved]
+. http://notmuch.org[notmuch] initial setup [solved]
 
-3. MUA setup [in progress]
+. Auto-check if mbsync replay is needed
+**  mbsync-watcher
+***   https://github.com/tim-smart/node-mbsync-watcher
+***   https://www.npmjs.com/package/mbsync-watcher
+***   my take: it's good for client->server updates, and not vice versa
+**  https://github.com/athoune/imapidle
+**  mswatch
+***   http://mswatch.sourceforge.net
+***   requires IMAP-server-side shell access - difficult
+***   wrapping 'imapidle' with a 'mbsync' trigger seems like good alternative
+
+. MUA setup [in progress]
 
 ** currently both
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] are being configured, investigated
 
-4. Message-tagging tool(s). [not yet started]
+. Message-tagging tool(s). [not yet started]
 ** http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
-5. Replicating+synchronizing notmuch metadata across machines. [not yet started]
+. Replicating+synchronizing notmuch metadata across machines. [not yet started]
 ** http://www.muchsync.org[muchsync] currently looks best.
+
 
 ## User-adoption Challenges
 
