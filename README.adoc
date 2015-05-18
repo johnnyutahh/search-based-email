@@ -43,11 +43,16 @@ document draft because:
   (which will hopefully mature as the problems are solved) to better
   help others like me in the future. I couldn't find a resource like
   this elsewhere, so maybe this content might be useful as a basis to
-  help fill some gaps.
+  help fill some gaps. To this end, I strongly encourage forks + pull
+  requests of this content.
+
+TODO:
++ summarize my user profile/background here?
 
 ### Details
 
-TODO
+TODO:
++ summarize my user profile/background here?
 
 However, the tag-based-classification paradigm seems _significantly_
 different, and may (or may not?) take some time to master, or at least
@@ -119,7 +124,7 @@ functionality appear to be:
 
 1. Initial tests show
    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[notmuch
-   performing 10-15 times faster than mu].
+   performing approx 15 times faster than mu].
 
    ** Question: where these tests configured and executed correctly? The
       performance difference is remarkable, generating concerns about
@@ -130,22 +135,34 @@ functionality appear to be:
    http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
    this metadata, but it takes additional process+infrastructure.
 
-3. #1 greatly outweighs #2. Because of this, notmuch "wins."
-
-More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes].
+3. #1 greatly outweighs #2. Because of this, notmuch "wins," while I
+   await feedback from the community(ies).
 
 ## Implementation
 
-Since notmuch <<Choosing,won>>, the following outlines a notmuch-specific
-implementation/tools/etc.
+Since notmuch <<Choosing,won>>, the following outlines but may not be
+limited to a notmuch-specific implementation/tools/etc.
 
-### email-to-maildir gathering: mbsync [solved]
+### email-to-maildir gathering, fetching: mbsync [solved]
 
-* http://isync.sourceforge.net/[mbsync]
+Options
+
+* http://isync.sourceforge.net/[mbsync, aka isync]
+* http://pyropus.ca/software/getmail[getmail]
+* http://offlineimap.org[offlineimap]
+
+Comments
 
 * I'm not (yet, at least) looking to debate this choice here.
-  For now, I seem to have mbsync working nicely. Search
+  For now, mbsync appears to working nicely for me. Search
   http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to see more.
+
+* I understand getmail the least. It's less referenced (on
+  the web) for this usage/context than either offlineimap
+  or mbsync. Why is this? Is it not a viable alternative to
+  the above? http://pyropus.ca/software/getmail[getmail's
+  website] seems to primarily (?) pitch it as a
+  http://sourceforge.net/projects/fetchmail/[fetchmail] replacement.
 
 ### notmuch initial setup [solved]
 
@@ -182,9 +199,12 @@ challenge for my adoption of this tag-based system. This includes but
 may not be limited to (listed in priority-first order):
 
 ### Which MUA(s)?
-* alot
-* mutt-kz
-* TODO
+* http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
+** seems to be the most-popular MUA in this space
+** http://notmuchmail.org/mutttips
+** https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
+* https://github.com/pazz/alot[alot]
+** TODO: describe the 1) promise and 2) challenges I experience with alot
 
 ### Support old-style IMAP-folder paradigm
 ** TODO
@@ -196,7 +216,7 @@ may not be limited to (listed in priority-first order):
 * in particular: `Inbox` and `Spam` folders -> tags
 * Is https://readthedocs.org/projects/afew[afew] best for this?
 
-### http://bit.ly/1Edr8fp[Moving msgs after applying tags]
+### Moving msgs after applying tags
 
 * Context, details:
   http://bit.ly/1GimL8Q[mutt-kz thread: "Moving msgs after applying tags?"].
@@ -215,6 +235,20 @@ may not be limited to (listed in priority-first order):
     wherever I put said message. Is this the way it works "out of the
     box"?
 
+### Piping email-message content through shell commands
+
+eg:
+* http://www.davep.org/mutt/muttrc/macros.html
+* http://wcm1.web.rice.edu/mutt-tips.html
+* http://rhonda.deb.at/config/mutt/keys
+
+### Configure keyboard shortcuts to any command
+
+eg:
+* http://rhonda.deb.at/config/mutt/keys
+* http://dev.mutt.org/trac/wiki/MuttGuide/Macros
+* http://www.mutt.org/doc/manual/manual-2.html
+
 [id='IMAP_folders_as_tags',reftext='IMAP folders as tags']
 ### IMAP folders as tags
 * http://notmuchmail.org/pipermail/notmuch/2010/003249.html
@@ -225,6 +259,12 @@ may not be limited to (listed in priority-first order):
 * http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
 * http://bit.ly/notmuch-folder-based-searching-nabble-2011
 
+### Address-Book/Contacts Integration
+
+* http://notmuchmail.org/vimtips/#index1h2[notmuch: Addressbook management
+  and vim]
+* http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts[mutt + contacts]
+
 ### Sync notmuch tags with maildir flags
 * https://github.com/spaetz/notmuchsync
 
@@ -233,8 +273,9 @@ may not be limited to (listed in priority-first order):
 * opening attachments from MUA
 * TODO
 
-### Automatically tagging new messages
-* using procmail to set tags
+### Automatically tagging new messages (post initial tagging)
+* http://afew.readthedocs.org/en/latest[afew]?
+* employe procmail to set tags?
 ** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
 
 ### Forwarding messages
@@ -251,9 +292,13 @@ may not be limited to (listed in priority-first order):
 ** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
 * http://www.muchsync.org
 
+### Offline Editing - Postponing Drafts
+
+* http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts[
+  The Homely Mutt: Postponing Drafts]
 
 [id='problem_details']
-## Appendix: Problem Details
+## Appendix 1: Problem Details
 
 (DISCLAIMER: This sections is under construction, and not complete.)
 
@@ -287,6 +332,23 @@ not close-to-impossible to integrate with the external tools.
 
 In short, it's time to move on from Thunderbird.
 
+## Appendix 2: General Setup Guides
+
+(Previously-referenced guides or sections of guides listed below are not
+duplicated here.)
+
+* http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html
+* mutt + notmuch
+  (non- http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] style)
+** http://stevelosh.com/blog/2012/10/the-homely-mutt/
+*** may get replaced by mutt-kz, but other things possibly still useful:
+**** http://stevelosh.com/blog/2012/10/the-homely-mutt/#full-text-searching
+* mutt in general
+** http://wcm1.web.rice.edu/mutt-tips.html
+** http://www.guckes.net/Mutt/setup.html
+** http://objectmix.com/mutt/202060-whaaah-cant-see-svens-setup-page.html
+* http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
+
 {blank}
 {blank}
 {blank}
@@ -315,3 +377,4 @@ In short, it's time to move on from Thunderbird.
 {blank}
 {blank}
 {blank}
+
