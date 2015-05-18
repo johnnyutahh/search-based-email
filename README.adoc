@@ -45,13 +45,19 @@ document draft because:
 ** Most important questions: what if anything am I missing? For any of
    my descriptions below, is there a better way/tool/approach/workflow?
 
-. Longer-term: the tag-based email community might reuse this content
-  (which will hopefully mature as the problems are solved) to better
-  help others like me in the future.
+. Longer-term: the tag-based email community might reuse this
+  content--which will hopefully mature as the problems are solved--to
+  better help others like me in the future.
 
 ** I couldn't find a resource like this elsewhere, so maybe this content
    might be useful as a basis to help fill some gaps. To this end, I
-   strongly encourage forks + pull requests of this content.
+   strongly encourage forks + pull requests of this content. (Of course,
+   please advise asap if other, similar docs exist.)
+
+As email is my most-frequent, computer-related activity, I'd
+like to "get it right." Hence the effort spent on this document.
+I'm hopeful with the right system, I can make email management a
+much-less-time-consuming burden.
 
 _(DISCLAIMER: this document may be in flux as I learn and attempt to
 master this domain.)_
@@ -86,13 +92,12 @@ See <<problem_details>> for more context.
     
 ## The Solution Options
 
-After a reasonable search of what tools are currently available, I'm
-currently seeking:
+After reviewing currently-available tools, I'm seeking:
 
-1. fast search on my entire maildir collection (my "email database"),
-2. to leverage tag-based categorization, and
+1. fast search on my entire email-message collection (my "email database"),
+2. to leverage tag-based email categorization, and
 3. integrate with external-to-MUA text-processing tools - namely ones
-   me+my team have developed.
+   me and my team have developed.
 
 (It's fair to ask: did I come up with these requirements by
 "adjusting" to what tools are currently available, or by independently
@@ -106,6 +111,7 @@ My choice seems to hinge on these 2 applications:
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
 
 Most of my (new) email-system setup seems to depend on the above choice.
+What other tools/options might I be overlooking?
 
 ## Choosing
 
@@ -385,7 +391,7 @@ My "user profile":
 ** and I still significantly code in Python to solve "glueware" problems.
 ** I also dabble in Linux and MacOSX sysadmin.
 * Learning new systems/languages/applications/software is old hat...
-** ...but it's now harder simply because time constraints from expanded
+** ...but it's now harder only because of time constraints from expanded
    business responsibilities.
 * And like many people, I receive a remarkable amount of email in a
   diverse set of contexts.
@@ -396,13 +402,13 @@ My "user profile":
   be _done_. However, some environments and applications perform
   significant, asynchronous activity even after reporting they are done
   servicing a request. (<<the_problem,Thunderbird>> is notorious for
-  this.) And this drives me nuts. I end up talking to the computer:
-  "Computer, if you need more time to complete a job, don't lie to me.
-  I can go do other things while I wait for you. Just don't make me
-  further wait when you already said you were done."
+  this.) And this drives me nuts. "Computer, if you need more time to
+  complete a job, don't lie to me. I can go do other things while I wait
+  for you. But please do not delay me further after you already said you
+  were done."
  
 * In summary, I'm a vim and Python lover, a keyboard jockey, and a
-  fairly-technical, impatient, demanding user. Who gets lots of email.
+  fairly-technical, impatient, demanding user. That gets lots of email.
 
 Despite my history assimilating to new applications/environments, the
 tag-based-classification paradigm still seems _significantly_ different
