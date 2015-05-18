@@ -26,14 +26,64 @@ toc::[]
 
 <<<
 
+## Purpose
+
+### Summary
+
+https://github.com/johnnyutahh[I] am new to what I call "tag-based
+email" systems, and I'm investigating the transition from a "large
+IMAP folder collection" to a tag-based system. I wrote this initial
+document draft because:
+
+. Near-term: it hopefully provides the best chance for an efficient
+  sand uccessful transition - if the tag-based community can provide
+  significant and timely feedback.
+
+. Longer-term: the tag-based email community might reuse this content
+  (which will hopefully mature as the problems are solved) to better
+  help others like me in the future. I couldn't find a resource like
+  this elsewhere, so maybe this content might be useful as a basis to
+  help fill some gaps.
+
+### Details
+
+TODO
+
+However, the tag-based-classification paradigm seems _significantly_
+different, and may (or may not?) take some time to master, or at least
+assimilate. See <<user_adoption_challenges>>. Specifically, opening
+https://github.com/pazz/alot[alot] for the first time and looking at a
+staggering 50k+ emails in my "inbox" can give someone pause; hopefully
+<<initial_tagging>> will take care of that.
+
+Further, the tag-based (as I call it) resources to document new-user
+(like me) paradigm shifts and list available toolsets seem to be
+scattered. Hence this document, as a "draft" precursor.
+
+Most-important considerations/questions form the "tag-based" email
+community: what if anything am I missing? For any of my descriptions
+below, is there a better way/tool/approach/workflow?
+
+I'd prefer not to spin my wheels trying to solve problems with my
+custom/unique workflow/solutions that may have been automatically solved
+elsewhere by tools I can reuse.
+
 ## The Problem
 
-. I'm seeking a better paradigm over my IMAP-folder-only email management
+. I'm seeking a better paradigm over my current, IMAP-folder-only,
+  high-capacity email management.
+
+** Among other things, moving _and_ copying emails to a variety of IMAP
+   folders, depending on the "classification" needs, gets cumbersome.
+
+** Searching my entire email-message collection with an MUA like
+   Thunderbird (see below) takes impossibly too long.
+
 . existing (2015-05-17) environment
 ** Primary http://en.wikipedia.org/wiki/Email_client[MUA] =
    Mozilla Thunderbird 17.0.11
 ** OS = Mac OS 10.9.5
-** no tagging
+** no "tagging"
 ** approx 4300 IMAP-based email folders with approx 1 million mail msgs
    from multiple servers/accounts
 *** doesn't include pruned/archived emails, whose indexing/searching
@@ -46,17 +96,21 @@ more context.
     
 ## The Solution Options
 
-I'm currently, as of 2015-05-16, seeking:
+After a reasonable search of what tools are currently available, I'm
+currently seeking:
 
 1. fast search on my entire maildir collection (my "email database"),
 2. leverage tag-based categorization, and
 3. integrate with external-to-MUA text-process tools.
 
-This probably means a tag-based-message-classification,
-fast-index-search toolset that integrates with a
-lower-level/text-primitive MUA (read mutt vs TB). The only
-reasonably-available, competitive mechanisms that I've yet found to
-provide this (core) functionality appear to be:
+(It's fair to ask: did I come up with these requirements by
+"adjusting" to what tools are currently available, or by independently
+dreaming up my own specifications? More the former. I'd much prefer
+http://bit.ly/JARVIS-wikia[Jarvis] be my email interface, but he's not
+currently or at least economically available.)
+
+The only mechanisms that I've yet found to provide this (core)
+functionality appear to be:
 
 1. http://notmuch.org[notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
@@ -66,132 +120,137 @@ provide this (core) functionality appear to be:
 1. Initial tests show
    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[notmuch
    performing 10-15 times faster than mu].
-   ** Question: were this tests configured and executed correctly? The
-      performance difference is remarkable, and concerns about correct
-      application setup, environment.
+
+   ** Question: where these tests configured and executed correctly? The
+      performance difference is remarkable, generating concerns about
+      correct application setup, environment.
 
 2. mu can embed its metadata (tags, etc) "natively" into
    the IMAP content/messages. notmuch can not. However,
    http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
    this metadata, but it takes additional process+infrastructure.
 
-3. #1 greatly outweighs #2. As of now, notmuch "wins."
+3. #1 greatly outweighs #2. Because of this, notmuch "wins."
 
 More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes].
 
 ## Implementation
 
-Since notmuch <<Choosing,wins>>, the following outlines a notmuch-specific
-implementation.
+Since notmuch <<Choosing,won>>, the following outlines a notmuch-specific
+implementation/tools/etc.
 
-Tools:
+### email-to-maildir gathering: mbsync [solved]
 
-. email-to-maildir gathering: http://isync.sourceforge.net/[mbsync] [solved]
+* http://isync.sourceforge.net/[mbsync]
 
-** I'm not (yet, at least) looking to debate this choice here.
-   For now, I seem to have mbsync working nicely. Search
-   http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to read more.
+* I'm not (yet, at least) looking to debate this choice here.
+  For now, I seem to have mbsync working nicely. Search
+  http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to see more.
 
-. http://notmuch.org[notmuch] initial setup [solved]
+### notmuch initial setup [solved]
 
-. Auto-check if mbsync replay is needed [implementation not yet started]
-**  mbsync-watcher
-***   https://github.com/tim-smart/node-mbsync-watcher
-***   https://www.npmjs.com/package/mbsync-watcher
-***   my take: it's good for client->server updates, and not vice versa
-**  https://github.com/athoune/imapidle
-**  mswatch
-***   http://mswatch.sourceforge.net
-***   requires IMAP-server-side shell access - difficult
-***   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
+* http://notmuch.org[notmuch]
 
-. MUA setup [in progress]
+### Auto-check if mbsync replay is needed [implementation not yet started]
+*  mbsync-watcher
+**   https://github.com/tim-smart/node-mbsync-watcher
+**   https://www.npmjs.com/package/mbsync-watcher
+**   my take: it's good for client->server updates, and not vice versa
+*  https://github.com/athoune/imapidle
+*  mswatch
+**   http://mswatch.sourceforge.net
+**   requires IMAP-server-side shell access - difficult
+**   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
 
-** currently both
+### MUA setup [in progress]
+
+* currently both
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] are being configured, investigated
 
-. Message-tagging tool(s). [implementation not yet started]
-** http://afew.readthedocs.org/en/latest[afew] currently looks best.
+### Message-tagging tool(s). [implementation not yet started]
+* http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
-. Replicating+synchronizing notmuch metadata across machines.
+### Replicating+synchronizing notmuch metadata across machines.
   [implementation not yet started]
-** http://www.muchsync.org[muchsync] currently looks best.
+* http://www.muchsync.org[muchsync] currently looks best.
 
-
+[id='user_adoption_challenges']
 ## User-adoption Challenges
 
 My adjustment of my workflow/paradigm appears to be the primary
 challenge for my adoption of this tag-based system. This includes but
 may not be limited to (listed in priority-first order):
 
-. Which MUA(s)?
-** alot
-** mutt-kz
+### Which MUA(s)?
+* alot
+* mutt-kz
+* TODO
+
+### Support old-style IMAP-folder paradigm
 ** TODO
 
-. Support old-style IMAP-folder paradigm
-** TODO
+[id='initial_tagging']
+### Initial tagging
+* http://notmuchmail.org/initial_tagging
+* "tagging" my large set of IMAP folders
+* in particular: `Inbox` and `Spam` folders -> tags
+* Is https://readthedocs.org/projects/afew[afew] best for this?
 
-. Initial tagging
-** http://notmuchmail.org/initial_tagging
-** "tagging" my large set of IMAP folders
-** in particular: `Inbox` and `Spam` folders -> tags
-** Is https://readthedocs.org/projects/afew[afew] best for this?
+### http://bit.ly/1Edr8fp[Moving msgs after applying tags].
 
-. http://bit.ly/1Edr8fp[Moving msgs after applying tags].
+* Context, details:
+  http://bit.ly/1GimL8Q[mutt-kz thread: "Moving msgs after applying tags?"].
 
-** Will messages retain notmuch-associated metadata (tags, etc) for
-   lifetime of any message, including post-folder moves - without any
-   special configuration?
+* Will messages retain notmuch-associated metadata (tags, etc) for
+  lifetime of any message, including post-folder moves - without any
+  special configuration?
 
-*** I'm used to moving messages between folders in order to classify.
+** I'm used to moving messages between folders in order to classify.
     Further, I will like to keep a clean Inbox and other folders, for my
     non-notmuch-based email clients, thus requiring message moving.
 
-*** I'd like to ensure that once I associated notmuch-metadata (by
-    adding tags, or whatever metadata/etc scenarios might be involved
-    with notmuch) with a message, that said metadata "stays" with a
-    message, regardless of wherever I put said message. Is this the way
-    it works "out of the box"?
+** Once I associate notmuch-metadata (by adding tags, or whatever
+    metadata/etc scenarios might be involved with notmuch) with a
+    message, that said metadata "stays" with a message, regardless of
+    wherever I put said message. Is this the way it works "out of the
+    box"?
 
-. IMAP folders as tags
-// can't put the [id=''] reference above the bullet line,
-// because it restarts the bullet-line numbering.
 [id='IMAP_folders_as_tags',reftext='IMAP folders as tags']
-** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
-*** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+### IMAP folders as tags
+* http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
 
-. notmuch/MUA/mutt-kz/alot folder-based searching
-** not yet certain how different this is from <<IMAP_folders_as_tags>>.
-** http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
-** http://bit.ly/notmuch-folder-based-searching-nabble-2011
+### notmuch/MUA/mutt-kz/alot folder-based searching
+* not yet certain how different this is from <<IMAP_folders_as_tags>>.
+* http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
+* http://bit.ly/notmuch-folder-based-searching-nabble-2011
 
-. Sync notmuch tags with maildir flags
-** https://github.com/spaetz/notmuchsync
+### Sync notmuch tags with maildir flags
+* https://github.com/spaetz/notmuchsync
 
-. Managing message attachments
-** forwarding emails with attachments
-** opening attachments from MUA
-** TODO
+### Managing message attachments
+* forwarding emails with attachments
+* opening attachments from MUA
+* TODO
 
-. Automatically tagging new messages
-** using procmail to set tags
-*** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
+### Automatically tagging new messages
+* using procmail to set tags
+** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
 
-. Forwarding messages
-** TODO
+### Forwarding messages
+* TODO
 
-. Writing HTML-formatted messages
-** TODO
+### Writing HTML-formatted messages
+* TODO
 
-. Syncing notmuch metadata across machines
-** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
-*** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
-** http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
-*** https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
-*** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
-** http://www.muchsync.org
+### Syncing notmuch metadata across machines
+* http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+* http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
+** https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
+** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
+* http://www.muchsync.org
 
 
 [id='problem_details']
@@ -204,7 +263,7 @@ TODO: describe my user profile/context/demographic/background.
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
 I understand it, feature frozen. I'm tired of debating with the
-Mozillazine support team about TB's bugs and limitations. Among other
+mozillaZine support team about TB's bugs and limitations. Among other
 things, it's IMAP sync is slow and unreliable. It literally (and
 unfortunately, inconsistently) deletes IMAP folders on it's own whim,
 asynchronously, sometimes when I least expect it. Sometimes it loses
@@ -229,26 +288,6 @@ not close-to-impossible to integrate with the external tools.
 
 In short, it's time to move on from Thunderbird.
 
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
-{blank}
 {blank}
 {blank}
 {blank}
