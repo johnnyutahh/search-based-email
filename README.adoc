@@ -51,9 +51,6 @@ TODO:
 
 ### Details
 
-TODO:
-+ summarize my user profile/background here?
-
 However, the tag-based-classification paradigm seems _significantly_
 different, and may (or may not?) take some time to master, or at least
 assimilate. See <<user_adoption_challenges>>. Specifically, opening
@@ -94,10 +91,7 @@ elsewhere by tools I can reuse.
 *** doesn't include pruned/archived emails, whose indexing/searching
     also desired
 
-See <<problem_details>> (includes my
-user profile/demographic/background) and
-http://bit.ly/email-tag-based-user-paradigm[investigation notes] for
-more context.
+See <<problem_details>> for more context.
     
 ## The Solution Options
 
@@ -164,9 +158,15 @@ Comments
   website] seems to primarily (?) pitch it as a
   http://sourceforge.net/projects/fetchmail/[fetchmail] replacement.
 
-### notmuch initial setup [solved]
+### notmuch initial installation and setup [solved]
 
 * http://notmuch.org[notmuch]
+
+### notmuch initial + automated tagging
+
+* https://readthedocs.org/projects/afew[afew] best?
+* http://www.procmail.org/[procmail]?
+* See <<initial_tagging>> and <<auto_tagging>> for more.
 
 ### Auto-check if mbsync replay is needed [implementation not yet started]
 *  mbsync-watcher
@@ -189,7 +189,11 @@ https://github.com/pazz/alot[alot] are being configured, investigated
 * http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
 ### Replicating+synchronizing notmuch metadata across machines [implementation not yet started]
+
 * http://www.muchsync.org[muchsync] currently looks best.
+
+** muchsync apparently syncs metadata _and_ data (which may be
+   unavoidable), but claims to do it as efficiently as possible.
 
 [id='user_adoption_challenges']
 ## User-adoption Challenges
@@ -269,20 +273,27 @@ eg:
 * https://github.com/spaetz/notmuchsync
 
 ### Managing message attachments
-* forwarding emails with attachments
+* <<forwarding_msgs_w_attachments>>
 * opening attachments from MUA
-* TODO
 
+[id='auto_tagging']
 ### Automatically tagging new messages (post initial tagging)
 * http://afew.readthedocs.org/en/latest[afew]?
 * employe procmail to set tags?
 ** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
 
-### Forwarding messages
-* TODO
+[id='forwarding_msgs_w_attachments']
+### Forwarding messages with attachments
+
+* alot appears to https://github.com/pazz/alot/issues/761[have issues
+  with this]
+
+* I'm wondering if mutt-kz or others do as well
 
 ### Writing HTML-formatted messages
-* TODO
+
+* Haven't yet seen this solved.
+* http://bit.ly/1dfWYmr[This discussion] might be useful.
 
 ### Syncing notmuch metadata across machines
 * http://notmuchmail.org/pipermail/notmuch/2010/003249.html
@@ -301,8 +312,6 @@ eg:
 ## Appendix 1: Problem Details
 
 (DISCLAIMER: This sections is under construction, and not complete.)
-
-TODO: describe my user profile/context/demographic/background.
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
