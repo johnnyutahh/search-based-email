@@ -26,18 +26,31 @@ email tools
     mbsync
     getmail
     offlineimap
+  check-for-IMAP-sync-needed
+    mbsync-watcher
+      https://github.com/tim-smart/node-mbsync-watcher
+      https://www.npmjs.com/package/mbsync-watcher
+      my take: it's good for client->server updates, and not vice versa
+    https://github.com/athoune/imapidle
+    mswatch
+      http://mswatch.sourceforge.net
+      requires IMAP-server-side shell access - difficult
+      wrapping 'imapidle' with a 'mbsync' trigger seems like good alternative
   indexing
     notmuch
     maildir-utils
-  notmuch-specific (mostly MUA's)
+  maildir flags
+    https://github.com/spaetz/notmuchsync (minor)
+  notmuch tagging
     afew
-      https://readthedocs.org/projects/afew/
+      http://afew.readthedocs.org/en/latest/
       https://github.com/teythoon/afew
+  MUA's
     alot
-    muchsync (sync entire notmuch databse across machines)
-    notmuchsync (minor)
     mutt-kz
       http://notmuchmail.org/mutttips
+  synchronizing notmuch across machines
+    muchsync (sync entire notmuch databse across machines)
 
 setup guides
   http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html

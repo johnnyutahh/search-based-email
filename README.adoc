@@ -51,10 +51,10 @@ I'm currently, as of 2015-05-16, seeking:
 2. leverage tag-based categorization, and
 3. integrate with external-to-MUA text-process tools.
 
-This probably means a a tag-based-message-classification,
+This probably means a tag-based-message-classification,
 fast-index-search toolset that integrates with a
 lower-level/text-primitive MUA (read mutt vs TB). The only
-reasonbly-available, competitive mechanisms that I've yet found to
+reasonably-available, competitive mechanisms that I've yet found to
 provide this (core) functionality appear to be:
 
 1. http://notmuch.org[notmuch]
@@ -72,18 +72,25 @@ provide this (core) functionality appear to be:
 2. mu can embed its metadata (tags, etc) "natively" into
    the IMAP content/messages. notmuch can not. However,
    http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
-   this metadata, but it takes additional procuess+infrastructure.
+   this metadata, but it takes additional process+infrastructure.
 
-3. #1 greatly outweights #2. As of now, notmuch "wins."
+3. #1 greatly outweighs #2. As of now, notmuch "wins."
 
 More details at my https://github.com/johnnyutahh/tag-based-email/blob/master/email-tag-based-user-paradigm.txt[investigation notes].
 
 ## Implementation
 
+Since notmuch wins, I make a notmuch-specific implementation.
+
 Tools:
 
-1. email-to-maildir gathering: mbsync [solved]
-2. notmuch initial setup [solved]
+1. email-to-maildir gathering: http://isync.sourceforge.net/[mbsync] [solved]
+
+** I'm not (yet, at least) looking to debate this choice here.
+   For now, I seem to have mbsync working nicely. Search
+   http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to read more.
+
+2. http://notmuch.org[notmuch] initial setup [solved]
 
 3. MUA setup [in progress]
 
@@ -91,7 +98,11 @@ Tools:
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] are being configured, investigated
 
-4. 
+4. Message-tagging tool(s). [not yet started]
+** http://afew.readthedocs.org/en/latest[afew] currently looks best.
+
+5. Replicating+synchronizing notmuch metadata across machines. [not yet started]
+** http://www.muchsync.org[muchsync] currently looks best.
 
 ## User-adoption Challenges
 
@@ -99,7 +110,22 @@ My adjustment of my workflow/paradigm appears to be the primary
 challenge for my adoption of this tag-based system. This includes but
 may not be limited to:
 
-Hopefully tools 
+1. https://lists.fedoraproject.org/pipermail/mutt-kz/2012-April/000043.html[Moving msgs after applying tags].
+
+   I'm used to moving messages between folders in order to classify.
+   Further, I will like to keep a clean Inbox and other folders, for my
+   non-notmuch-based email clients, thus requiring message moving.
+
+   I'd like to ensure that once I associated notmuch-metadata (by adding
+   tags, or whatever metadata/etc scenarios might be involved with
+   notmuch) with a message, that said metadata "stays" with a message,
+   regardless of wherever I put said message. Is this the way it works
+   "out of the box"?
+
+2. next
+
+   blah 
+    
 
 [id='problem_details']
 ## Appendix: Problem Details
@@ -120,7 +146,7 @@ email.
 
 Additionally, the TB text/formatting editor is legendarily bad/buggy.
 I'd desperately prefer to simply edit in vim, and edit rich/html text in
-markdown or asciidoc and convert to html with a rednering engine, and I
+markdown or asciidoc and convert to html with a rendering engine, and I
 suspect I could script-integrate such capability... if I had an MUA that
 could play nicely with external scripts.
 
@@ -128,7 +154,7 @@ Further, I'm a keyboard jockey--eg: vim lover--and Python programmer.
 I've maxed out TB's keyboard-shortcut-ness best I can tell, and it's
 still limiting. I have external tools (some developed by me and/or my
 team) to parse and perform "magic" (like task-tracking and bug-report
-inegration) on email folders and individual messages, and TB--with it's
+integration) on email folders and individual messages, and TB--with it's
 lack of proper maildir support and difficult extensibility--makes it if
 not close-to-impossible to integrate with the external tools.
 
