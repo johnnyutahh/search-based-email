@@ -60,39 +60,45 @@ master this domain.)_
 
 [id='my_user_profile']
 
-My "user profile": I'm originally trained as a software and
-computer-systems engineer (C, C\++, Java, Ada, perl, bash, Python, Mac,
-Linux, Windows, VMS), but after several years I'm now more of a business
-person. However, vim remains my primary editor (I hate moving my hand
-from the keyboard to the mouse or trackpad), Mac OS X is my primary
-computing machine, and I still significantly code in Python to solve
-"glueware" problems. I also dabble in Linux and MacOSX sysadmin stuff
-as needed. Learning new systems/software/languages is something I've
-historically done often, but find harder to do simply because of growing
-time constraints and expanded business responsibilities. And like many
-people, I receive a remarkable amount of email in a diverse set of
-contexts. In short, I'm a vim and Python lover, a keyboard jockey, and a
-fairly-technical user.
+My "user profile":
 
-Despite my history assimilating with new environments, the
-tag-based-classification paradigm still seems _significantly_
-different and a bit daunting to this "old school IMAP-folder
-user", and may (or may not?) take some time to master, or at least
-assimilate. See <<user_adoption_challenges>>. Specifically, opening
-https://github.com/pazz/alot[alot] for the first time and looking at a
-staggering 50k+ emails in my "inbox" can give someone pause; hopefully
-<<initial_tagging>> will take care of that.
+* Historically trained as software+systems engineer
+* Experience with variety of programming languages and OSes: C, C\++,
+  Java, Ada, perl, Python; Windows, Unix, Linux, VMS, MacOSX
+* I'm now more of a "business person." In spite of this:
+** vim remains my primary editor (I hate moving my hand from the
+   keyboard to the mouse or trackpad),
+** Mac OS X is my primary computing machine,
+** and I still significantly code in Python to solve "glueware" problems.
+** I also dabble in Linux and MacOSX sysadmin
+* Learning new systems/languages/applications/software is old hat...
+** ...but it's now harder simply because time constraints from expanded
+   business responsibilities.
+* And like many people, I receive a remarkable amount of email in a
+  diverse set of contexts.
+* In summary, I'm a vim and Python lover, a keyboard jockey, and a
+  fairly-technical user. Who gets lots of email.
 
-Further, the tag-based (as I call it) resources--to document
+Despite my history assimilating to new applications/environments, the
+tag-based-classification paradigm still seems _significantly_ different
+and a bit daunting to this "old school IMAP-folder user", and may (or
+may not?) take some time to master. See <<user_adoption_challenges>>.
+For example, opening https://github.com/pazz/alot[alot] for the first
+time and looking at a staggering 50k+ emails in my "inbox" can give
+someone pause; hopefully <<initial_tagging>> will take care of that.
+
+Further, the tag-based documentation resources--to describe
 new-user-paradigm-shifts and list available toolsets--seem scattered,
-disjointed, or non-existent for many scenarios. Hence this document, as
-a "draft" precursor.
+disjointed, and/or non-existent for many scenarios. Hence this document.
+Obviously, I'd love to find any similar, previously-overlooked
+documentation resource.
 
-I'd prefer not to spin my wheels trying to solve problems with my
-custom/unique workflow/solutions that may have been automatically solved
-elsewhere by tools I can reuse. So I write this doc in hopes on learning
-the "best of breed" solutions given my user context and preferences, and
-not have to learn all the toolset domain through brute-force experience.
+In any case, I'd prefer to minimize time spinning my wheels trying
+to solve problems the "wrong way" if there's already some better
+method/workflow/tool that I overlooked. Hence, I write this doc in hopes
+on learning the "best of breed" solutions given my user context and
+preferences, and minimize having to learn everything via brute-force
+experience.
 
 [id='the_problem']
 ## The Problem
