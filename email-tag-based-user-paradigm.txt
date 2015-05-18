@@ -27,15 +27,7 @@ email tools
     getmail
     offlineimap
   check-for-IMAP-sync-needed
-    mbsync-watcher
-      https://github.com/tim-smart/node-mbsync-watcher
-      https://www.npmjs.com/package/mbsync-watcher
-      my take: it's good for client->server updates, and not vice versa
-    https://github.com/athoune/imapidle
-    mswatch
-      http://mswatch.sourceforge.net
-      requires IMAP-server-side shell access - difficult
-      wrapping 'imapidle' with a 'mbsync' trigger seems like good alternative
+    [see README]
   indexing
     notmuch
     maildir-utils
@@ -65,19 +57,8 @@ setup guides
         http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts
         http://stevelosh.com/blog/2012/10/the-homely-mutt/#full-text-searching
   http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
-    
-initial notmuch tagging
-  http://notmuchmail.org/initial_tagging
-  tagging IMAP folders
-    https://readthedocs.org/projects/afew
 
 notmuch: not-yet-solved user requirements
-
-  moving msgs after applying tags?
-    https://lists.fedoraproject.org/pipermail/mutt-kz/2012-April/000043.html
-
-  sync notmuch tags with maildir flags
-    https://github.com/spaetz/notmuchsync
 
   syncing notmuch tags across machines
     http://notmuchmail.org/pipermail/notmuch/2010/003249.html
@@ -86,14 +67,6 @@ notmuch: not-yet-solved user requirements
       https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
       https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
     http://www.muchsync.org
-
-  IMAP folders as tags
-    http://notmuchmail.org/pipermail/notmuch/2010/003249.html
-      http://notmuchmail.org/pipermail/notmuch/2010/003250.html
-
-  notmuch folder-based searching
-    http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
-    http://bit.ly/notmuch-folder-based-searching-nabble-2011
 
   using procmail to set tags
     http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055

@@ -92,7 +92,7 @@ Tools:
 
 . http://notmuch.org[notmuch] initial setup [solved]
 
-. Auto-check if mbsync replay is needed
+. Auto-check if mbsync replay is needed [implementation not yet started]
 **  mbsync-watcher
 ***   https://github.com/tim-smart/node-mbsync-watcher
 ***   https://www.npmjs.com/package/mbsync-watcher
@@ -109,10 +109,11 @@ Tools:
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] are being configured, investigated
 
-. Message-tagging tool(s). [not yet started]
+. Message-tagging tool(s). [implementation not yet started]
 ** http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
-. Replicating+synchronizing notmuch metadata across machines. [not yet started]
+. Replicating+synchronizing notmuch metadata across machines.
+  [implementation not yet started]
 ** http://www.muchsync.org[muchsync] currently looks best.
 
 
@@ -120,24 +121,55 @@ https://github.com/pazz/alot[alot] are being configured, investigated
 
 My adjustment of my workflow/paradigm appears to be the primary
 challenge for my adoption of this tag-based system. This includes but
-may not be limited to:
-
-1. https://lists.fedoraproject.org/pipermail/mutt-kz/2012-April/000043.html[Moving msgs after applying tags].
-
-   I'm used to moving messages between folders in order to classify.
-   Further, I will like to keep a clean Inbox and other folders, for my
-   non-notmuch-based email clients, thus requiring message moving.
-
-   I'd like to ensure that once I associated notmuch-metadata (by adding
-   tags, or whatever metadata/etc scenarios might be involved with
-   notmuch) with a message, that said metadata "stays" with a message,
-   regardless of wherever I put said message. Is this the way it works
-   "out of the box"?
-
-2. next
-
-   blah 
+may not be limited to (listed in priority-first order):
     
+. initial tagging
+** http://notmuchmail.org/initial_tagging
+** "tagging" IMAP folders
+*** Can https://readthedocs.org/projects/afew[afew] do this?
+
+. http://bit.ly/1Edr8fp[Moving msgs after applying tags].
+
+** Will messages retain notmuch-associated metadata (tags, etc) for
+   lifetime of any message, including post-folder moves - without any
+   special configuration?
+
+*** I'm used to moving messages between folders in order to classify.
+    Further, I will like to keep a clean Inbox and other folders, for my
+    non-notmuch-based email clients, thus requiring message moving.
+
+*** I'd like to ensure that once I associated notmuch-metadata (by
+    adding tags, or whatever metadata/etc scenarios might be involved
+    with notmuch) with a message, that said metadata "stays" with a
+    message, regardless of wherever I put said message. Is this the way
+    it works "out of the box"?
+
+. IMAP folders as tags
+// can't put the [id=''] reference above the bullet line,
+// because it restarts the bullet-line numbering.
+[id='IMAP_folders_as_tags',reftext='IMAP folders as tags']
+** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+*** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+
+. notmuch/MUA/mutt-kz/alot folder-based searching
+** not yet certain how different this is from <<IMAP_folders_as_tags>>.
+** http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
+** http://bit.ly/notmuch-folder-based-searching-nabble-2011
+
+. sync notmuch tags with maildir flags
+** https://github.com/spaetz/notmuchsync
+
+. using procmail to set tags
+** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
+
+. syncing notmuch tags across machines
+** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+*** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+** http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
+*** https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
+*** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
+** http://www.muchsync.org
+
 
 [id='problem_details']
 ## Appendix: Problem Details
