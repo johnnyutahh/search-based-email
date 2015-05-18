@@ -53,19 +53,29 @@ document draft because:
    might be useful as a basis to help fill some gaps. To this end, I
    strongly encourage forks + pull requests of this content.
 
-DISCLAIMER: this document may be in flux as I learn this domain.
-
-[id='my_user_profile']
-TODO:
-+ summarize my user profile/background here?
-
-
+_(DISCLAIMER: this document may be in flux as I learn and attempt to
+master this domain.)_
 
 ### More Details
 
-TODO: flesh out this section
+[id='my_user_profile']
 
-The tag-based-classification paradigm seems _significantly_
+My "user profile": I'm originally trained as a software and
+computer-systems engineer (C, C\++, Java, Ada, perl, bash, Python, Mac,
+Linux, Windows, VMS), but after several years I'm now more of a business
+person. However, vim remains my primary editor (I hate moving my hand
+from the keyboard to the mouse or trackpad), Mac OS X is my primary
+computing machine, and I still significantly code in Python to solve
+"glueware" problems. I also dabble in Linux and MacOSX sysadmin stuff
+as needed. Learning new systems/software/languages is something I've
+historically done often, but find harder to do simply because of growing
+time constraints and expanded business responsibilities. And like many
+people, I receive a remarkable amount of email in a diverse set of
+contexts. In short, I'm a vim and Python lover, a keyboard jockey, and a
+fairly-technical user.
+
+Despite my history assimilating with new environments, the
+tag-based-classification paradigm still seems _significantly_
 different and a bit daunting to this "old school IMAP-folder
 user", and may (or may not?) take some time to master, or at least
 assimilate. See <<user_adoption_challenges>>. Specifically, opening
@@ -82,6 +92,7 @@ I'd prefer not to spin my wheels trying to solve problems with my
 custom/unique workflow/solutions that may have been automatically solved
 elsewhere by tools I can reuse.
 
+[id='the_problem']
 ## The Problem
 
 . I'm seeking a better paradigm over my current, IMAP-folder-only,
@@ -209,9 +220,9 @@ Comments
 
 (Implementation currently in progress.)
 
-* currently both
-http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
-https://github.com/pazz/alot[alot] are being configured, investigated
+* Currently both http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
+  and https://github.com/pazz/alot[alot] are being configured,
+  investigated. See <<which_MUAs>>.
 
 ### Message-tagging
 
@@ -235,6 +246,7 @@ My adjustment of my workflow/paradigm appears to be the primary
 challenge for my adoption of this tag-based system. This includes but
 may not be limited to (listed in priority-first order):
 
+[id='which_MUAs']
 ### Which MUA(s)?
 
 * http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
@@ -274,8 +286,11 @@ may not be limited to (listed in priority-first order):
 
 ### Support old-style IMAP-folder paradigm
 
-* While I may be be moving to a a tag-based paradigm, I still need to
-  access
+* While I may be be moving to a a tag-based paradigm, I still
+  need to access my 4k+ IMAP folders as I did before. Any primary
+  MUA/interface/IMAP-client I choose needs to support IMAP-folder-based
+  paradigms (copying and moving to folders, etc) that I currently employ
+  with <<the_problem,Mozilla Thunderbird>>.
 
 [id='initial_tagging']
 ### Initial tagging

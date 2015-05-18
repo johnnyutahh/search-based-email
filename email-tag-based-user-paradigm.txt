@@ -1,6 +1,4 @@
 # <!-- vim: set syntax=mediawiki sw=2 ts=2: -->
 
 README.adoc TODOs
-  better summarize my user profile
   address all the 'TODO's in README.adoc
-  vim notmuch frontend MUA option?
