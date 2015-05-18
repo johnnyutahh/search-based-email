@@ -56,49 +56,9 @@ document draft because:
 _(DISCLAIMER: this document may be in flux as I learn and attempt to
 master this domain.)_
 
-### More Details
+### Details
 
-[id='my_user_profile']
-
-My "user profile":
-
-* Historically trained as software+systems engineer
-* Experience with variety of programming languages and OSes: C, C\++,
-  Java, Ada, perl, Python; Windows, Unix, Linux, VMS, MacOSX
-* I'm now more of a "business person." In spite of this:
-** vim remains my primary editor (I hate moving my hand from the
-   keyboard to the mouse or trackpad),
-** Mac OS X is my primary computing machine,
-** and I still significantly code in Python to solve "glueware" problems.
-** I also dabble in Linux and MacOSX sysadmin
-* Learning new systems/languages/applications/software is old hat...
-** ...but it's now harder simply because time constraints from expanded
-   business responsibilities.
-* And like many people, I receive a remarkable amount of email in a
-  diverse set of contexts.
-* In summary, I'm a vim and Python lover, a keyboard jockey, and a
-  fairly-technical user. Who gets lots of email.
-
-Despite my history assimilating to new applications/environments, the
-tag-based-classification paradigm still seems _significantly_ different
-and a bit daunting to this "old school IMAP-folder user", and may (or
-may not?) take some time to master. See <<user_adoption_challenges>>.
-For example, opening https://github.com/pazz/alot[alot] for the first
-time and looking at a staggering 50k+ emails in my "inbox" can give
-someone pause; hopefully <<initial_tagging>> will take care of that.
-
-Further, the tag-based documentation resources--to describe
-new-user-paradigm-shifts and list available toolsets--seem scattered,
-disjointed, and/or non-existent for many scenarios. Hence this document.
-Obviously, I'd love to find any similar, previously-overlooked
-documentation resource.
-
-In any case, I'd prefer to minimize time spinning my wheels trying
-to solve problems the "wrong way" if there's already some better
-method/workflow/tool that I overlooked. Hence, I write this doc in hopes
-on learning the "best of breed" solutions given my user context and
-preferences, and minimize having to learn everything via brute-force
-experience.
+See <<purpose_more_details>>.
 
 [id='the_problem']
 ## The Problem
@@ -328,14 +288,16 @@ may not be limited to (listed in priority-first order):
 
 ### Piping email-message content through shell commands
 
-eg:
+Example potential solutions, not yet tested:
+
 * http://www.davep.org/mutt/muttrc/macros.html
 * http://wcm1.web.rice.edu/mutt-tips.html
 * http://rhonda.deb.at/config/mutt/keys
 
 ### Configure keyboard shortcuts to any command
 
-eg:
+Example potential solutions, not yet tested:
+
 * http://rhonda.deb.at/config/mutt/keys
 * http://dev.mutt.org/trac/wiki/MuttGuide/Macros
 * http://www.mutt.org/doc/manual/manual-2.html
@@ -395,8 +357,57 @@ eg:
 
 * I'm wondering if mutt-kz or others do as well
 
+[id='purpose_more_details']
+## Appendix 1: Purpose: More Details
+
+[id='my_user_profile']
+
+My "user profile":
+
+* https://github.com/johnnyutahh[I'm] historically-trained as a
+  software and computer-systems engineer.
+* Experience with variety of programming languages and OSes including
+  but not limited to: C, C\++, Java, Ada, perl, Python; Windows, Unix,
+  Linux, VMS, MacOSX. My favorite "Swiss army knife" language is Python.
+  If I've time, I'm open to extending/fixing Pythong programs. I'd like
+  to learn Ruby and https://golang.org[Go].
+* I'm now more of a "business person." In spite of this:
+** vim remains my primary editor (I hate moving my hand from the
+   keyboard to the mouse or trackpad),
+** Mac OS X is my primary computing machine,
+** and I still significantly code in Python to solve "glueware" problems.
+** I also dabble in Linux and MacOSX sysadmin
+* Learning new systems/languages/applications/software is old hat...
+** ...but it's now harder simply because time constraints from expanded
+   business responsibilities.
+* And like many people, I receive a remarkable amount of email in a
+  diverse set of contexts.
+* In summary, I'm a vim and Python lover, a keyboard jockey, and a
+  fairly-technical user. Who gets lots of email.
+
+Despite my history assimilating to new applications/environments, the
+tag-based-classification paradigm still seems _significantly_ different
+and a bit daunting to this "old school IMAP-folder user", and may (or
+may not?) take some time to master. See <<user_adoption_challenges>>.
+For example, opening https://github.com/pazz/alot[alot] for the first
+time and looking at a staggering 50k+ emails in my "inbox" can give
+someone pause; hopefully <<initial_tagging>> will take care of that.
+
+Further, the tag-based documentation resources--to describe
+new-user-paradigm-shifts and list available toolsets--seem scattered,
+disjointed, and/or non-existent for many scenarios. Hence this document.
+Obviously, I'd love to find any similar, previously-overlooked
+documentation resource.
+
+In any case, I'd prefer to minimize time spinning my wheels trying
+to solve problems the "wrong way" if there's already some better
+method/workflow/tool that I overlooked. Hence, I write this doc in hopes
+on learning the "best of breed" solutions given my user context and
+preferences, and minimize having to learn everything via brute-force
+experience.
+
 [id='problem_details']
-## Appendix 1: Problem Details
+## Appendix 2: Problem Details
 
 (DISCLAIMER: This sections is under construction, and not complete.)
 
@@ -428,7 +439,7 @@ not close-to-impossible to integrate with the external tools.
 
 In short, it's time to move on from Thunderbird.
 
-## Appendix 2: General Setup Guides
+## Appendix 3: General Setup Guides
 
 (Previously-referenced guides or sections of guides listed below are not
 duplicated here.)
