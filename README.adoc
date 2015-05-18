@@ -90,7 +90,9 @@ a "draft" precursor.
 
 I'd prefer not to spin my wheels trying to solve problems with my
 custom/unique workflow/solutions that may have been automatically solved
-elsewhere by tools I can reuse.
+elsewhere by tools I can reuse. So I write this doc in hopes on learning
+the "best of breed" solutions given my user context and preferences, and
+not have to learn all the toolset domain through brute-force experience.
 
 [id='the_problem']
 ## The Problem
