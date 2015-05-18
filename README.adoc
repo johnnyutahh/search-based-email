@@ -169,8 +169,8 @@ Currently solved with http://isync.sourceforge.net/[mbsync, aka isync].
 Options
 
 * http://isync.sourceforge.net/[mbsync, aka isync]
-* http://pyropus.ca/software/getmail[getmail]
 * http://offlineimap.org[offlineimap]
+* http://pyropus.ca/software/getmail[getmail]
 
 Comments
 
