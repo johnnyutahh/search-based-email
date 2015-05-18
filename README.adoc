@@ -168,11 +168,10 @@ implementation/tools/etc.
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] are being configured, investigated
 
-### Message-tagging tool(s). [implementation not yet started]
+### Message-tagging tool(s) [implementation not yet started]
 * http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
-### Replicating+synchronizing notmuch metadata across machines.
-  [implementation not yet started]
+### Replicating+synchronizing notmuch metadata across machines [implementation not yet started]
 * http://www.muchsync.org[muchsync] currently looks best.
 
 [id='user_adoption_challenges']
@@ -197,7 +196,7 @@ may not be limited to (listed in priority-first order):
 * in particular: `Inbox` and `Spam` folders -> tags
 * Is https://readthedocs.org/projects/afew[afew] best for this?
 
-### http://bit.ly/1Edr8fp[Moving msgs after applying tags].
+### http://bit.ly/1Edr8fp[Moving msgs after applying tags]
 
 * Context, details:
   http://bit.ly/1GimL8Q[mutt-kz thread: "Moving msgs after applying tags?"].
