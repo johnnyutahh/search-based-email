@@ -90,8 +90,9 @@ After a reasonable search of what tools are currently available, I'm
 currently seeking:
 
 1. fast search on my entire maildir collection (my "email database"),
-2. leverage tag-based categorization, and
-3. integrate with external-to-MUA text-process tools.
+2. to leverage tag-based categorization, and
+3. integrate with external-to-MUA text-processing tools - namely ones
+   me+my team have developed.
 
 (It's fair to ask: did I come up with these requirements by
 "adjusting" to what tools are currently available, or by independently
@@ -99,13 +100,16 @@ dreaming up my own specifications? More the former. I'd much prefer
 http://bit.ly/JARVIS-wikia[Jarvis] be my email interface, but he's not
 currently or at least economically available.)
 
-The only mechanisms that I've yet found to provide this (core)
-functionality appear to be:
+My choice seems to hinge on these 2 applications:
 
 1. http://notmuch.org[notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
 
+Most of my (new) email-system setup seems to depend on the above choice.
+
 ## Choosing
+
+Tradeoffs:
 
 1. Initial tests show
    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[notmuch
@@ -122,6 +126,9 @@ functionality appear to be:
 
 3. #1 greatly outweighs #2. Because of this, notmuch "wins," while I
    await feedback from the community(ies).
+
+What other tradeoffs might motivate me to employ
+http://www.djcbsoftware.nl/code/mu[mu] over http://notmuch.org[notmuch]?
 
 ## Implementation
 
@@ -376,14 +383,26 @@ My "user profile":
    keyboard to the mouse or trackpad),
 ** Mac OS X is my primary computing machine,
 ** and I still significantly code in Python to solve "glueware" problems.
-** I also dabble in Linux and MacOSX sysadmin
+** I also dabble in Linux and MacOSX sysadmin.
 * Learning new systems/languages/applications/software is old hat...
 ** ...but it's now harder simply because time constraints from expanded
    business responsibilities.
 * And like many people, I receive a remarkable amount of email in a
   diverse set of contexts.
+
+* Some might describe me as an impatient, unforgiving computing
+  user. I _hate_ being faster than the computer. Further, when the
+  computer/software/application says it's job is done, I want it to
+  be _done_. However, some environments and applications perform
+  significant, asynchronous activity even after reporting they are done
+  servicing a request. (<<the_problem,Thunderbird>> is notorious for
+  this.) And this drives me nuts. I end up talking to the computer:
+  "Computer, if you need more time to complete a job, don't lie to me.
+  I can go do other things while I wait for you. Just don't make me
+  further wait when you already said you were done."
+ 
 * In summary, I'm a vim and Python lover, a keyboard jockey, and a
-  fairly-technical user. Who gets lots of email.
+  fairly-technical, impatient, demanding user. Who gets lots of email.
 
 Despite my history assimilating to new applications/environments, the
 tag-based-classification paradigm still seems _significantly_ different
@@ -442,7 +461,8 @@ In short, it's time to move on from Thunderbird.
 ## Appendix 3: General Setup Guides
 
 (Previously-referenced guides or sections of guides listed below are not
-duplicated here.)
+duplicated here. I provide them here for my general reference; maybe
+others will find them useful.)
 
 * http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html
 * mutt + notmuch
