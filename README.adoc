@@ -282,19 +282,6 @@ eg:
 * employe procmail to set tags?
 ** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
 
-[id='forwarding_msgs_w_attachments']
-### Forwarding messages with attachments
-
-* alot appears to https://github.com/pazz/alot/issues/761[have issues
-  with this]
-
-* I'm wondering if mutt-kz or others do as well
-
-### Writing HTML-formatted messages
-
-* Haven't yet seen this solved.
-* http://bit.ly/1dfWYmr[This discussion] might be useful.
-
 ### Syncing notmuch metadata across machines
 * http://notmuchmail.org/pipermail/notmuch/2010/003249.html
 ** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
@@ -307,6 +294,19 @@ eg:
 
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts[
   The Homely Mutt: Postponing Drafts]
+
+### Writing HTML-formatted messages
+
+* Haven't yet seen this solved.
+* http://bit.ly/1dfWYmr[This discussion] might be useful.
+
+[id='forwarding_msgs_w_attachments']
+### Forwarding messages with attachments
+
+* alot appears to https://github.com/pazz/alot/issues/761[have issues
+  with this]
+
+* I'm wondering if mutt-kz or others do as well
 
 [id='problem_details']
 ## Appendix 1: Problem Details
