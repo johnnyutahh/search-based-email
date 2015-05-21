@@ -185,6 +185,8 @@ Comments
 
 ### Notmuch initial + automated tagging
 
+(This implementation has not yet started.)
+
 * https://readthedocs.org/projects/afew[afew] best?
 * http://www.procmail.org/[procmail]?
 * See <<initial_tagging>> and <<auto_tagging>> for more.
@@ -212,34 +214,25 @@ Comments
 **   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
 **   this might also be a client->server option
 
-[id='MUA_setup']
-### MUA setup
+[id='MUA_choice']
+### MUA
 
 (Implementation currently in progress.)
 
-#### MUA Summary
+#### Summary
 
-Currently both http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
-and https://github.com/pazz/alot[alot] are being actively investigated.
-However, I've not yet settled on a primary MUA. Along with
-<<initial_tagging>>, this (<<MUA_setup>>) appears to represent the
-largest learning curve.
+Along with <<initial_tagging>>, the (<<MUA_choice,MUA introduction
+and mastery>>) appears to represent the largest learning curve.
+http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
+https://github.com/pazz/alot[alot] currently present the most-attractive
+solutions, but it's early.
 
-#### MUA Details
+#### Details
 
 * http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
 ** seems to be the most-popular MUA in this space
 ** http://notmuchmail.org/mutttips
 ** https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
-
-* vim front-end for Notmuch
-** http://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README
-** http://notmuchmail.org/vimtips/
-
-** <<my_user_profile,I'm a heavy vim user>>, and while this approached
-   seemed initially appealing, the depth seems so small, that I haven't
-   even bothered to try this. Am I overlooking a useful (in comparison
-   to the others) tool?
 
 * https://github.com/pazz/alot[alot]
 
@@ -247,14 +240,30 @@ largest learning curve.
    possibly my best long-term solution, especially given
    <<my_user_profile,my user profile>> (namely I'm a vim user and a
    Python programmer--seems to mirror well). However, the available
-   documentation/resources are far more sparse. The user-manual content
-   is almost impeccable, and pazz seems to do a great job to stay on top
-   of all issues. But it's hard to find practical resources like example
-   config files, procedural setup, blog/setup guides, etc. Maybe in part
-   because it's not as widely used.
+   documentation/resources are far more sparse than say mutt-kz. The
+   user-manual content is almost impeccable, and pazz seems to do a
+   great job to stay on top of all issues and offer a professional
+   solution. For example, I significantly appareciate the up-front,
+   informationally-dense, bulleted feature list at the top of the
+   https://github.com/pazz/alot/blob/master/README.md[alot README].
+   However, it's thus far been hard to find practical resources like
+   example config files, procedural setup, etc. Maybe this is due in
+   part because it's not yet as popular, or caters to a self-starting
+   user base, or something else?
 
-*** Speculating: a smaller effort to provide setup + config-file
-    examples might go a long way to solve this problem.
+*** Speculating: a hopefully-small effort to provide setup + config-file
+    examples might go a long way to solve this problem, and boost alot's
+    "new user uptake" populartiy.
+
+* vim front-end for Notmuch
+** http://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README
+** http://notmuchmail.org/vimtips/
+
+** <<my_user_profile,I'm a heavy vim user>>, and while this approached
+   seemed initially appealing, the depth of functionaly seems so
+   (relatively) small that I haven't yet attempted to run this
+   application. Am I overlooking a useful (in comparison to the others)
+   tool?
 
 * There's other http://notmuchmail.org/frontends[frontends]...
 
@@ -270,7 +279,7 @@ largest learning curve.
 
 ### Replicating+synchronizing Notmuch metadata across machines
 
-(Implementation currently in progress.)
+(This implementation has not yet started.)
 
 * http://www.muchsync.org[muchsync] currently looks best.
 
@@ -288,7 +297,7 @@ limited:
 
 Decide which MUA(s) to use, particularly deciding on a primary MUA. This
 is technically not a usage-scenario, but currently represents my biggest
-challenge. See <<MUA_setup>>.
+challenge. See <<MUA_choice>>.
 
 ### Support old-style IMAP-folder paradigm
 
