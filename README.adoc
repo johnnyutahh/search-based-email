@@ -95,9 +95,14 @@ See <<problem_details>> for more context.
 After reviewing currently-available tools, I'm seeking:
 
 1. fast search on my entire email-message collection (my "email database"),
-2. to leverage tag-based email categorization, and
-3. integrate with external-to-MUA text-processing tools - namely ones
-   me and my team have developed.
+
+2. to leverage tag-based email categorization,
+
+3. integrate with external-to-MUA text-processing tools - namely ones me
+   and my team have developed,
+
+4. provide easy extensibility with Linux and MacOSX command-line
+   "primitives."
 
 (It's fair to ask: did I come up with these requirements by
 "adjusting" to what tools are currently available, or by independently
@@ -105,15 +110,18 @@ dreaming up my own specifications? More the former. I'd much prefer
 http://bit.ly/JARVIS-wikia[Jarvis] be my email interface, but he's not
 currently or at least economically available.)
 
-My choice seems to hinge on these 2 applications:
+My investigation thus far suggests my implementation path hinges on
+choosing 1 of the following applications, as they're at the core of
+email-message indexing and tagging:
 
 1. http://notmuch.org[Notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
 
-Most of my (new) email-system setup seems to depend on the above choice.
-What other tools/options might I be overlooking?
+Is this assessment accurate? What other tools/options might I be
+overlooking?
 
-## Choosing
+[id='core_choice']
+## Core Tool Choice
 
 Tradeoffs:
 
@@ -136,10 +144,10 @@ Tradeoffs:
 What other tradeoffs might motivate me to employ
 http://www.djcbsoftware.nl/code/mu[mu] over http://notmuch.org[Notmuch]?
 
-## Implementation
+## Remaining Tool Choices
 
-Since Notmuch <<choosing,won>>, the following outlines but may not be
-limited to a Notmuch-specific implementation/tools/etc.
+Since Notmuch <<core_choice,won>>, the following presents but may not be
+limited to a Notmuch-specific implementation.
 
 ### Email-to-maildir gathering, fetching
 
@@ -155,14 +163,15 @@ Options
 * http://offlineimap.org[offlineimap]
 * http://pyropus.ca/software/getmail[getmail]
 
-I've chosen http://isync.sourceforge.net/[mbsync, aka isync].
+Choice
+
+I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 
 Comments
 
-* I'm not (yet, at least) looking to debate this choice here.
-  For now, mbsync appears to working nicely for me. Search
-  http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to see more.
-
+* I've used mbsync more than any other tool listed here, and it's
+  thus far working nicely.
+* Search http://bit.ly/1EdmDkW["mbsync vs offlineimap"] to see more.
 * I understand getmail the least. It's less referenced (on
   the web) for this usage/context than either offlineimap
   or mbsync. Why is this? Is it not a viable alternative to
@@ -170,9 +179,9 @@ Comments
   website] seems to primarily (?) pitch it as a
   http://sourceforge.net/projects/fetchmail/[fetchmail] replacement.
 
-### Notmuch initial installation and setup
+### Notmuch installation and initial configuration
 
-* Currently solved: http://notmuch.org[Notmuch]
+* Best I can tell, I've completed this.
 
 ### Notmuch initial + automated tagging
 
@@ -203,38 +212,20 @@ Comments
 **   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
 **   this might also be a client->server option
 
+[id='MUA_setup']
 ### MUA setup
 
 (Implementation currently in progress.)
 
-* Currently both http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
-  and https://github.com/pazz/alot[alot] are being configured,
-  investigated. See <<which_MUAs>>.
+#### MUA Summary
 
-### Message-tagging
+Currently both http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
+and https://github.com/pazz/alot[alot] are being actively investigated.
+However, I've not yet settled on a primary MUA. Along with
+<<initial_tagging>>, this (<<MUA_setup>>) appears to represent the
+largest learning curve.
 
-(This implementation has not yet started.)
-
-* http://afew.readthedocs.org/en/latest[afew] currently looks best.
-
-### Replicating+synchronizing Notmuch metadata across machines
-
-(Implementation currently in progress.)
-
-* http://www.muchsync.org[muchsync] currently looks best.
-
-** muchsync apparently syncs metadata _and_ data (which may be
-   unavoidable), but claims to do it as efficiently as possible.
-
-[id='user_adoption_challenges']
-## User-adoption Challenges
-
-My adjustment of my workflow/paradigm appears to be the primary
-challenge for my adoption of this tag-based system. This includes but
-may not be limited to (listed in priority-first order):
-
-[id='which_MUAs']
-### Which MUA(s)?
+#### MUA Details
 
 * http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
 ** seems to be the most-popular MUA in this space
@@ -270,6 +261,34 @@ may not be limited to (listed in priority-first order):
 ** ...but none seem as appealing to <<my_user_profile,me>> as the
    above. Am I overlooking any solutions that might fit well with my
    <<my_user_profile,user profile>>?
+
+### Message-tagging
+
+(This implementation has not yet started.)
+
+* http://afew.readthedocs.org/en/latest[afew] currently looks best.
+
+### Replicating+synchronizing Notmuch metadata across machines
+
+(Implementation currently in progress.)
+
+* http://www.muchsync.org[muchsync] currently looks best.
+
+** muchsync apparently syncs metadata _and_ data (which may be
+   unavoidable), but claims to do it as efficiently as possible.
+
+[id='user_adoption_challenges']
+## Usage-Scenario Challenges in Priority-First Order
+
+<<my_user_profile,My>> usage-scenario challenges include but may not be
+limited:
+
+[id='which_MUAs']
+### Which MUA(s)?
+
+Decide which MUA(s) to use, particularly deciding on a primary MUA. This
+is technically not a usage-scenario, but currently represents my biggest
+challenge. See <<MUA_setup>>.
 
 ### Support old-style IMAP-folder paradigm
 
@@ -450,9 +469,8 @@ things, it's IMAP sync is slow and unreliable. It literally (and
 unfortunately, inconsistently) deletes IMAP folders on it's own whim,
 asynchronously, sometimes when I least expect it. Sometimes it loses
 track of the folders it didn't delete, and simply creates new ones,
-bloating my mbox (TB only reliably support mbox) files terribly over
-time. Or simply spot-use TB or Outlook where I have to send formatted
-email.
+bloating my mbox (TB only reliably supports mbox) files terribly over
+time.
 
 Additionally, the TB text/formatting editor is legendarily bad/buggy.
 I'd desperately prefer to simply edit in vim, and edit rich/html text in
@@ -465,16 +483,17 @@ I've maxed out TB's keyboard-shortcut-ness best I can tell, and it's
 still limiting. I have external tools (some developed by me and/or my
 team) to parse and perform "magic" (like task-tracking and bug-report
 integration) on email folders and individual messages, and TB--with it's
-lack of proper maildir support and difficult extensibility--makes it if
-not close-to-impossible to integrate with the external tools.
+lack of proper maildir support and difficult extensibility--makes it
+extremely difficult if not impossible to integrate with the external
+tools.
 
 In short, it's time to move on from Thunderbird.
 
 ## Appendix 3: General Setup Guides
 
-(Previously-referenced guides or sections of guides listed below are not
-duplicated here. I provide them here for my general reference; maybe
-others will find them useful.)
+(Previously-referenced guides or sections of guides listed elsewhere in
+this doc are not duplicated here. The following is provided here for my
+general reference; maybe others will find these references useful.)
 
 * http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html
 * Mutt + Notmuch
