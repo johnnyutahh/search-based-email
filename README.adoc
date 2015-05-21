@@ -350,6 +350,15 @@ Example potential solutions, not yet tested:
 * http://wcm1.web.rice.edu/mutt-tips.html
 * http://rhonda.deb.at/config/mutt/keys
 
+I want to http://en.wikipedia.org/wiki/Pipeline_%28Unix%29["pipe"] the
+content of:
+
+. 1,
+. many (by selecting multiple emails at the same time), or
+. an entire IMAP folder of emails 
+
+to any command/script of my choosing.
+
 ### Configure keyboard shortcuts to any command
 
 Example potential solutions, not yet tested:
