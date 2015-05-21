@@ -271,7 +271,7 @@ solutions, but it's early.
    above. Am I overlooking any solutions that might fit well with my
    <<my_user_profile,user profile>>?
 
-### Message-tagging
+### Message tagging
 
 (This implementation has not yet started.)
 
@@ -359,7 +359,7 @@ Example potential solutions, not yet tested:
 * http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
 * http://bit.ly/notmuch-folder-based-searching-nabble-2011
 
-### Address-Book/Contacts Integration
+### Address-book/contacts integration
 
 * http://notmuchmail.org/vimtips/#index1h2[Notmuch: Addressbook management
   and vim]
@@ -386,7 +386,7 @@ Example potential solutions, not yet tested:
 ** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
 * http://www.muchsync.org
 
-### Offline Editing - Postponing Drafts
+### Offline editing - postponing drafts
 
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts[
   The Homely Mutt: Postponing Drafts]
