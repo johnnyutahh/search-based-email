@@ -505,14 +505,15 @@ markdown or asciidoc and convert to html with a rendering engine, and I
 suspect I could script-integrate such capability... if I had an MUA that
 could play nicely with external scripts.
 
-Further, I'm a keyboard jockey--eg: vim lover--and Python programmer.
-I've maxed out TB's keyboard-shortcut-ness best I can tell, and it's
-still limiting. I have external tools (some developed by me and/or my
-team) to parse and perform "magic" (like task-tracking and bug-report
-integration) on email folders and individual messages, and TB--with it's
-lack of proper maildir support and difficult extensibility--makes it
-extremely difficult if not impossible to integrate with the external
-tools.
+Further, I'm a keyboard jockey--eg: vim lover--and Python
+programmer. I've maxed out TB's keyboard-shortcut-ness (eg:
+https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[TB's
+Nostalgy add-on]) best I can tell, and it's still limiting. I have
+external tools (some developed by me and/or my team) to parse and
+perform "magic" (like task-tracking and bug-report integration) on
+email folders and individual messages, and TB--with it's lack of
+proper maildir support and difficult extensibility--makes it extremely
+difficult if not impossible to integrate with the external tools.
 
 In short, it's time to move on from Thunderbird.
 
