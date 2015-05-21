@@ -191,7 +191,7 @@ Comments
 * http://www.procmail.org/[procmail]?
 * See <<initial_tagging>> and <<auto_tagging>> for more.
 
-### Auto-check if mbsync replay is needed
+### Auto-detect if IMAP resync needed
 
 (This implementation has not yet started.)
 
@@ -277,7 +277,7 @@ solutions, but it's early.
 
 * http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
-### Replicating+synchronizing Notmuch metadata across machines
+### Synchronizing Notmuch metadata across machines
 
 (This implementation has not yet started.)
 
