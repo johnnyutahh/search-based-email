@@ -307,6 +307,15 @@ challenge. See <<MUA_choice>>.
   paradigms (copying and moving to folders, etc) that I currently employ
   with <<the_problem,Mozilla Thunderbird>>.
 
+[id='imap_account_separation']
+### Support IMAP-account separation
+
+* I have multiple email accounts, which is not uncommon. I want to
+  "view" each one differently, such that emails and folders from account
+  X does not clutter my view of emails/folders when viewing account Y.
+* It would be helpful but not absolutely required to support a
+  "combined" view of all my accounts, as an additional option.
+
 [id='initial_tagging']
 ### Initial tagging
 * http://notmuchmail.org/initial_tagging
