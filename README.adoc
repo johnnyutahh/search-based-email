@@ -40,7 +40,7 @@ document draft because:
   significant and timely feedback.
 
 ** Community members need not wait to reply to -all- issues presented;
-   small responses on invidual points welcome, even preferred.
+   small responses on invidual points are welcome, and even preferred.
 
 ** The most-important questions: what if anything am I missing? For any
    of my descriptions below, is there a better way/tool/approach/workflow?
