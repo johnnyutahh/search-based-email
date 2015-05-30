@@ -511,36 +511,38 @@ someone pause; hopefully <<initial_tagging>> will take care of that.
 [id='existing_tag_based_user_intro_docs_appear_to_be_lacking']
 
 Further, the tag-based documentation resources--to describe
-new-user-paradigm-shifts and list available toolsets--seem scattered,
-disjointed, and/or non-existent for many scenarios. Hence this document.
-Obviously, I'd love to find any similar, previously-overlooked
-documentation resource.
+new-user-paradigm-shifts and present the most-popular toolsets--seem
+scattered, disjointed, and/or non-existent for many scenarios / from
+many perspectives. Hence this document. Obviously, I'd love to find any
+similar, previously-overlooked documentation resource.
 
 [id='why_spend_the_effort_to_write_this_doc']
 
-Why did I spend the time to write this document, instead of just first
-trying all the tools? As email is my most-frequent, computer-related
-(and unfortunately, life-intensive) activity, I'd like to "get it
-right." When I simply stumble upon tools that just happen to work on my
-first try, I too often tend to get sucked into beating on that tool to
-make it work, often to the detriment of not trying other options. And/or
+Why did I spend the time to write this document, instead of just trying
+all the tools? As email is my most-frequent, computer-related (and
+unfortunately, life-intensive) activity, I'd like to "get it right."
+When I simply stumble upon tools that just happen to work on my first
+try, I too often tend to get sucked into beating on that tool to make
+it work, often to the detriment of not trying other options. And/or
 the time required to find and resolve other options is too costly or
 inefficient.
 
 Further: why make everyone slog through this investigation? Why not
-document and make the uptake choices easier for future users?
+document and make the uptake choices easier for future users? If this
+"overview" grows and lives on, that's a possibility. (However, for the
+record: I'm not dedicated to making that happen; others are welcome to
+mature this content past the point of it's effective use for me.)
 
-In any case, I'd prefer to minimize time spinning my wheels trying
-to solve problems the "wrong way" if there's already some better
-method/workflow/tool that I overlooked. Hence, I write this doc in hopes
-on learning the "best of breed" solutions given my user context and
-preferences, and minimize having to learn everything via brute-force
-experience.
+I'd prefer to minimize time spinning my wheels trying to solve problems
+the "wrong way" if there's already some better method/workflow/tool that
+I overlooked. Hence, I write this doc in hopes on learning the "best of
+breed" solutions given my user context and preferences, and minimize
+having to learn everything via brute-force experience.
 
-I'm hopeful that experienced and diverse feedback
+In any case, I'm hopeful that experienced and diverse feedback
 from the tag-based-email-using communities can help
 avoid these problems. At least, it seemed like the
-most-effective way to approach this problem, for the space
+most-effective way to approach this problem, as the space
 <<existing_tag_based_user_intro_docs_appear_to_be_lacking,doesn't (yet)
 seem friendly to newbies>>.
 
