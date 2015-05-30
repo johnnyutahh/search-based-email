@@ -42,22 +42,28 @@ document draft because:
 ** Community members need not wait to reply to -all- issues presented;
    small responses on invidual points welcome, even preferred.
 
-** The most-important questions: what if anything am I missing? For any of
-   my descriptions below, is there a better way/tool/approach/workflow?
+** The most-important questions: what if anything am I missing? For any
+   of my descriptions below, is there a better way/tool/approach/workflow?
+   And what usage scenario, workflow challenges might I be overlooking?
 
 . Longer-term: the tag-based email community might reuse this
   content--which will hopefully mature as the problems are solved--to
   better help others like me in the future.
 
-** I couldn't find a resource like this elsewhere, so maybe this content
-   might be useful as a basis to help fill some gaps. To this end, I
-   strongly encourage forks + pull requests of this content. (Of course,
-   please advise asap if other, similar docs exist.)
+** I looked extensively for a web resource to
+   comprehensively help indoctrinate me with the (seemingly)
+   radically-different paradigm of tag-based email usage,
+   <<existing_tag_based_user_intro_docs_appear_to_be_lacking,but I
+   couldn't find anything>>. Maybe this content might be useful as a
+   basis to help fill some gaps. To this end, I strongly encourage forks
+   + pull requests of this content. (Of course, please advise asap if
+   other, similar docs exist.)
 
-As email is my most-frequent, computer-related activity, I'd
-like to "get it right." Hence the effort spent on this document.
-I'm hopeful with the right system, I can make email management a
-much-less-time-consuming burden.
+With the right system, I'm hopeful I can make email
+management a much-less-time-consuming burden on my work... and my life.
+
+<<why_spend_the_effort_to_write_this_doc,This section addresses why I
+spent the effort to write this document>>.
 
 _(DISCLAIMER: this document may be in flux as I learn and attempt to
 master this domain.)_
@@ -69,13 +75,22 @@ See <<purpose_more_details>>.
 [id='the_problem']
 ## The Problem
 
+I find email classification, recall, and translation to
+work/task tracking to be much more laborious than it should be.
+<<computer_please_be_faster_than_me,I expect the computer to be faster
+than me>>, and tailor to my preferred workflow. Instead, I'm constantly
+waiting for the computer, or forced to type inefficiently, and/or
+experience a terrible workflow.
+
+More specifically:
+
 . I'm seeking a better paradigm over my current, IMAP-folder-only,
   high-capacity email management.
 
 ** Among other things, moving _and_ copying emails to a variety of IMAP
    folders, depending on the "classification" needs, gets cumbersome.
 
-** Searching my entire email-message collection with an MUA like
+** Searching my entire email-message/IMAP collection with an MUA like
    Thunderbird (see below) takes impossibly too long.
 
 . existing (2015-05-17) environment
@@ -89,17 +104,21 @@ See <<purpose_more_details>>.
     also desired
 
 See <<problem_details>> for more context.
+
+(An aside: why did I title this effort "tag-based email"? Seemed like as
+good a way as any to more specifically described the problem and usage
+context. I'm open to alternative suggestions.)
     
-## The Solution Options
+## Possible Solutions
 
 After reviewing currently-available tools, I'm seeking:
 
-1. fast search on my entire email-message collection (my "email database"),
+1. fast search on my entire email-message/IMAP collection (my "email database"),
 
 2. to leverage tag-based email categorization,
 
-3. integrate with external-to-MUA text-processing tools - namely ones me
-   and my team have developed,
+3. integrate with external-to-MUA text-processing tools (mostly
+   command-line scripts) - namely ones me and my team have developed,
 
 4. provide easy extensibility with Linux and MacOSX command-line
    "primitives."
@@ -110,9 +129,13 @@ dreaming up my own specifications? More the former. I'd much prefer
 http://bit.ly/JARVIS-wikia[Jarvis] be my email interface, but he's not
 currently or at least economically available.)
 
-My investigation thus far suggests my implementation path hinges on
-choosing 1 of the following applications, as they're at the core of
-email-message indexing and tagging:
+[id='core_choice']
+## Core Tool Choice
+
+My investigation thus far suggests the implementation path hinges
+on choosing 1 of the following 2 applications, as they seem to
+mutually-exclusively represent the best (or at least most-popular) of
+the core of email-message indexing and tagging tool suites:
 
 1. http://notmuch.org[Notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
@@ -120,10 +143,8 @@ email-message indexing and tagging:
 Is this assessment accurate? What other tools/options might I be
 overlooking?
 
-[id='core_choice']
-## Core Tool Choice
-
-Tradeoffs:
+[id='notmuch_won']
+My comparison analysis:
 
 1. Initial tests show
    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[Notmuch
@@ -137,16 +158,15 @@ Tradeoffs:
    the IMAP content/messages. Notmuch can not. However,
    http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
    this metadata, but it takes additional process+infrastructure.
-
-3. #1 greatly outweighs #2. Because of this, Notmuch "wins," while I
-   await feedback from the community(ies).
+3. #1 greatly outweighs #2. Because of this, Notmuch "wins" (with me),
+   pending feedback from others.
 
 What other tradeoffs might motivate me to employ
 http://www.djcbsoftware.nl/code/mu[mu] over http://notmuch.org[Notmuch]?
 
 ## Remaining Tool Choices
 
-Since Notmuch <<core_choice,won>>, the following presents but may not be
+Since Notmuch <<notmuch_won,won>>, the following presents but may not be
 limited to a Notmuch-specific implementation.
 
 ### Email-to-maildir gathering, fetching
@@ -157,17 +177,17 @@ format. The following tools (presumably) all sync an
 http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol[IMAP]
 server to a Maildir filesystem.
 
-Options
+#### Options
 
 * http://isync.sourceforge.net/[mbsync, aka isync]
 * http://offlineimap.org[offlineimap]
 * http://pyropus.ca/software/getmail[getmail]
 
-Choice
+#### Choice
 
 I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 
-Comments
+#### Comments
 
 * I've used mbsync more than any other tool listed here, and it's
   thus far working nicely.
@@ -185,7 +205,7 @@ Comments
 
 ### Notmuch initial + automated tagging
 
-(This implementation has not yet started.)
+(I've not yet started this implementation.)
 
 * https://readthedocs.org/projects/afew[afew] best?
 * http://www.procmail.org/[procmail]?
@@ -193,7 +213,7 @@ Comments
 
 ### Auto-detect if IMAP resync needed
 
-(This implementation has not yet started.)
+(I've not yet started this implementation.)
 
 #### client->server checking
 
@@ -207,17 +227,20 @@ Comments
 
 #### server->client checking
 
-*  https://github.com/athoune/imapidle
+* https://github.com/athoune/imapidle + some of my own Python scripting, which
+  I'm hopeful will not be difficult.
 *  mswatch
 **   http://mswatch.sourceforge.net
-**   requires IMAP-server-side shell access - difficult
-**   wrapping `imapidle` with a `mbsync` trigger seems like good alternative
+**   requires IMAP-server-side shell access - difficult if not impossible
+     to get for all my IMAP accounts.
+**   wrapping `imapidle` with a `mbsync` trigger seems like a better,
+     more-flexible alternative
 **   this might also be a client->server option
 
 [id='MUA_choice']
 ### MUA
 
-(Implementation currently in progress.)
+(My implementation is currently in progress.)
 
 #### Summary
 
@@ -225,7 +248,7 @@ Along with <<initial_tagging>>, the (<<MUA_choice,MUA introduction
 and mastery>>) appears to represent the largest learning curve.
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] currently present the most-attractive
-solutions, but it's early.
+solutions (for me), but it's early.
 
 #### Details
 
@@ -248,8 +271,9 @@ solutions, but it's early.
    https://github.com/pazz/alot/blob/master/README.md[alot README].
    However, it's thus far been hard to find practical resources like
    example config files, procedural setup, etc. Maybe this is due in
-   part because it's not yet as popular, or caters to a self-starting
-   user base, or something else?
+   part because it's not yet as popular, or caters to a user base more
+   willing to spend time learning/configuring/tinkering with one tool,
+   or something else?
 
 *** Speculating: a hopefully-small effort to provide setup + config-file
     examples might go a long way to solve this problem, and boost alot's
@@ -273,17 +297,18 @@ solutions, but it's early.
 
 ### Message tagging
 
-(This implementation has not yet started.)
+(I've not yet started this implementation.)
 
 * http://afew.readthedocs.org/en/latest[afew] currently looks best.
 
 ### Synchronizing Notmuch metadata across machines
 
-(This implementation has not yet started.)
+(I've not yet started this implementation.)
 
 * http://www.muchsync.org[muchsync] currently looks best.
 
-** muchsync apparently syncs metadata _and_ data (which may be
+** muchsync apparently syncs metadata _and_ data (it seems less
+   efficient to be forced to copy the data, but this may be
    unavoidable), but claims to do it as efficiently as possible.
 
 [id='user_adoption_challenges']
@@ -297,24 +322,27 @@ limited:
 
 Decide which MUA(s) to use, particularly deciding on a primary MUA. This
 is technically not a usage-scenario, but currently represents my biggest
-challenge. See <<MUA_choice>>.
+challenge. See the <<MUA_choice,MUA options>>.
 
 ### Support old-style IMAP-folder paradigm
 
-* While I may be be moving to a a tag-based paradigm, I still
-  need to access my 4k+ IMAP folders as I did before. Any primary
-  MUA/interface/IMAP-client I choose needs to support IMAP-folder-based
-  paradigms (copying and moving to folders, etc) that I currently employ
-  with <<the_problem,Mozilla Thunderbird>>.
+* While I may be be moving to a a tag-based paradigm, I still need
+  to access my 4k+ IMAP folders as I did before, at least while I'm
+  transitioning (presumably) from a folder-based to a tag-based
+  paradigm. Any primary MUA/interface/IMAP-client I choose needs to
+  support IMAP-folder-based paradigms (copying and moving to folders,
+  etc) that I currently employ with <<the_problem,Mozilla Thunderbird>>.
 
 [id='imap_account_separation']
 ### Support IMAP-account separation
 
-* I have multiple email accounts, which is not uncommon. I want to
+. I have multiple email accounts, which is not uncommon. I want to
   "view" each one differently, such that emails and folders from account
   X does not clutter my view of emails/folders when viewing account Y.
-* It would be helpful but not absolutely required to support a
-  "combined" view of all my accounts, as an additional option.
+. It would be extremely helpful to support a "combined" view of all my
+  accounts, as an additional option. I stop just short of calling this an
+  absolute requirement, simply because #1 is currently more important than
+  #2.
 
 [id='initial_tagging']
 ### Initial tagging
@@ -333,14 +361,14 @@ challenge. See <<MUA_choice>>.
   special configuration?
 
 ** I'm used to moving messages between folders in order to classify.
-    Further, I will like to keep a clean Inbox and other folders, for my
-    non-Notmuch-based email clients, thus requiring message moving.
+   Further, I will like to keep a clean Inbox and other folders, for my
+   non-Notmuch-based email clients, thus requiring message moving.
 
 ** Once I associate Notmuch-metadata (by adding tags, or whatever
-    metadata/etc scenarios might be involved with Notmuch) with a
-    message, that said metadata "stays" with a message, regardless of
-    wherever I put said message. Is this the way it works "out of the
-    box"?
+   metadata/etc scenarios might be involved with Notmuch) with a
+   message, I want (need?) said metadata/tags/etc to associate with a
+   message forever, regardless of wherever I put said message. Is this
+   the way it works "out of the box" with Notmuch-based systems?
 
 ### Piping email-message content through shell commands
 
@@ -353,8 +381,8 @@ Example potential solutions, not yet tested:
 I want to http://en.wikipedia.org/wiki/Pipeline_%28Unix%29["pipe"] the
 content of:
 
-. 1,
-. many (by selecting multiple emails at the same time), or
+. one email message,
+. many email messages (by selecting multiple emails at the same time), or
 . an entire IMAP folder of emails 
 
 to any command/script of my choosing.
@@ -371,6 +399,8 @@ Example potential solutions, not yet tested:
 ### IMAP folders as tags
 * http://notmuchmail.org/pipermail/notmuch/2010/003249.html
 ** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+
+Also, see <<initial_tagging>>.
 
 ### Notmuch/MUA/mutt-kz/alot folder-based searching
 * not yet certain how different this is from <<IMAP_folders_as_tags>>.
@@ -393,16 +423,17 @@ Example potential solutions, not yet tested:
 [id='auto_tagging']
 ### Automatically tagging new messages (post initial tagging)
 * http://afew.readthedocs.org/en/latest[afew]?
-* employe procmail to set tags?
-** http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055
+* http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055[employ
+  procmail to set tags]?
 
 ### Syncing Notmuch metadata across machines
+* http://www.muchsync.org
+** In lieu of testing, this seems like the clear winner.
 * http://notmuchmail.org/pipermail/notmuch/2010/003249.html
 ** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
 * http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
 ** https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
 ** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
-* http://www.muchsync.org
 
 ### Offline editing - postponing drafts
 
@@ -431,22 +462,29 @@ My "user profile":
 
 * https://github.com/johnnyutahh[I'm] historically-trained as a
   software and computer-systems engineer.
-* Experience with variety of programming languages and OSes including
-  but not limited to: C, C\++, Java, Ada, perl, Python; Windows, Unix,
-  Linux, VMS, MacOSX. My favorite "Swiss army knife" language is Python.
-  If I've time, I'm open to extending/fixing Pythong programs. I'd like
-  to learn Ruby and https://golang.org[Go].
+
+** I've significant experience with programming in a variety of
+   programming languages and system-administering a variety of
+   OSes including but not limited to: C, C\++, Java, Ada, perl,
+   Python; Windows, many commercial Unix-es, Linux, VMS, MacOSX. My
+   favorite "Swiss army knife" language is Python. If I've time,
+   I'm open to extending/fixing Python programs. I'd like to learn
+   https://www.ruby-lang.org[Ruby] and https://golang.org[Go].
+
 * I'm now more of a "business person." In spite of this:
+
 ** vim remains my primary editor (I hate moving my hand from the
    keyboard to the mouse or trackpad),
 ** Mac OS X is my primary computing machine,
 ** and I still significantly code in Python to solve "glueware" problems.
-** I also dabble in Linux and MacOSX sysadmin.
+** I also still dabble in Linux (mostly Debian/Ubuntu) and MacOSX sysadmin.
 * Learning new systems/languages/applications/software is old hat...
 ** ...but it's now harder only because of time constraints from expanded
    business responsibilities.
 * And like many people, I receive a remarkable amount of email in a
   diverse set of contexts.
+
+[id='computer_please_be_faster_than_me']
 
 * Some might describe me as an impatient, unforgiving computing
   user. I _hate_ being faster than the computer. Further, when the
@@ -470,11 +508,27 @@ For example, opening https://github.com/pazz/alot[alot] for the first
 time and looking at a staggering 50k+ emails in my "inbox" can give
 someone pause; hopefully <<initial_tagging>> will take care of that.
 
+[id='existing_tag_based_user_intro_docs_appear_to_be_lacking']
+
 Further, the tag-based documentation resources--to describe
 new-user-paradigm-shifts and list available toolsets--seem scattered,
 disjointed, and/or non-existent for many scenarios. Hence this document.
 Obviously, I'd love to find any similar, previously-overlooked
 documentation resource.
+
+[id='why_spend_the_effort_to_write_this_doc']
+
+Why did I spend the time to write this document, instead of just first
+trying all the tools? As email is my most-frequent, computer-related
+(and unfortunately, life-intensive) activity, I'd like to "get it
+right." When I simply stumble upon tools that just happen to work on my
+first try, I too often tend to get sucked into beating on that tool to
+make it work, often to the detriment of not trying other options. And/or
+the time required to find and resolve other options is too costly or
+inefficient.
+
+Further: why make everyone slog through this investigation? Why not
+document and make the uptake choices easier for future users?
 
 In any case, I'd prefer to minimize time spinning my wheels trying
 to solve problems the "wrong way" if there's already some better
@@ -483,10 +537,17 @@ on learning the "best of breed" solutions given my user context and
 preferences, and minimize having to learn everything via brute-force
 experience.
 
+I'm hopeful that experienced and diverse feedback
+from the tag-based-email-using communities can help
+avoid these problems. At least, it seemed like the
+most-effective way to approach this problem, for the space
+<<existing_tag_based_user_intro_docs_appear_to_be_lacking,doesn't (yet)
+seem friendly to newbies>>.
+
 [id='problem_details']
 ## Appendix 2: Problem Details
 
-(DISCLAIMER: This sections is under construction, and not complete.)
+(DISCLAIMER: This sections under construction, and not complete.)
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
