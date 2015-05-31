@@ -108,11 +108,11 @@ More specifically:
 
 See <<problem_details>> for more context.
 
-(An aside: why did I title this effort "tag-based email"? Seemed like
-as good a way as any to more specifically described the problem and
-usage context. http://notmuchmail.org[Notmuch] calls itself the 'The
-mail indexer', but lots of email systems "index," although not many do
-it well. Few of them classically "tag." But I'm open to alternative
+(An aside: why did I title this effort "tag-based email"? Seemed like as
+good a way as any to more-specifically described the problem and usage
+context. http://notmuchmail.org[Notmuch] calls itself the 'The mail
+indexer', but lots of email systems "index," although not many do it
+well. Few of them classically "tag." But I'm open to alternative-naming
 suggestions.)
     
 ## Possible Solutions
