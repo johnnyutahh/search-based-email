@@ -530,14 +530,14 @@ unfortunately).
 
 . *Brute-force "experience" may be too inefficient*. When I simply
 stumble upon tools that just happen to work in some way on my first
-try, I too often tend to get sucked into beating on that tool to make
-it work in a broader context (especially after I've gotten in habit
-of using said tool for while), often to the detriment of not trying
-other options. And/or the time required to find and resolve other
-options is too costly or inefficient. I'd instead like to leverage
-others experience, minimizing time spinning my wheels trying to solve
-problems the "wrong way"--especially if there's already some better
-method/workflow/tool that I overlooked.
+try, I too often get sucked into inefficiently beating on that tool
+to make it work in a broader context (especially after I've gotten
+in habit of using said tool for a long time), often to the detriment
+of not trying other options. And/or the time required to find and
+resolve other options is too costly or inefficient. I'd instead like
+to leverage others experience, minimizing time inefficiently trying
+to solve problems the "wrong way"--especially if there's already some
+better method/workflow/tool that I overlooked.
 
 . *It might help others in the future*. Why make everyone slog through
 this investigation? Why not document and make the uptake choices easier
@@ -545,6 +545,11 @@ for future users? If this "overview" grows and lives on, that's a
 possibility. (However, for the record: I'm not dedicated to making that
 happen; others are welcome to mature this content past the point of it's
 effective use for me.)
+
+. *Defining requirements up front: this usually works.* Rarely have I
+regretted taking the time to well-define requirements (separate from
+design and/or solution) for any significant software project. Whether or
+not my team is creating or searching for (or both) the software/service.
 
 . *I might learn something I wouldn't have previously found*. It's
 possible this document might attract enough attention for people to
