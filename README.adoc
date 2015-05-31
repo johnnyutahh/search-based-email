@@ -136,7 +136,7 @@ on choosing 1 of the following 2 applications, as they seem to
 mutually-exclusively represent the best (or at least most-popular) of
 the core of email-message indexing and tagging tool suites:
 
-1. http://notmuch.org[Notmuch]
+1. http://notmuchmail.org[Notmuch]
 2. http://www.djcbsoftware.nl/code/mu[mu (maildir-utils)]
 
 Is this assessment accurate? What other tools/options might I be
@@ -161,12 +161,12 @@ My comparison analysis:
    pending feedback from others.
 
 What other tradeoffs might motivate me to employ
-http://www.djcbsoftware.nl/code/mu[mu] over http://notmuch.org[Notmuch]?
+http://www.djcbsoftware.nl/code/mu[mu] over http://notmuchmail.org[Notmuch]?
 
 ## Remaining Tool Choices
 
 Since Notmuch <<notmuch_won,won>>, the following presents, but may not
-be limited to, a http://notmuch.org[Notmuch]-specific implementation.
+be limited to, a http://notmuchmail.org[Notmuch]-specific implementation.
 
 ### Email-to-maildir gathering, fetching
 
