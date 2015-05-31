@@ -42,9 +42,10 @@ document draft because:
 ** Community members need not wait to reply to -all- issues presented;
    small responses on invidual points are welcome, and even preferred.
 
-** The most-important questions: what if anything am I missing? For any
-   of my descriptions below, is there a better way/tool/approach/workflow?
-   And what usage scenario, workflow challenges might I be overlooking?
+** The most-important questions:
+.... What if anything am I missing?
+.... For any descriptions below, is there a better way/tool/approach/workflow?
+.... What usage scenario, workflow challenges might I be overlooking?
 
 . Longer-term: the tag-based email community might reuse this
   content--which will hopefully mature as the problems are solved--to
@@ -62,8 +63,9 @@ document draft because:
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
 
-<<why_spend_the_effort_to_write_this_doc,This section addresses why I
-spent the effort to write this document>>.
+Why write this doc instead of just trudging through the tool
+testing (like everyone else presumably did to learn this space)?
+<<why_spend_the_effort_to_write_this_doc,Read on>>.
 
 _(DISCLAIMER: this document may be in flux as I learn and attempt to
 master this domain.)_
@@ -517,32 +519,41 @@ many perspectives. Hence this document. Obviously, I'd love to find any
 similar, previously-overlooked documentation resource.
 
 [id='why_spend_the_effort_to_write_this_doc']
+### Why write this doc?
 
 Why did I spend the time to write this document, instead of just trying
-all the tools? As email is my most-frequent, computer-related (and
-unfortunately, life-intensive) activity, I'd like to "get it right."
-When I simply stumble upon tools that just happen to work on my first
+all the tools?
+
+. *Email is too important not to "get it right."* Or at least, email
+is too "frequent," probably my most-frequent life activity (very
+unfortunately).
+
+. *Brute-force "experience" may be too inefficient*. When I simply
+stumble upon tools that just happen to work in some way on my first
 try, I too often tend to get sucked into beating on that tool to make
-it work, often to the detriment of not trying other options. And/or
-the time required to find and resolve other options is too costly or
-inefficient.
+it work in a broader context (especially after I've gotten in habit
+of using said tool for while), often to the detriment of not trying
+other options. And/or the time required to find and resolve other
+options is too costly or inefficient. I'd instead like to leverage
+others experience, minimizing time spinning my wheels trying to solve
+problems the "wrong way"--especially if there's already some better
+method/workflow/tool that I overlooked.
 
-Further: why make everyone slog through this investigation? Why not
-document and make the uptake choices easier for future users? If this
-"overview" grows and lives on, that's a possibility. (However, for the
-record: I'm not dedicated to making that happen; others are welcome to
-mature this content past the point of it's effective use for me.)
+. *It might help others in the future*. Why make everyone slog through
+this investigation? Why not document and make the uptake choices easier
+for future users? If this "overview" grows and lives on, that's a
+possibility. (However, for the record: I'm not dedicated to making that
+happen; others are welcome to mature this content past the point of it's
+effective use for me.)
 
-I'd prefer to minimize time spinning my wheels trying to solve problems
-the "wrong way" if there's already some better method/workflow/tool that
-I overlooked. Hence, I write this doc in hopes on learning the "best of
-breed" solutions given my user context and preferences, and minimize
-having to learn everything via brute-force experience.
+. *I might learn something I wouldn't have previously found*. It's
+possible this document might attract enough attention for people to
+offer solutions (apps, wokflows, or whatever) I might not have otherwise
+discovered. Ever.
 
 In any case, I'm hopeful that experienced and diverse feedback
-from the tag-based-email-using communities can help
-avoid these problems. At least, it seemed like the
-most-effective way to approach this problem, as the space
+from the tag-based-email-using communities can help avoid these
+problems. At least, it seemed like the most-effective way, as the space
 <<existing_tag_based_user_intro_docs_appear_to_be_lacking,doesn't (yet)
 seem friendly to newbies>>.
 
