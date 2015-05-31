@@ -563,9 +563,9 @@ problems. At least, it seemed like the most-effective way, as the space
 seem friendly to newbies>>.
 
 [id='problem_details']
-## Appendix 2: Problem Details
+## Appendix 2: More Problem Details
 
-(DISCLAIMER: This sections under construction, and not complete.)
+(DISCLAIMER: This section's under construction, and not complete.)
 
 OS X is great, but TB is difficult. Thunderbird is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
