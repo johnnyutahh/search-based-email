@@ -1,4 +1,0 @@
-# <!-- vim: set syntax=mediawiki sw=2 ts=2: -->
-
-README.adoc TODOs
-  address all the 'TODO's in README.adoc
