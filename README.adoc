@@ -116,21 +116,17 @@ context. I'm open to alternative suggestions.)
 
 After reviewing currently-available tools, I'm seeking:
 
-1. fast search on my entire email-message/IMAP collection (my "email database"),
+. fast search on my entire email-message/IMAP collection (my "email database"),
+. to leverage tag-based email categorization, and
+. provide easy extensibility with Linux and MacOSX command-line
+  "primitives" or other, custom scripts/commands.
 
-2. to leverage tag-based email categorization,
-
-3. integrate with external-to-MUA text-processing tools (mostly
-   command-line scripts) - namely ones me and my team have developed,
-
-4. provide easy extensibility with Linux and MacOSX command-line
-   "primitives."
-
-(It's fair to ask: did I come up with these requirements by
-"adjusting" to what tools are currently available, or by independently
-dreaming up my own specifications? More the former. I'd much prefer
-http://bit.ly/JARVIS-wikia[Jarvis] be my email interface, but he's not
-currently or at least economically available.)
+It's fair to ask: did I come up with the above "requirements" by
+a) adjusting to features from currently-available tools, or b) by
+independently dreaming up my own specifications? More the former/(a).
+I'd much prefer http://bit.ly/JARVIS-wikia[Jarvis] be my email
+interface, but he's not currently (or at least not economically)
+available.
 
 [id='core_choice']
 ## Core Tool Choice
