@@ -165,8 +165,8 @@ http://www.djcbsoftware.nl/code/mu[mu] over http://notmuch.org[Notmuch]?
 
 ## Remaining Tool Choices
 
-Since Notmuch <<notmuch_won,won>>, the following presents but may not be
-limited to a Notmuch-specific implementation.
+Since Notmuch <<notmuch_won,won>>, the following presents, but may not
+be limited to, a Notmuch-specific implementation.
 
 ### Email-to-maildir gathering, fetching
 
