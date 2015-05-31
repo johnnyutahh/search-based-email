@@ -235,9 +235,9 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 **   http://mswatch.sourceforge.net
 **   requires IMAP-server-side shell access - difficult if not impossible
      to get for all my IMAP accounts.
+**   this might also be a client->server option
 **   wrapping `imapidle` with a `mbsync` trigger seems like a better,
      more-flexible alternative
-**   this might also be a client->server option
 
 [id='MUA_choice']
 ### MUA
