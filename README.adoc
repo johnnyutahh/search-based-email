@@ -45,7 +45,8 @@ document draft because:
 ** The most-important questions:
 .... What if anything am I missing?
 .... For any descriptions below, is there a better way/tool/approach/workflow?
-.... What usage scenario, workflow challenges might I be overlooking?
+.... What <<user_adoption_challenges,usage scenario/workflow
+     challenges>> might I be overlooking?
 
 . Longer-term: the tag-based email community might reuse this
   content--which will hopefully mature as the problems are solved--to
@@ -82,7 +83,7 @@ work/task tracking to be much more laborious than it should be.
 <<computer_please_be_faster_than_me,I expect the computer to be faster
 than me>>, and tailor to my preferred workflow. Instead, I'm constantly
 waiting for the computer, or forced to type inefficiently, and/or
-experience a terrible workflow.
+experiencing a terrible workflow.
 
 More specifically:
 
@@ -95,15 +96,15 @@ More specifically:
 ** Searching my entire email-message/IMAP collection with an MUA like
    Thunderbird (see below) takes impossibly too long.
 
-. existing (2015-05-17) environment
+. My existing environment
 ** Primary http://en.wikipedia.org/wiki/Email_client[MUA] =
    Mozilla Thunderbird 17.0.11
 ** OS = Mac OS 10.9.5
-** no "tagging"
-** approx 4300 IMAP-based email folders with approx 1 million mail msgs
-   from multiple servers/accounts
-*** doesn't include pruned/archived emails, whose indexing/searching
-    also desired
+** No "tagging."
+** I've approximately 4300 IMAP-based email folders with approximately 1
+   million mail messages served via multiple IMAP accounts/servers.
+*** This does not include pruned/archived emails, to whom I'd also like
+    to applying tagging/indexing/searching workflows.
 
 See <<problem_details>> for more context.
 
