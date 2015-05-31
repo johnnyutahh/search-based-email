@@ -553,8 +553,8 @@ not my team is creating or searching for (or both) the software/service.
 
 . *I might learn something I wouldn't have previously found*. It's
 possible this document might attract enough attention for people to
-offer solutions (apps, wokflows, or whatever) I might not have otherwise
-discovered. Ever.
+offer solutions (applications, workflows, or whatever) I might not have
+otherwise discovered. Ever.
 
 In any case, I'm hopeful that experienced and diverse feedback
 from the tag-based-email-using communities can help avoid these
