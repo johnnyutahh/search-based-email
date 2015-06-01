@@ -41,6 +41,8 @@ document draft because:
 
 ** Community members need not wait to reply to -all- issues presented;
    small responses on invidual points are welcome, and even preferred.
+*** TODO: describe the most-effective ways to feedback. Direct editing
+    of this document complete encouraged, but obviously not required.
 
 ** The most-important questions:
 .... What if anything am I missing?
