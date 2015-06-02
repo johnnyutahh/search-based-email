@@ -30,19 +30,14 @@ toc::[]
 
 ### Summary
 
-<<my_user_profile,I>> am new to what I call "tag-based
-email" systems, and I'm investigating the transition from a "large
-IMAP folder collection" to a tag-based system. I wrote this initial
-document draft because:
+<<my_user_profile,I>> am new to what I call "tag-based email" systems,
+and I'm investigating the transition from a "large IMAP folder
+collection" to a tag-based system (most likely <<core_choice,Notmuch- or
+mu-based>>). I wrote this initial document draft because:
 
 . Near-term: it hopefully provides the best chance for an efficient
   and successful transition -- if the tag-based community can provide
   significant and timely feedback.
-
-** Community members need not wait to reply to -all- issues presented;
-   small responses on invidual points are welcome, and even preferred.
-*** TODO: describe the most-effective ways to feedback. Direct editing
-    of this document complete encouraged, but obviously not required.
 
 ** The most-important questions:
 .... What if anything am I missing?
@@ -50,18 +45,23 @@ document draft because:
 .... What <<user_adoption_challenges,usage scenario/workflow
      challenges>> might I be overlooking?
 
+** Community members need not wait to reply to -all- issues presented;
+   small responses on individual points are welcome, and even preferred.
+
+*** Please provide feedback whichever way you prefer. Email-list replies
+    to point topics are great. Git forks and pull's also great - easier
+    for me. I can possibly provide write access to this repo, upon request.
+
 . Longer-term: the tag-based email community might reuse this
   content--which will hopefully mature as the problems are solved--to
   better help others like me in the future.
 
-** I looked extensively for a web resource to
-   comprehensively help indoctrinate me with the (seemingly)
-   radically-different paradigm of tag-based email usage,
-   <<existing_tag_based_user_intro_docs_appear_to_be_lacking,but I
-   couldn't find anything>>. Maybe this content might be useful as a
-   basis to help fill some gaps. To this end, I strongly encourage forks
-   + pull requests of this content. (Of course, please advise asap if
-   other, similar docs exist.)
+** I searched for a similar web resource to comprehensively introduce me
+   to the (seemingly) radically-different paradigm of tag-based email
+   usage, <<existing_tag_based_user_intro_docs_appear_to_be_lacking,but
+   I couldn't find anything>>. Maybe this document's content might be
+   useful as a basis to help fill some gaps. Please advise if other,
+   similar content already exists.
 
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
@@ -96,12 +96,14 @@ More specifically:
    folders, depending on the "classification" needs, gets cumbersome.
 
 ** Searching my entire email-message/IMAP collection with an MUA like
-   Thunderbird (see below) takes impossibly too long.
+   https://www.mozilla.org/en-US/thunderbird[Thunderbird] (see below)
+   takes impossibly too long, and in many cases, isn't powerful or
+   granular enough to get the job done.
 
 . My existing environment
 ** Primary http://en.wikipedia.org/wiki/Email_client[MUA] =
-   Mozilla Thunderbird 17.0.11
-** OS = Mac OS 10.9.5
+   https://www.mozilla.org/en-US/thunderbird[Mozilla Thunderbird] 17.0.11
+** OS = Mac OS 10.9.5 (Mavericks)
 ** No "tagging."
 ** I've approximately 4300 IMAP-based email folders with approximately 1
    million mail messages served via multiple IMAP accounts/servers.
@@ -426,9 +428,15 @@ Also, see <<initial_tagging>>.
 
 [id='auto_tagging']
 ### Automatically tagging new messages (post initial tagging)
+
 * http://afew.readthedocs.org/en/latest[afew]?
+
 * http://notmuchmail.org/pipermail/notmuch/2012/thread.html#11055[employ
   procmail to set tags]?
+
+* Can someone compare/contrast
+  http://afew.readthedocs.org/en/latest[afew] and
+  http://www.procmail.org/[procmail]?
 
 ### Syncing Notmuch metadata across machines
 * http://www.muchsync.org
@@ -462,10 +470,15 @@ Also, see <<initial_tagging>>.
 
 [id='my_user_profile']
 
-My "user profile":
+### My "user profile"
 
-* https://github.com/johnnyutahh[I'm] historically-trained as a
-  software and computer-systems engineer.
+* In summary, https://github.com/johnnyutahh[I'm] a vim and
+  Python lover, a keyboard jockey, and a reasonably-experienced,
+  fairly-technical, <<computer_please_be_faster_than_me,demanding>>
+  user. And like many others, I receive a remarkable amount of email in
+  diverse contexts.
+
+* I'm historically-trained as a software and computer-systems engineer.
 
 ** I've significant experience with programming in a variety of
    programming languages and system-administering a variety of
@@ -485,8 +498,6 @@ My "user profile":
 * Learning new systems/languages/applications/software is old hat...
 ** ...but it's now harder only because of time constraints from expanded
    business responsibilities.
-* And like many people, I receive a remarkable amount of email in a
-  diverse set of contexts.
 
 [id='computer_please_be_faster_than_me']
 
@@ -500,9 +511,6 @@ My "user profile":
   complete a job, don't lie to me. I can go do other things while I wait
   for you. But please do not delay me further after you already said you
   were done."
- 
-* In summary, I'm a vim and Python lover, a keyboard jockey, and a
-  fairly-technical, impatient, demanding user. That gets lots of email.
 
 Despite my history assimilating to new applications/environments, the
 tag-based-classification paradigm still seems _significantly_ different
@@ -530,33 +538,28 @@ all the tools?
 is too "frequent," probably my most-frequent life activity (very
 unfortunately).
 
-. *Brute-force "experience" may be too inefficient*. When I simply
-stumble upon tools that just happen to work in some way on my first
-try, I too often get sucked into inefficiently beating on that tool
-to make it work in a broader context (especially after I've gotten
-in habit of using said tool for a long time), often to the detriment
-of not trying other options. And/or the time required to find and
-resolve other options is too costly or inefficient. I'd instead like
-to leverage others experience, minimizing time inefficiently trying
-to solve problems the "wrong way"--especially if there's already some
-better method/workflow/tool that I overlooked.
+. *Brute-force "experience" may be too inefficient*. I'd rather learn
+from others' experiences rather than inefficiently reply them all
+myself.
 
-. *It might help others in the future*. Why make everyone slog through
-this investigation? Why not document and make the uptake choices easier
-for future users? If this "overview" grows and lives on, that's a
-possibility. (However, for the record: I'm not dedicated to making that
-happen; others are welcome to mature this content past the point of it's
-effective use for me.)
+. *This document may help future newbies.* And possibly accelerate
+new-user population growth.
 
 . *Defining requirements up front: this usually works.* Rarely have I
 regretted taking the time to well-define requirements (separate from
-design and/or solution) for any significant software project. Whether or
-not my team is creating or searching for (or both) the software/service.
+design and/or solution) for any significant software or tool-adoption
+project.
 
 . *I might learn something I wouldn't have previously found*. It's
 possible this document might attract enough attention for people to
 offer solutions (applications, workflows, or whatever) I might not have
 otherwise discovered. Ever.
+
+. *Breaking my production email "IMAP database" would be very... bad.*
+My businesses and projects rely on my email system to be top-notch
+solid. If my email gets corrupted, lost, etc - things go very bad, very
+fast. Especially if I'm _unknowingly_ messing up my email. Hence, I'm
+rather cautious about correct implementation.
 
 In any case, I'm hopeful that experienced and diverse feedback
 from the tag-based-email-using communities can help avoid these
@@ -569,7 +572,8 @@ seem friendly to newbies>>.
 
 (DISCLAIMER: This section's under construction, and not complete.)
 
-OS X is great, but TB is difficult. Thunderbird is old, buggy,
+OS X is great, but TB is difficult.
+https://www.mozilla.org/en-US/thunderbird[Thunderbird] is old, buggy,
 troublesome, slow, basically inextensible (for me, anyway), and as
 I understand it, feature frozen. I'm tired of debating with the
 mozillaZine support team about TB's bugs and limitations. Among other
@@ -596,7 +600,8 @@ email folders and individual messages, and TB--with it's lack of
 proper maildir support and difficult extensibility--makes it extremely
 difficult if not impossible to integrate with the external tools.
 
-In short, it's time to move on from Thunderbird.
+In short, it's time to move on from
+https://www.mozilla.org/en-US/thunderbird[Thunderbird].
 
 ## Appendix 3: General Setup Guides
 
