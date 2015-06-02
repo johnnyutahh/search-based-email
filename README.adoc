@@ -16,7 +16,7 @@
 
 # One User's Convert-to-Tag-Based-Email Challenges
 author github.com@johnnyutahh.com
-0.x, May 2015:
+0.x, June 2015:
 Last updated {docdate} {doctime}
 
 toc::[]
@@ -45,12 +45,13 @@ mu-based>>). I wrote this initial document draft because:
 .... What <<user_adoption_challenges,usage scenario/workflow
      challenges>> might I be overlooking?
 
-** Community members need not wait to reply to -all- issues presented;
-   small responses on individual points are welcome, and even preferred.
+** Community members need not wait to reply to _all_ issues presented;
+   smaller responses on individual points are welcome, and even preferred.
 
 *** Please provide feedback whichever way you prefer. Email-list replies
-    to point topics are great. Git forks and pull's also great - easier
-    for me. I can possibly provide write access to this repo, upon request.
+    to point topics are great. Git forks and pull's also great, and
+    easier for me, but (obviously) not required. I can also possibly
+    provide write access to this repo, upon request.
 
 . Longer-term: the tag-based email community might reuse this
   content--which will hopefully mature as the problems are solved--to
