@@ -107,7 +107,8 @@ More specifically:
    https://www.mozilla.org/en-US/thunderbird[Mozilla Thunderbird] 17.0.11
 ** Mac OS 10.9.5 (Mavericks)
 
-See <<problem_details>> for more context.
+See <<problem_details>> and <<user_adoption_challenges,user scenarios>>
+for more context and requirements.
 
 (An aside: why call this effort "tag-based email"?
 http://notmuchmail.org[Notmuch] calls itself the 'The mail indexer',
@@ -170,7 +171,7 @@ http://www.djcbsoftware.nl/code/mu[mu] over
 http://notmuchmail.org[Notmuch]?
 
 Since Notmuch <<notmuch_won,won>> (for now), some of the
-options options for the remainder of the tool choices may be
+options for the remainder of the tool choices may be
 http://notmuchmail.org[Notmuch]-specific.
 
 ### Email-to-maildir gathering, fetching
