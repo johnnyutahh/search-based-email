@@ -30,53 +30,44 @@ toc::[]
 
 ### Summary
 
-<<my_user_profile,I>> am new to what I call "tag-based email" systems,
-and I'm investigating the transition from a "large IMAP folder
-collection" to a tag-based system (most likely <<core_choice,Notmuch- or
-mu-based>>). I wrote this initial document draft because:
+<<my_user_profile,I>> want to transition my email environment from a
+<<my_existing_environment,"classic">> one to a tag-and-index-based
+system (most likely <<core_choice,Notmuch- or mu-based>>), and I need
+help.
 
-. Near-term: it hopefully provides the best chance for an efficient and
-  successful transition, if the <<core_choice,Notmuch, mu, and related user
-  communities>> can provide significant and timely feedback.
+. *Near-term*. I'm seeking significant and timely feedback from the
+  <<core_choice,Notmuch, mu, and related user communities>>.
 
 ** The most-important questions:
 
-.... What if anything am I missing?
+... Given <<the_problem,the problem>>, am I accurately assessing all
+    <<tool_choices,tools>> available?
 
-***** Specifically, what <<user_adoption_challenges,usage
-     scenario/workflow challenges>> might I be overlooking?
+... What common <<user_adoption_challenges,user scenarios>> might I be
+    overlooking?
 
-.... For any descriptions below, is there a better way/tool/approach/workflow?
+... Do you see a better usage workflow than what's presented for any
+    <<tool_choices,tool>> or <<user_adoption_challenges,usage scenarios>>?
 
-** Community members need not wait to reply to _all_ issues presented;
-   smaller responses on individual points are welcome, and even preferred.
+** Any written feedback works. Includes email-list replies,
+   https://github.com/johnnyutahh/tag-based-email/issues[issue posts],
+   forks of and/or write access to
+   https://github.com/johnnyutahh/tag-based-email[this repo].
 
-*** Please provide feedback however you prefer.
-    Email-list replies to point topics are great. So are
-    https://github.com/johnnyutahh/tag-based-email/issues[issues]
-    posted to this-document's
-    https://github.com/johnnyutahh/tag-based-email[git repo]. Git forks
-    and pull's also great, and easier for me, but (obviously) not
-    required. I can also possibly provide write access to this repo,
-    upon request.
-
-. Longer-term: the tag-based email community might reuse this
-  content--which will hopefully mature as the problems are solved--to
-  better help others like me in the future.
+. *Longer-term*. This documnet _might_ be reusable by others (including
+  future new users) if someone matures it moving forward.
 
 ** I searched for a similar web resource to comprehensively introduce me
    to the (seemingly) radically-different paradigm of tag-based email
    usage, <<existing_tag_based_user_intro_docs_appear_to_be_lacking,but
-   I couldn't find anything>>. Maybe this document's content might be
-   useful as a basis to help fill some gaps. Please advise if other,
-   similar content already exists.
+   I couldn't find anything>>. Please advise if missed anything not
+   referenced here.
 
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
 
-Why write this doc instead of just trudging through the tool
-testing (like everyone else presumably did to learn this space)?
-<<why_spend_the_effort_to_write_this_doc,Read on>>.
+Why write this doc instead of just trudging through the tool testing
+myself? <<why_spend_the_effort_to_write_this_doc,Read on>>.
 
 _(DISCLAIMER: this document may be in flux as I learn and attempt to
 master this domain.)_
@@ -97,7 +88,7 @@ experiencing a terrible workflow.
 
 More specifically:
 
-. I'm seeking a better paradigm over my current, IMAP-folder-only,
+* I'm seeking a better paradigm over my current, IMAP-folder-only,
   high-capacity email management.
 
 ** Among other things, moving _and_ copying emails to a variety of IMAP
@@ -108,24 +99,20 @@ More specifically:
    takes impossibly too long, and in many cases, isn't powerful or
    granular enough to get the job done.
 
-. My existing environment
+[id='my_existing_environment']
+* My existing environment
+** At least 4300 IMAP-based email folders with 1MM (million)
+   email messages served via multiple IMAP servers.
 ** Primary http://en.wikipedia.org/wiki/Email_client[MUA] =
    https://www.mozilla.org/en-US/thunderbird[Mozilla Thunderbird] 17.0.11
-** OS = Mac OS 10.9.5 (Mavericks)
-** No "tagging."
-** I've approximately 4300 IMAP-based email folders with approximately 1
-   million mail messages served via multiple IMAP accounts/servers.
-*** This does not include pruned/archived emails, to whom I'd also like
-    to applying tagging/indexing/searching workflows.
+** Mac OS 10.9.5 (Mavericks)
 
 See <<problem_details>> for more context.
 
-(An aside: why did I title this effort "tag-based email"? Seemed like as
-good a way as any to more-specifically described the problem and usage
-context. http://notmuchmail.org[Notmuch] calls itself the 'The mail
-indexer', but lots of email systems "index," although not many do it
-well. Few of them classically "tag." But I'm open to alternative-naming
-suggestions.)
+(An aside: why call this effort "tag-based email"?
+http://notmuchmail.org[Notmuch] calls itself the 'The mail indexer',
+but lots of email systems "index," but not many do it well. Few of them
+classically "tag." I'm open to alternative-document-naming suggestions.)
     
 ## Possible Solutions
 
@@ -143,8 +130,11 @@ I'd much prefer http://bit.ly/JARVIS-wikia[Jarvis] be my email
 interface, but he's not currently (or at least not economically)
 available.
 
+[id='tool_choices']
+## Tool Choices
+
 [id='core_choice']
-## Core Tool Choice
+### Core Tool Choice
 
 My investigation thus far suggests the implementation path hinges
 on choosing 1 of the following 2 applications, as they seem to
@@ -176,12 +166,12 @@ My comparison analysis:
    pending feedback from others.
 
 What other tradeoffs might motivate me to employ
-http://www.djcbsoftware.nl/code/mu[mu] over http://notmuchmail.org[Notmuch]?
+http://www.djcbsoftware.nl/code/mu[mu] over
+http://notmuchmail.org[Notmuch]?
 
-## Remaining Tool Choices
-
-Since Notmuch <<notmuch_won,won>>, the following presents, but may not
-be limited to, a http://notmuchmail.org[Notmuch]-specific implementation.
+Since Notmuch <<notmuch_won,won>> (for now), some of the
+options options for the remainder of the tool choices may be
+http://notmuchmail.org[Notmuch]-specific.
 
 ### Email-to-maildir gathering, fetching
 
