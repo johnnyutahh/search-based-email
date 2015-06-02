@@ -16,7 +16,7 @@
 
 # One User's Convert-to-Tag-Based-Email Challenges
 author github.com@johnnyutahh.com
-0.x, June 2015:
+0.1, June 2015:
 Last updated {docdate} {doctime}
 
 toc::[]
@@ -35,9 +35,9 @@ and I'm investigating the transition from a "large IMAP folder
 collection" to a tag-based system (most likely <<core_choice,Notmuch- or
 mu-based>>). I wrote this initial document draft because:
 
-. Near-term: it hopefully provides the best chance for an efficient
-  and successful transition -- if the tag-based community can provide
-  significant and timely feedback.
+. Near-term: it hopefully provides the best chance for an efficient and
+  successful transition, if the <<core_choice,Notmuch and mu user
+  communities>> can provide significant and timely feedback.
 
 ** The most-important questions:
 .... What if anything am I missing?
@@ -471,7 +471,7 @@ Also, see <<initial_tagging>>.
 
 [id='my_user_profile']
 
-### My "user profile"
+### My user profile
 
 * In summary, https://github.com/johnnyutahh[I'm] a vim and
   Python lover, a keyboard jockey, and a reasonably-experienced,
