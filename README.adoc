@@ -40,16 +40,15 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
 
 * Most-important questions:
 
-.. Given <<the_problem,the problem>>, am I accurately assessing all
+.. *Tools*. Given <<the_problem,the problem>>, am I accurately assessing all
    <<tool_choices,tools>> available?
 
-.. Per the <<user_adoption_challenges,user scenarios>>:
-*** What important or common senarios might I be overlooking?
-*** What are the best tool(s) for each scenario, and/or what are the
-    tradeoffs (of each tool)?
+.. *User scenarios*. What are the best tools, or tradeoffs of each tool,
+   for each <<user_adoption_challenges,user scenarios>>?
 
-.. Do you see a better workflow than what's presented for any
-   <<tool_choices,tool>> or <<user_adoption_challenges,usage scenario>>?
+.. *Worflows*. Do you know a better workflow than what's presented
+   for any <<tool_choices,tool>> or <<user_adoption_challenges,usage
+   scenario>>?
 
 * Any written feedback works: email-list replies,
   https://github.com/johnnyutahh/tag-based-email/issues[issue
