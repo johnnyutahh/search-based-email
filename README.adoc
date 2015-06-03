@@ -31,13 +31,12 @@ toc::[]
 ### Summary
 
 <<my_user_profile,I>> want to transition my email environment from a
-<<my_existing_environment,"classic">> one to a tag-and-index-based
+<<my_existing_environment,classic setup>> to a tag-and-index-based
 system (most likely <<core_choice,Notmuch- or mu-based>>), and I'm
 seeking help.
 
-. *Near-term*. I'm seeking significant and timely feedback on this
-document from the <<core_choice,Notmuch, mu, and related user
-communities>>.
+. *Near-term*. I'm seeking significant feedback on this document from
+the <<core_choice,Notmuch, mu, and related user communities>>.
 
 * Most-important questions:
 
@@ -60,11 +59,9 @@ communities>>.
 . *Longer-term*. This documnet _might_ be reusable by others, including
   future new users, if someone matures it moving forward.
 
-** I searched for a similar web resource to comprehensively introduce me
-   to the (seemingly) radically-different paradigm of tag-based email
-   usage, <<existing_tag_based_user_intro_docs_appear_to_be_lacking,but
-   I couldn't find anything>>. Please advise if something should be
-   included that's not already referenced here.
+** <<existing_tag_based_user_intro_docs_appear_to_be_lacking,I couldn't
+   find a similar document>> on the web. Please advise if I missed
+   something.
 
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
