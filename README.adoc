@@ -44,7 +44,7 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
    <<tool_choices,tools>> available?
 
 .. *User scenarios*. What are the best tools, or tradeoffs of each tool,
-   for each <<user_adoption_challenges,user scenarios>>?
+   for each <<user_adoption_challenges,user scenario>>?
 
 .. *Worflows*. Do you know a better workflow than what's presented
    for any <<tool_choices,tool>> or <<user_adoption_challenges,usage
