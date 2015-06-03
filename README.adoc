@@ -49,7 +49,7 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
     tradeoffs (of each tool)?
 
 .. Do you see a better workflow than what's presented for any
-   <<tool_choices,tool>> or <<user_adoption_challenges,usage scenarios>>?
+   <<tool_choices,tool>> or <<user_adoption_challenges,usage scenario>>?
 
 * Any written feedback works: email-list replies,
   https://github.com/johnnyutahh/tag-based-email/issues[issue posts],
