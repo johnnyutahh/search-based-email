@@ -1,9 +1,10 @@
 Potential communities to engage:
 
-alot     https://github.com/pazz/alot/issues
 notmuch  http://notmuchmail.org/mailman/listinfo/notmuch
 mu       https://groups.google.com/forum/#!forum/mu-discuss
+alot     https://github.com/pazz/alot/issues
 afew     https://github.com/teythoon/afew/issues
 mbsync   https://lists.sourceforge.net/lists/listinfo/isync-devel
-muchsync http://www.scs.stanford.edu/~dm/
 procmail http://www.procmail.org/era/lists.html
+mutt-kz  https://admin.fedoraproject.org/mailman/listinfo/mutt-kz
+muchsync http://www.scs.stanford.edu/~dm/
