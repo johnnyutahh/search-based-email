@@ -14,7 +14,7 @@
 :sectlinks: 1
 //:sectanchors: 1
 
-# One User's Convert-to-Tag-Based-Email Challenges
+# One User's Converting-to-Tag-Based-Email Challenges
 author github.com@johnnyutahh.com
 0.1, June 2015:
 Last updated {docdate} {doctime}
@@ -56,12 +56,11 @@ the <<core_choice,Notmuch, mu, and related user communities>>.
   git forks-plus-pull-requests, etc. Let me know if you'd like write
   access to https://github.com/johnnyutahh/tag-based-email[the repo].
 
-. *Longer-term*. This documnet _might_ be reusable by others, including
-  future new users, if someone matures it moving forward.
-
-** <<existing_tag_based_user_intro_docs_appear_to_be_lacking,I couldn't
-   find a similar document>> on the web. Please advise if I missed
-   something.
+. *Longer-term*. This documnet _might_ be reusable by others,
+  including future new users, if someone matures it moving forward.
+  <<existing_tag_based_user_intro_docs_appear_to_be_lacking,I couldn't
+  find a similar document>> on the web. Please advise if I missed
+  something.
 
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
@@ -98,6 +97,9 @@ More specifically:
    https://www.mozilla.org/en-US/thunderbird[Thunderbird] (see below)
    takes impossibly too long, and in many cases, isn't powerful or
    granular enough to get the job done.
+
+** Lack of support for several of these <<user_adoption_challenges,user
+   scenarios>> makes general email management much more cumbersome.
 
 [id='my_existing_environment']
 * My existing environment
@@ -170,8 +172,8 @@ What other tradeoffs might motivate me to employ
 http://www.djcbsoftware.nl/code/mu[mu] over
 http://notmuchmail.org[Notmuch]?
 
-Since Notmuch <<notmuch_won,won>> (for now), some of the
-options for the remainder of the tool choices may be
+Since Notmuch <<notmuch_won,won>> (for now), some of the options
+for the remainder of the tool choices presented elsewhere may be
 http://notmuchmail.org[Notmuch]-specific.
 
 ### Email-to-maildir gathering, fetching
@@ -554,11 +556,11 @@ possible this document might attract enough attention for people to
 offer solutions (applications, workflows, or whatever) I might not have
 otherwise discovered. Ever.
 
-. *Breaking my production email "IMAP database" would be very... bad.*
-My businesses and projects rely on my email system to be top-notch
-solid. If my email gets corrupted, lost, etc - things go very bad, very
-fast. Especially if I'm _unknowingly_ messing up my email. Hence, I'm
-rather cautious about correct implementation.
+. *Breaking my production email "IMAP database" testing new apps would
+be very... bad.* My businesses and projects rely on my email system
+to be top-notch solid. If my email gets corrupted, lost, etc - things
+go very bad, very fast. Especially if I'm _unknowingly_ messing up my
+email. Hence, I'm rather cautious about correct implementation.
 
 In any case, I'm hopeful that experienced and diverse feedback
 from the tag-based-email-using communities can help avoid these
