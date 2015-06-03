@@ -55,7 +55,7 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
   posts], git https://help.github.com/articles/fork-a-repo/[forks]
   plus https://help.github.com/articles/using-pull-requests/[pull requests],
   etc. Let me know if you'd like write access to
-  https://github.com/johnnyutahh/tag-based-email[the repo].
+  https://github.com/johnnyutahh/tag-based-email[the repo for this document].
 
 . *Longer-term*. This documnet _might_ be reusable by others,
   including future new users, if someone matures it moving forward.
