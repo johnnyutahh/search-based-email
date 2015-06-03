@@ -26,6 +26,22 @@ toc::[]
 
 <<<
 
+[id='the_main_questions']
+## Questions
+
+Here's the most-important questions, given <<the_purpose,the purpose>>
+and <<the_problem,the problem>>:
+
+. *Tools*. Am I accurately assessing all available <<tool_choices,tools>>?
+
+. *User scenarios*. What are the best tools, or trade-offs of each tool,
+  for each <<user_adoption_challenges,user scenario>>?
+
+. *Workflows*. Do you know a better workflow than what's presented
+  for any <<tool_choices,tool>> or <<user_adoption_challenges,usage
+  scenario>>?
+
+[id='the_purpose']
 ## Purpose
 
 ### Summary
@@ -36,18 +52,8 @@ system (most likely <<core_choice,Notmuch- or mu-based>>), and I'm
 seeking help.
 
 . *Near-term*. I'm seeking significant feedback on this document from
-the <<core_choice,Notmuch, mu, and related>> user communities.
-
-* Most-important questions, given <<the_problem,the problem>>:
-
-.. *Tools*.  I accurately assessing all <<tool_choices,tools>> available?
-
-.. *User scenarios*. What are the best tools, or tradeoffs of each tool,
-   for each <<user_adoption_challenges,user scenario>>?
-
-.. *Worflows*. Do you know a better workflow than what's presented
-   for any <<tool_choices,tool>> or <<user_adoption_challenges,usage
-   scenario>>?
+the <<core_choice,Notmuch, mu, and related>> user communities. Most
+importantly, I seek answers to <<the_main_questions,these questions>>.
 
 * Any written feedback works: email-list replies,
   https://github.com/johnnyutahh/tag-based-email/issues[issue
@@ -56,7 +62,7 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
   etc. Let me know if you'd like write access to
   https://github.com/johnnyutahh/tag-based-email[the repo for this document].
 
-. *Longer-term*. This documnet _might_ be reusable by others,
+. *Longer-term*. This document _might_ be reusable by others,
   including future new users, if someone matures it moving forward.
   (In such case, the tone would change from being centered on
   <<my_user_profile,my>> problems to a more-general-purpose document.)
@@ -67,15 +73,15 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
 
+### Details
+
+_DISCLAIMER: this document may be in flux as I learn and attempt to
+master this domain._
+
 Why write this doc instead of just trudging through the tool testing
 myself? <<why_spend_the_effort_to_write_this_doc,Read on>>.
 
-_(DISCLAIMER: this document may be in flux as I learn and attempt to
-master this domain.)_
-
-### Details
-
-See <<purpose_more_details>>.
+See <<purpose_more_details>> for more.
 
 [id='the_problem']
 ## The Problem
@@ -171,13 +177,12 @@ My comparison analysis:
 3. #1 greatly outweighs #2. Because of this, Notmuch "wins" (with me),
    pending feedback from others.
 
-What other tradeoffs might motivate me to employ
+What other trade-offs might motivate me to employ
 http://www.djcbsoftware.nl/code/mu[mu] over
 http://notmuchmail.org[Notmuch]?
 
-Since Notmuch <<notmuch_won,won>> (for now), some of the options
-for the remainder of the tool choices presented elsewhere may be
-http://notmuchmail.org[Notmuch]-specific.
+Since Notmuch <<notmuch_won,won>> (for now), the rest of this document
+may be more http://notmuchmail.org[Notmuch]-specific.
 
 ### IMAP-to-Maildir syncing
 
