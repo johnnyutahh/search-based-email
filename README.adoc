@@ -59,6 +59,8 @@ the <<core_choice,Notmuch, mu, and related>> user communities.
 
 . *Longer-term*. This documnet _might_ be reusable by others,
   including future new users, if someone matures it moving forward.
+  (In such case, the tone would change from being centered on
+  <<my_user_profile,my>> problems to a more-general-purpose document.)
   <<existing_tag_based_user_intro_docs_appear_to_be_lacking,I couldn't
   find similar content>> on the web. Please advise if I missed
   something.
