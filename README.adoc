@@ -179,7 +179,7 @@ Since Notmuch <<notmuch_won,won>> (for now), some of the options
 for the remainder of the tool choices presented elsewhere may be
 http://notmuchmail.org[Notmuch]-specific.
 
-### IMAP-to-maildir syncing
+### IMAP-to-Maildir syncing
 
 Notmuch seems to work best (or maybe requires?)
 the http://en.wikipedia.org/wiki/Maildir[Maildir]
