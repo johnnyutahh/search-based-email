@@ -38,10 +38,9 @@ seeking help.
 . *Near-term*. I'm seeking significant feedback on this document from
 the <<core_choice,Notmuch, mu, and related>> user communities.
 
-* Most-important questions:
+* Most-important questions, given <<the_problem,the problem>>:
 
-.. *Tools*. Given <<the_problem,the problem>>, am I accurately assessing all
-   <<tool_choices,tools>> available?
+.. *Tools*.  I accurately assessing all <<tool_choices,tools>> available?
 
 .. *User scenarios*. What are the best tools, or tradeoffs of each tool,
    for each <<user_adoption_challenges,user scenario>>?
