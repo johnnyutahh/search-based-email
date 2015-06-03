@@ -302,12 +302,6 @@ solutions (for me), but it's early.
    above. Am I overlooking any solutions that might fit well with my
    <<my_user_profile,user profile>>?
 
-### Message tagging
-
-(I've not yet started this implementation.)
-
-* http://afew.readthedocs.org/en/latest[afew] currently looks best.
-
 ### Synchronizing Notmuch metadata across machines
 
 (I've not yet started this implementation.)
