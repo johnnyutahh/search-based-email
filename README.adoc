@@ -357,6 +357,7 @@ challenge. See the <<MUA_choice,MUA options>>.
 * "tagging" my large set of IMAP folders
 * in particular: `Inbox` and `Spam` folders -> tags
 * Is https://readthedocs.org/projects/afew[afew] best for this?
+* See <<auto_tagging,post-initial, automated tagging>> for more.
 
 ### Moving msgs after applying tags
 
@@ -428,7 +429,7 @@ Also, see <<initial_tagging>>.
 * opening attachments from MUA
 
 [id='auto_tagging']
-### Automatically tagging new messages (post initial tagging)
+### Automatically tagging new messages (after initial tagging)
 
 * http://afew.readthedocs.org/en/latest[afew]?
 
@@ -438,6 +439,8 @@ Also, see <<initial_tagging>>.
 * Can someone compare/contrast
   http://afew.readthedocs.org/en/latest[afew] and
   http://www.procmail.org/[procmail]?
+
+* See <<initial_tagging>> for more.
 
 ### Syncing Notmuch metadata across machines
 * http://www.muchsync.org
