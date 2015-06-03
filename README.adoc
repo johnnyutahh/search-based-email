@@ -115,9 +115,10 @@ See <<problem_details>> and <<user_adoption_challenges,user scenarios>>
 for more context and requirements.
 
 (An aside: why call this effort "tag-based email"?
-http://notmuchmail.org[Notmuch] calls itself the 'The mail indexer',
-but lots of email systems "index," but not many do it well. Few of them
-classically "tag." I'm open to alternative-document-naming suggestions.)
+http://notmuchmail.org[Notmuch] calls itself the 'The mail indexer', but
+lots of email systems "index," but not many do it well. Fewer of them
+appear to effectively "tag." I'm open to alternative-document-naming
+suggestions.)
     
 ## Possible Solutions
 
@@ -178,7 +179,7 @@ Since Notmuch <<notmuch_won,won>> (for now), some of the options
 for the remainder of the tool choices presented elsewhere may be
 http://notmuchmail.org[Notmuch]-specific.
 
-### Email-to-maildir gathering, fetching
+### IMAP-to-maildir syncing
 
 Notmuch seems to work best (or maybe requires?)
 the http://en.wikipedia.org/wiki/Maildir[Maildir]
