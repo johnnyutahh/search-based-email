@@ -32,36 +32,39 @@ toc::[]
 
 <<my_user_profile,I>> want to transition my email environment from a
 <<my_existing_environment,"classic">> one to a tag-and-index-based
-system (most likely <<core_choice,Notmuch- or mu-based>>), and I need
-help.
+system (most likely <<core_choice,Notmuch- or mu-based>>), and I'm
+seeking help.
 
-. *Near-term*. I'm seeking significant and timely feedback from the
-  <<core_choice,Notmuch, mu, and related user communities>>.
+. *Near-term*. I'm seeking significant and timely feedback on this
+document from the <<core_choice,Notmuch, mu, and related user
+communities>>.
 
-** The most-important questions:
+* Most-important questions:
 
-... Given <<the_problem,the problem>>, am I accurately assessing all
-    <<tool_choices,tools>> available?
+.. Given <<the_problem,the problem>>, am I accurately assessing all
+   <<tool_choices,tools>> available?
 
-... What common <<user_adoption_challenges,user scenarios>> might I be
-    overlooking?
+.. Per the <<user_adoption_challenges,user scenarios>>:
+*** What important or common senarios might I be overlooking?
+*** What are the best tool(s) for each scenario, and/or what are the
+    tradeoffs (of each tool)?
 
-... Do you see a better usage workflow than what's presented for any
-    <<tool_choices,tool>> or <<user_adoption_challenges,usage scenarios>>?
+.. Do you see a better workflow than what's presented for any
+   <<tool_choices,tool>> or <<user_adoption_challenges,usage scenarios>>?
 
-** Any written feedback works. Includes email-list replies,
-   https://github.com/johnnyutahh/tag-based-email/issues[issue posts],
-   forks of and/or write access to
-   https://github.com/johnnyutahh/tag-based-email[this repo].
+* Any written feedback works: email-list replies,
+  https://github.com/johnnyutahh/tag-based-email/issues[issue posts],
+  git forks-plus-pull-requests, etc. Let me know if you'd like write
+  access to https://github.com/johnnyutahh/tag-based-email[the repo].
 
-. *Longer-term*. This documnet _might_ be reusable by others (including
-  future new users) if someone matures it moving forward.
+. *Longer-term*. This documnet _might_ be reusable by others, including
+  future new users, if someone matures it moving forward.
 
 ** I searched for a similar web resource to comprehensively introduce me
    to the (seemingly) radically-different paradigm of tag-based email
    usage, <<existing_tag_based_user_intro_docs_appear_to_be_lacking,but
-   I couldn't find anything>>. Please advise if missed anything not
-   referenced here.
+   I couldn't find anything>>. Please advise if something should be
+   included that's not already referenced here.
 
 With the right system, I'm hopeful I can make email
 management a much-less-time-consuming burden on my work... and my life.
