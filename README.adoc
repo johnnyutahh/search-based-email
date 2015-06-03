@@ -36,7 +36,7 @@ system (most likely <<core_choice,Notmuch- or mu-based>>), and I'm
 seeking help.
 
 . *Near-term*. I'm seeking significant feedback on this document from
-the <<core_choice,Notmuch, mu, and related user communities>>.
+the <<core_choice,Notmuch, mu, and related>> user communities.
 
 * Most-important questions:
 
@@ -59,7 +59,7 @@ the <<core_choice,Notmuch, mu, and related user communities>>.
 . *Longer-term*. This documnet _might_ be reusable by others,
   including future new users, if someone matures it moving forward.
   <<existing_tag_based_user_intro_docs_appear_to_be_lacking,I couldn't
-  find a similar document>> on the web. Please advise if I missed
+  find similar content>> on the web. Please advise if I missed
   something.
 
 With the right system, I'm hopeful I can make email
@@ -236,13 +236,14 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 
 * https://github.com/athoune/imapidle + some of my own Python scripting, which
   I'm hopeful will not be difficult.
-*  mswatch
-**   http://mswatch.sourceforge.net
-**   requires IMAP-server-side shell access - difficult if not impossible
-     to get for all my IMAP accounts.
-**   this might also be a client->server option
-**   wrapping `imapidle` with a `mbsync` trigger seems like a better,
-     more-flexible alternative
+
+* mswatch
+** http://mswatch.sourceforge.net
+** requires IMAP-server-side shell access - difficult if not impossible
+   to get for all my IMAP accounts.
+** this might also be a client->server option
+** wrapping `imapidle` with my own Python script that triggers `mbsync`
+   seems like a better, more-flexible alternative
 
 [id='MUA_choice']
 ### MUA
