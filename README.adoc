@@ -209,10 +209,6 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
   website] seems to primarily (?) pitch it as a
   http://sourceforge.net/projects/fetchmail/[fetchmail] replacement.
 
-### Notmuch installation and initial configuration
-
-* Best I can tell, I've completed this.
-
 ### Notmuch initial + automated tagging
 
 (I've not yet started this implementation.)
