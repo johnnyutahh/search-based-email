@@ -14,7 +14,7 @@
 :sectlinks: 1
 //:sectanchors: 1
 
-# One User's Converting-to-Tag-Based-Email Challenges
+# Converting to Tag-Based Email: http://notmuchmail.org/[Notmuch] or http://www.djcbsoftware.nl/code/mu/[mu]
 author github.com@johnnyutahh.com
 0.1, June 2015:
 Last updated {docdate} {doctime}
