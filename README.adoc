@@ -55,12 +55,13 @@ seeking help.
 the <<core_choice,Notmuch, mu, and related>> user communities. Most
 importantly, I seek answers to <<the_main_questions,these questions>>.
 
-* Any written feedback works: email-list replies,
+* Any written feedback works, including: email-list replies,
   https://github.com/johnnyutahh/tag-based-email/issues[issue
-  posts], git https://help.github.com/articles/fork-a-repo/[forks]
-  plus https://help.github.com/articles/using-pull-requests/[pull requests],
-  etc. Let me know if you'd like write access to
-  https://github.com/johnnyutahh/tag-based-email[the repo for this document].
+  posts], git https://help.github.com/articles/fork-a-repo/[forks] plus
+  https://help.github.com/articles/using-pull-requests/[pull requests].
+  Please signal if you'd like write access to
+  https://github.com/johnnyutahh/tag-based-email[the repo for this
+  document].
 
 . *Longer-term*. This document _might_ be reusable by others,
   including future new users, if someone matures it moving forward.
@@ -90,8 +91,9 @@ I find email classification, recall, and translation to
 work/task tracking to be much more laborious than it should be.
 <<computer_please_be_faster_than_me,I expect the computer to be faster
 than me>>, and tailor to my preferred workflow. Instead, I'm constantly
-waiting for the computer, or forced to type inefficiently, and/or
-experiencing a terrible workflow.
+waiting for the computer, or forced to type or mouse-click inefficiently
+(I'm a <<my_user_profile,vim-loving keyboard jockey>>), and/or
+experiencing a poor workflow.
 
 More specifically:
 
@@ -125,7 +127,7 @@ http://notmuchmail.org[Notmuch] calls itself the 'The mail indexer', but
 lots of email systems "index," but not many do it well. Fewer of them
 appear to effectively "tag." I'm open to alternative-document-naming
 suggestions.)
-    
+
 ## Possible Solutions
 
 After reviewing currently-available tools, I'm seeking:
@@ -146,7 +148,7 @@ available.
 ## Tool Choices
 
 [id='core_choice']
-### Core Tool Choice
+### Core tool choice - Indexing
 
 My investigation thus far suggests the implementation path hinges
 on choosing 1 of the following 2 applications, as they seem to
@@ -166,7 +168,7 @@ My comparison analysis:
    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[Notmuch
    performing approx 15 times faster than mu].
 
-   ** Question: where these tests configured and executed correctly? The
+   ** Question: were these tests configured and executed correctly? The
       performance difference is remarkable, generating concerns about
       correct application setup, environment.
 
@@ -295,11 +297,13 @@ solutions (for me), but it's early.
 ** http://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README
 ** http://notmuchmail.org/vimtips/
 
-** <<my_user_profile,I'm a heavy vim user>>, and while this approached
-   seemed initially appealing, the depth of functionaly seems so
-   (relatively) small that I haven't yet attempted to run this
-   application. Am I overlooking a useful (in comparison to the others)
-   tool?
+** <<my_user_profile,I'm a heavy vim user>>, and while this
+   approached seemed initially appealing, it's feature depth
+   seems small enough that I haven't yet attempted to run this
+   application--but to be fair, I haven't "dug deep." Am I overlooking
+   a powerful (in comparison to the others) tool by not vetting this
+   http://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README[vim
+   front-end] further?
 
 * There's other http://notmuchmail.org/frontends[frontends]...
 
@@ -307,15 +311,37 @@ solutions (for me), but it's early.
    above. Am I overlooking any solutions that might fit well with my
    <<my_user_profile,user profile>>?
 
+[id='sync_notmuch_metadata_across_machines']
 ### Synchronizing Notmuch metadata across machines
 
 (I've not yet started this implementation.)
 
 * http://www.muchsync.org[muchsync] currently looks best.
-
+** In lieu of testing, this seems like the clear winner.
 ** muchsync apparently syncs metadata _and_ data (it seems less
    efficient to be forced to copy the data, but this may be
    unavoidable), but claims to do it as efficiently as possible.
+
+** Problem: muchsync is not yet ported to <<my_existing_environment,Mac
+   OS X (I'm running Mavericks/10.9.5)>>. I've dabbled a little with the
+   porting, but don't yet have an error-free build.
+
+*** first: http://stackoverflow.com/a/6725161/605356[overcame lack
+    clock_gettime in Mac OS X]
+
+*** next: trying to fix the compiler's inability to resolve
+    http://lists.apple.com/archives/darwin-dev/2011/May/msg00002.html[
+    openat()] in the build. I don't yet have a
+    solution, other than maybe upgrading my OS to
+    http://en.wikipedia.org/wiki/OS_X_Yosemite[Yosemite/10.10], which I
+    really don't want to do right now.
+
+* Others
+** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
+*** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
+** http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
+*** https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
+*** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
 
 [id='user_adoption_challenges']
 ## Usage-Scenario Challenges in Priority-First Order
@@ -332,12 +358,13 @@ challenge. See the <<MUA_choice,MUA options>>.
 
 ### Support old-style IMAP-folder paradigm
 
-* While I may be be moving to a a tag-based paradigm, I still need
-  to access my 4k+ IMAP folders as I did before, at least while I'm
-  transitioning (presumably) from a folder-based to a tag-based
-  paradigm. Any primary MUA/interface/IMAP-client I choose needs to
-  support IMAP-folder-based paradigms (copying and moving to folders,
-  etc) that I currently employ with <<the_problem,Mozilla Thunderbird>>.
+* While I may be be moving to a a tag-based paradigm, I
+  still need to access my 4k+ IMAP folders as I did before,
+  at least while I'm transitioning (presumably) from a
+  <<folder_based_searching,folder-based>> to a tag-based paradigm.
+  Any primary MUA/interface/IMAP-client I choose needs to support
+  IMAP-folder-based paradigms (copying and moving to folders, etc) that
+  I currently employ with <<the_problem,Mozilla Thunderbird>>.
 
 [id='imap_account_separation']
 ### Support IMAP-account separation
@@ -369,7 +396,8 @@ challenge. See the <<MUA_choice,MUA options>>.
 
 ** I'm used to moving messages between folders in order to classify.
    Further, I will like to keep a clean Inbox and other folders, for my
-   non-Notmuch-based email clients, thus requiring message moving.
+   non-Notmuch-based email clients, thus (presumably) requiring message
+   moving.
 
 ** Once I associate Notmuch-metadata (by adding tags, or whatever
    metadata/etc scenarios might be involved with Notmuch) with a
@@ -377,22 +405,41 @@ challenge. See the <<MUA_choice,MUA options>>.
    message forever, regardless of wherever I put said message. Is this
    the way it works "out of the box" with Notmuch-based systems?
 
+[id='folder_based_searching']
+### MUA folder-based searching with name auto-completion
+
+* I need to be able to find, goto/view, and copy/move messages to any
+  IMAP folder (in the http://superuser.com/q/392320/98033[IMAP
+  "folder tree"]) via a quick, keyboard-driven
+  fashion with folder-name auto-completion.
+  https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[
+  Thunderbird's Nostalgy add-on] does a great job of this.
+
+* I'm not yet certain how <<IMAP_folders_as_tags>> affects this usage
+  scenario.
+
+* It's possible the more I employ "tags" instead of "folder"
+  classification the less I needed this capability.
+
+* http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
+* http://bit.ly/notmuch-folder-based-searching-nabble-2011
+
 ### Piping email-message content through shell commands
-
-Example potential solutions, not yet tested:
-
-* http://www.davep.org/mutt/muttrc/macros.html
-* http://wcm1.web.rice.edu/mutt-tips.html
-* http://rhonda.deb.at/config/mutt/keys
 
 I want to http://en.wikipedia.org/wiki/Pipeline_%28Unix%29["pipe"] the
 content of:
 
 . one email message,
 . many email messages (by selecting multiple emails at the same time), or
-. an entire IMAP folder of emails 
+. an entire IMAP folder of emails
 
 to any command/script of my choosing.
+
+Example, potential solutions, not yet tested:
+
+* http://www.davep.org/mutt/muttrc/macros.html
+* http://wcm1.web.rice.edu/mutt-tips.html
+* http://rhonda.deb.at/config/mutt/keys
 
 ### Mapping keyboard shortcuts to any command
 
@@ -409,10 +456,7 @@ Example potential solutions, not yet tested:
 
 Also, see <<initial_tagging>>.
 
-### Notmuch/MUA/mutt-kz/alot folder-based searching
-* not yet certain how different this is from <<IMAP_folders_as_tags>>.
-* http://notmuchmail.org/pipermail/notmuch/2011/thread.html#3707
-* http://bit.ly/notmuch-folder-based-searching-nabble-2011
+Can a Notmuch-based system do this?
 
 ### Address-book/contacts integration
 
@@ -421,7 +465,9 @@ Also, see <<initial_tagging>>.
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts[mutt + contacts]
 
 ### Sync Notmuch tags with maildir flags
-* https://github.com/spaetz/notmuchsync
+
+Does anyone use https://github.com/spaetz/notmuchsync[notmuchsync], and
+does it work well?
 
 ### Managing message attachments
 * <<forwarding_msgs_w_attachments>>
@@ -441,19 +487,11 @@ Also, see <<initial_tagging>>.
 
 * See <<initial_tagging>> for more.
 
-### Syncing Notmuch metadata across machines
-* http://www.muchsync.org
-** In lieu of testing, this seems like the clear winner.
-* http://notmuchmail.org/pipermail/notmuch/2010/003249.html
-** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
-* http://www.reddit.com/r/linux/comments/2kcznk/notmuch_syncing_tags
-** https://github.com/altercation/es-bin/blob/master/maildir-notmuch-sync
-** https://lists.fedoraproject.org/pipermail/mutt-kz/2013-March/000136.html
-
 ### Offline editing - postponing drafts
 
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts[
   The Homely Mutt: Postponing Drafts]
+** Does anyone employ this, and does it work well?
 
 ### Writing HTML-formatted messages
 
@@ -463,16 +501,15 @@ Also, see <<initial_tagging>>.
 [id='forwarding_msgs_w_attachments']
 ### Forwarding messages with attachments
 
-* alot appears to https://github.com/pazz/alot/issues/761[have issues
-  with this]
+* https://github.com/pazz/alot[alot] appears to
+  https://github.com/pazz/alot/issues/761[have a problem with this].
 
-* I'm wondering if mutt-kz or others do as well
+* Do mutt-kz or <<MUA_choice,other MUA's>> also experience this problem?
 
 [id='purpose_more_details']
 ## Appendix 1: Purpose: More Details
 
 [id='my_user_profile']
-
 ### My user profile
 
 * In summary, https://github.com/johnnyutahh[I'm] a vim and
@@ -556,7 +593,7 @@ project.
 . *I might learn something I wouldn't have previously found*. It's
 possible this document might attract enough attention for people to
 offer solutions (applications, workflows, or whatever) I might not have
-otherwise discovered. Ever.
+otherwise discovered.
 
 . *Breaking my production email "IMAP database" testing new apps would
 be very... bad.* My businesses and projects rely on my email system
