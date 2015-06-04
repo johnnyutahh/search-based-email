@@ -101,7 +101,7 @@ More specifically:
   high-capacity email management.
 
 ** Among other things, moving _and_ copying emails to a variety of IMAP
-   folders, depending on the "classification" needs, gets cumbersome.
+   folders--in order to "classify" said emails--gets cumbersome.
 
 ** Searching my entire email-message/IMAP collection with an MUA like
    https://www.mozilla.org/en-US/thunderbird[Thunderbird] (see below)
