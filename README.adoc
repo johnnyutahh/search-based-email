@@ -100,8 +100,9 @@ More specifically:
 * I'm seeking a better paradigm over my current, IMAP-folder-only,
   high-capacity email management.
 
-** Among other things, moving _and_ copying emails to a variety of IMAP
-   folders--in order to "classify" said emails--gets cumbersome.
+** Among other things, <<old_style_imap_folder_paradigm,moving _and_
+   copying emails to a variety of IMAP folders>>--in order to "classify"
+   said emails--gets cumbersome.
 
 ** Searching my entire email-message/IMAP collection with an MUA like
    https://www.mozilla.org/en-US/thunderbird[Thunderbird] (see below)
@@ -110,6 +111,18 @@ More specifically:
 
 ** Lack of support for several of these <<user_adoption_challenges,user
    scenarios>> makes general email management much more cumbersome.
+
+** https://www.mozilla.org/en-US/thunderbird[Thunderbird (TB)]
+   in general is <<problem_details,slow, sluggish, and generally
+   annoying in many ways>> in part because it's a GUI-only interface,
+   but TB annoys beyond just the GUI-only problem--including it's
+   struggles to handle a <<my_existing_environment,large number of
+   IMAP folders>>. Other MUA's like http://bit.ly/1Gn1Ant[Outlook],
+   https://www.postbox-inc.com/[Postbox] (a TB variant),
+   http://en.wikipedia.org/wiki/Mail_(OS_X)[Mail.app], and
+   http://en.wikipedia.org/wiki/Evolution_(software)[Evolution] are
+   either worse (than TB, for <<my_user_profile,me>>) or unavailable in
+   <<my_existing_environment,my environment>>.
 
 [id='my_existing_environment']
 * My existing environment
@@ -326,7 +339,7 @@ solutions (for me), but it's early.
    OS X (I'm running Mavericks/10.9.5)>>. I've dabbled a little with the
    porting, but don't yet have an error-free build.
 
-*** first: http://stackoverflow.com/a/6725161/605356[overcame lack
+*** first: http://stackoverflow.com/a/6725161/605356[overcame lack of
     clock_gettime in Mac OS X]
 
 *** next: trying to fix the compiler's inability to resolve
@@ -356,15 +369,24 @@ Decide which MUA(s) to use, particularly deciding on a primary MUA. This
 is technically not a usage-scenario, but currently represents my biggest
 challenge. See the <<MUA_choice,MUA options>>.
 
+[id='old_style_imap_folder_paradigm']
 ### Support old-style IMAP-folder paradigm
 
-* While I may be be moving to a a tag-based paradigm, I
-  still need to access my 4k+ IMAP folders as I did before,
-  at least while I'm transitioning (presumably) from a
-  <<folder_based_searching,folder-based>> to a tag-based paradigm.
-  Any primary MUA/interface/IMAP-client I choose needs to support
-  IMAP-folder-based paradigms (copying and moving to folders, etc) that
-  I currently employ with <<the_problem,Mozilla Thunderbird>>.
+While I may be be moving to a a tag-based paradigm, I
+still need to access my 4k+ IMAP folders as I did before,
+at least while I'm transitioning (presumably) from a
+<<folder_based_searching,folder-based>> to a tag-based
+paradigm. Any primary MUA/interface/IMAP-client I choose
+needs to support these IMAP-folder-based paradigms (copying
+and moving to folders, etc) that I currently employ with
+<<the_problem,Mozilla Thunderbird (TB)>>, leveraging the
+https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[TB's
+Nostalgy add-on] to do it. See the <<folder_based_searching>> for more
+on this.
+
+https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[Nostalgy]
+also offers excellent keyboard-shortcut-mapping capability and is one of
+the few great things about Thunderbird.
 
 [id='imap_account_separation']
 ### Support IMAP-account separation
