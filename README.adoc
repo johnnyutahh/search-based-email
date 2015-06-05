@@ -104,10 +104,11 @@ More specifically:
    copying emails to a variety of IMAP folders>>--in order to "classify"
    said emails--gets cumbersome.
 
-** Searching my entire email-message/IMAP collection with an MUA like
-   https://www.mozilla.org/en-US/thunderbird[Thunderbird] (see below)
-   takes impossibly too long, and in many cases, isn't powerful or
-   granular enough to get the job done.
+** Searching my <<my_existing_environment,all my IMAP
+   folders>> (many of them quite large) with an MUA like
+   https://www.mozilla.org/en-US/thunderbird[Thunderbird] takes
+   impossibly too long, and in many cases, isn't powerful or granular
+   enough to get the job done.
 
 ** Lack of support for several of these <<user_adoption_challenges,user
    scenarios>> makes general email management much more cumbersome.
