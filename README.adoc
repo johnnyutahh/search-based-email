@@ -14,7 +14,7 @@
 :sectlinks: 1
 //:sectanchors: 1
 
-# Converting to Tag-Based Email: http://notmuchmail.org/[Notmuch] or http://www.djcbsoftware.nl/code/mu/[mu]
+# Converting to Search-Based Email: http://notmuchmail.org/[Notmuch] or http://www.djcbsoftware.nl/code/mu/[mu]
 author github.com@johnnyutahh.com
 0.1, June 2015:
 Last updated {docdate} {doctime}
@@ -56,11 +56,11 @@ the <<core_choice,Notmuch, mu, and related>> user communities. Most
 importantly, I seek answers to <<the_main_questions,these questions>>.
 
 * Any written feedback works, including: email-list replies,
-  https://github.com/johnnyutahh/tag-based-email/issues[issue
+  https://github.com/johnnyutahh/search-based-email/issues[issue
   posts], git https://help.github.com/articles/fork-a-repo/[forks] plus
   https://help.github.com/articles/using-pull-requests/[pull requests].
   Please signal if you'd like write access to
-  https://github.com/johnnyutahh/tag-based-email[the repo for this
+  https://github.com/johnnyutahh/search-based-email[the repo for this
   document].
 
 . *Longer-term*. This document _might_ be reusable by others,
@@ -136,18 +136,19 @@ More specifically:
 See <<problem_details>> and <<user_adoption_challenges,user scenarios>>
 for more context and requirements.
 
-(An aside: why call this effort "tag-based email"?
-http://notmuchmail.org[Notmuch] calls itself the 'The mail indexer', but
-lots of email systems "index," but not many do it well. Fewer of them
-appear to effectively "tag." I'm open to alternative-document-naming
-suggestions.)
+(An aside: why title this document "search-based email"?
+http://notmuchmail.org/pipermail/notmuch/2015/020617.html[Suggestion
+from the community]. It seems better than "tag-based email," my original
+title. I've also considered "index-based email," but "search" seems a
+bit more descriptive than "index," and less esoteric. I'm open to any
+title that best groks with the community.)
 
 ## Possible Solutions
 
 After reviewing currently-available tools, I'm seeking:
 
 . fast search on my entire email-message/IMAP collection (my "email database"),
-. to leverage tag-based email categorization, and
+. to leverage search/index/tag-based email categorization, and
 . provide easy extensibility with Linux and MacOSX command-line
   "primitives" or other, custom scripts/commands.
 
@@ -373,13 +374,13 @@ challenge. See the <<MUA_choice,MUA options>>.
 [id='old_style_imap_folder_paradigm']
 ### Support old-style IMAP-folder paradigm
 
-While I may be be moving to a a tag-based paradigm, I
-still need to access my 4k+ IMAP folders as I did before,
-at least while I'm transitioning (presumably) from a
-<<folder_based_searching,folder-based>> to a tag-based
-paradigm. Any primary MUA/interface/IMAP-client I choose
-needs to support these IMAP-folder-based paradigms (copying
-and moving to folders, etc) that I currently employ with
+While I may be be moving to a a search/index/tag-based
+paradigm, I still need to access my 4k+ IMAP folders as I
+did before, at least while I'm transitioning (presumably)
+from a <<folder_based_searching,folder-based>>. Any
+primary MUA/interface/IMAP-client I choose needs to
+support these IMAP-folder-based paradigms (copying and
+moving to folders, etc) that I currently employ with
 <<the_problem,Mozilla Thunderbird (TB)>>, leveraging the
 https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[TB's
 Nostalgy add-on] to do it. See the <<folder_based_searching>> for more
@@ -575,17 +576,18 @@ does it work well?
   for you. But please do not delay me further after you already said you
   were done."
 
-Despite my history assimilating to new applications/environments, the
-tag-based-classification paradigm still seems _significantly_ different
-and a bit daunting to this "old school IMAP-folder user", and may (or
-may not?) take some time to master. See <<user_adoption_challenges>>.
-For example, opening https://github.com/pazz/alot[alot] for the first
-time and looking at a staggering 50k+ emails in my "inbox" can give
-someone pause; hopefully <<initial_tagging>> will take care of that.
+Despite my history assimilating to new applications/environments,
+the search-and-tag-based-classification paradigm still seems
+_significantly_ different and a bit daunting to this "old school
+IMAP-folder user", and may (or may not?) take some time to
+master. See <<user_adoption_challenges>>. For example, opening
+https://github.com/pazz/alot[alot] for the first time and looking at a
+staggering 50k+ emails in my "inbox" can give someone pause; hopefully
+<<initial_tagging>> will take care of that.
 
 [id='existing_tag_based_user_intro_docs_appear_to_be_lacking']
 
-Further, the tag-based documentation resources--to describe
+Further, the search-and-tag-based documentation resources--to describe
 new-user-paradigm-shifts and present the most-popular toolsets--seem
 scattered, disjointed, and/or non-existent for many scenarios / from
 many perspectives. Hence this document. Obviously, I'd love to find any
@@ -625,7 +627,7 @@ go very bad, very fast. Especially if I'm _unknowingly_ messing up my
 email. Hence, I'm rather cautious about correct implementation.
 
 In any case, I'm hopeful that experienced and diverse feedback
-from the tag-based-email-using communities can help avoid these
+from the search/index/tag-based-email-using communities can help avoid these
 problems. At least, it seemed like the most-effective way, as the space
 <<existing_tag_based_user_intro_docs_appear_to_be_lacking,doesn't (yet)
 seem friendly to newbies>>.
