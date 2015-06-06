@@ -272,8 +272,8 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 #### Summary
 
 Given <<the_problem,the problem>>, the work to find and master the
-better MUAs for <<my_user_profile,me>> and concurrently learn a new
-search-and-tag-based email classification paradigms seems like my
+best/better MUA(s) for <<my_user_profile,me>> and concurrently learn a
+new search-and-tag-based email classification paradigm seems like my
 biggest challenge.
 
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
@@ -281,7 +281,7 @@ https://github.com/pazz/alot[alot] currently present the most-attractive
 solutions (for me), but it's early.
 
 A dark-horse candidate: http://notmuchmail.org/emacstips[notmuch.el],
-and Emacs front-end.
+an Emacs front-end.
 
 #### Details
 
@@ -390,21 +390,17 @@ challenge. See the <<MUA_choice,MUA options>>.
 [id='old_style_imap_folder_paradigm']
 ### Support old-style IMAP-folder paradigm
 
-While I may be be moving to a a search/index/tag-based
-paradigm, I still need to access my 4k+ IMAP folders as I
-did before, at least while I'm transitioning (presumably)
-from a <<folder_based_searching,folder-based>>. Any
-primary MUA/interface/IMAP-client I choose needs to
-support these IMAP-folder-based paradigms (copying and
-moving to folders, etc) that I currently employ with
-<<the_problem,Mozilla Thunderbird (TB)>>, leveraging the
-https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[TB's
-Nostalgy add-on] to do it. See the <<folder_based_searching>> for more
-on this.
+While I may be be moving to a a search/index/tag-based paradigm, I
+still need to access my <<my_existing_environment,4k+ IMAP folders>>
+as I did before, at least while I'm transitioning my current
+<<folder_based_searching,folder-based>> paradigm that I currently
+employ with <<the_problem,Mozilla Thunderbird (TB)>>, which leverages
+the https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[TB's
+Nostalgy add-on] to do it.
 
-https://addons.mozilla.org/en-us/thunderbird/addon/nostalgy[Nostalgy]
-also offers excellent keyboard-shortcut-mapping capability and is one of
-the few great things about Thunderbird.
+TB-Nostalgy also offers excellent keyboard-shortcut-mapping capability
+and is one of the few great features of Thunderbird that I'd like to
+replicate in my <<MUA_choice,new MUA>>.
 
 [id='imap_account_separation']
 ### Support IMAP-account separation
