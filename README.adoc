@@ -279,6 +279,9 @@ http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] currently present the most-attractive
 solutions (for me), but it's early.
 
+A dark-horse candidate: http://notmuchmail.org/emacstips[notmuch.el],
+and Emacs front-end.
+
 #### Details
 
 * http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz]
@@ -307,6 +310,18 @@ solutions (for me), but it's early.
 *** Speculating: a hopefully-small effort to provide setup + config-file
     examples might go a long way to solve this problem, and boost alot's
     "new user uptake" populartiy.
+
+* emacs front-end(s)
+
+** Since <<my_user_profile,I'm a vim user>>, I've initially shied away an
+http://notmuchmail.org/emacstips[Emacs-based front-end]. However, I've
+now seen it referenced multiple times as a potentially-uniquely-powerful
+interface.
+
+** Questions: Does http://notmuchmail.org/emacstips[notmuch.el] provide
+enough uniquely-powerful capability to merit special consideration? And
+if so, as a vim user will I find special difficulty trying to learn an
+Emacs-based paradigm?
 
 * vim front-end for Notmuch
 ** http://git.notmuchmail.org/git/notmuch/blob/HEAD:/vim/README
