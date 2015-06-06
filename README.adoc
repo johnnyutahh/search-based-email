@@ -269,12 +269,10 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 [id='MUA_choice']
 ### MUA
 
-(My implementation is currently in progress.)
-
 #### Summary
 
-Along with <<initial_tagging>>, <<MUA_choice,MUA introduction
-and mastery>> appears to represent the largest learning curve.
+Along with <<initial_tagging>>, MUA mastery
+appears to represent the largest learning curve.
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] currently present the most-attractive
 solutions (for me), but it's early.
