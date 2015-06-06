@@ -437,9 +437,9 @@ replicate in my <<MUA_choice,new MUA>>.
 
 ** Once I associate Notmuch-metadata (by adding tags, or whatever
    metadata/etc scenarios might be involved with Notmuch) with a
-   message, I want (need?) said metadata/tags/etc to associate with a
-   message forever, regardless of wherever I put said message. Is this
-   the way it works "out of the box" with Notmuch-based systems?
+   message, I need said metadata/tags/etc to associate with a message
+   forever, regardless of wherever I put said message. Is this the way
+   it works "out of the box" with Notmuch-based systems?
 
 [id='folder_based_searching']
 ### MUA folder-based searching with name auto-completion
