@@ -271,8 +271,11 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
 
 #### Summary
 
-Along with <<initial_tagging>>, MUA mastery
-appears to represent the largest learning curve.
+Given <<the_problem,the problem>>, the work to find and master the
+better MUAs for <<my_user_profile,me>> and concurrently learn a new
+search-and-tag-based email classification paradigms seems like my
+biggest challenge.
+
 http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] and
 https://github.com/pazz/alot[alot] currently present the most-attractive
 solutions (for me), but it's early.
