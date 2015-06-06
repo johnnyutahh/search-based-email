@@ -312,7 +312,7 @@ an Emacs front-end.
     examples might go a long way to solve this problem, and boost alot's
     "new user uptake" populartiy.
 
-* emacs front-end(s)
+* Emacs front-end(s)
 
 ** Since <<my_user_profile,I'm a vim user>>, I've initially shied away an
 http://notmuchmail.org/emacstips[Emacs-based front-end]. However, I've
