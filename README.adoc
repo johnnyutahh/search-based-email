@@ -600,7 +600,7 @@ staggering 50k+ emails in my "inbox" can give someone pause; hopefully
 [id='existing_tag_based_user_intro_docs_appear_to_be_lacking']
 
 Additionally, the search-and-tag-based documentation resources--to
-describe new-user-paradigm-shifts and present the most-popular
+describe new-user-paradigm shifts and present the most-popular
 toolsets--seem disjointed and/or non-existent. Hence some of the
 motivation to present this document.
 
