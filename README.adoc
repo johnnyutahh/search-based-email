@@ -390,7 +390,7 @@ challenge. See the <<MUA_choice,MUA options>>.
 [id='old_style_imap_folder_paradigm']
 ### Support old-style IMAP-folder paradigm
 
-While I may be be moving to a a search/index/tag-based paradigm, I
+While I may be be moving to a search/index/tag-based paradigm, I
 still need to access my <<my_existing_environment,4k+ IMAP folders>>
 as I did before, at least while I'm transitioning my current
 <<folder_based_searching,folder-based>> paradigm that I currently
