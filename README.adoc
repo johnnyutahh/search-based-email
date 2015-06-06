@@ -601,9 +601,7 @@ staggering 50k+ emails in my "inbox" can give someone pause; hopefully
 
 Further, the search-and-tag-based documentation resources--to describe
 new-user-paradigm-shifts and present the most-popular toolsets--seem
-scattered, disjointed, and/or non-existent for many scenarios / from
-many perspectives. Hence this document. Obviously, I'd love to find any
-similar, previously-overlooked documentation resource.
+disjointed and/or non-existent for many scenario. Hence this document.
 
 [id='why_spend_the_effort_to_write_this_doc']
 ### Why write this doc?
