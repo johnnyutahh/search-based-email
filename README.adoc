@@ -410,9 +410,8 @@ replicate in my <<MUA_choice,new MUA>>.
   X does not clutter my view of emails/folders when viewing account Y.
 
 . It would be extremely helpful to additionally support a "combined"
-  view/mode of all my accounts, as an additional option. I stop just
-  short of calling this an absolute requirement, simply because #1 is
-  currently more important than #2.
+  view/mode of all my accounts. But this is not an absolute requirement,
+  simply because #1 is currently more important than #2.
 
 [id='initial_tagging']
 ### Initial tagging
