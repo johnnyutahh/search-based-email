@@ -302,7 +302,8 @@ an Emacs front-end.
    solution. For example, I significantly appareciate the up-front,
    informationally-dense, bulleted feature list at the top of the
    https://github.com/pazz/alot/blob/master/README.md[alot README].
-   However, it's thus far been hard to find practical resources like
+
+** However, it's thus far been hard to find practical resources like
    example config files, procedural setup, etc. Maybe this is due in
    part because it's not yet as popular, or caters to a user base more
    willing to spend time learning/configuring/tinkering with one tool,
