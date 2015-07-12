@@ -501,7 +501,7 @@ Can a Notmuch-based system do this?
   and vim]
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts[mutt + contacts]
 
-### Highlight folders with new emails
+### Highlight folders with unread or new emails
 
 How to do this? Including support for virtual folders.
 https://bbs.archlinux.org/viewtopic.php?id=191340[Details here].
