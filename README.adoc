@@ -503,7 +503,7 @@ Can a Notmuch-based system do this?
 
 ### Highlight folders with new emails
 
-Including virtual folders.
+How to do this? Including support for virtual folders.
 https://bbs.archlinux.org/viewtopic.php?id=191340[Details here].
 
 ### Sync Notmuch tags with maildir flags
