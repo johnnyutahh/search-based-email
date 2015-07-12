@@ -501,6 +501,11 @@ Can a Notmuch-based system do this?
   and vim]
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts[mutt + contacts]
 
+### Highlight folders with new mails
+
+Including virtual folders.
+https://bbs.archlinux.org/viewtopic.php?id=191340[Details here].
+
 ### Sync Notmuch tags with maildir flags
 
 Does anyone use https://github.com/spaetz/notmuchsync[notmuchsync], and
