@@ -181,7 +181,7 @@ My comparison analysis:
 
 1. Initial tests show
    https://gist.github.com/johnnyutahh/f4e3d2d3fb07de5fa146[Notmuch
-   performing approx 15 times faster than mu].
+   performing approximately 15 times faster than mu].
 
    ** Question: were these tests configured and executed correctly? The
       performance difference is remarkable, generating concerns about
