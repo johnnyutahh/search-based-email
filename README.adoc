@@ -691,17 +691,37 @@ https://www.mozilla.org/en-US/thunderbird[Thunderbird].
 this doc are not duplicated here. The following is provided here for my
 general reference; maybe others will find these references useful.)
 
-* http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html
+### mutt-kz-applicable configuration
+
+* https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
+* http://notmuchmail.org/mutttips/#index2h1
+* https://github.com/karelzak/mutt-kz/blob/master/contrib/sample.muttrc
+* http://www.davep.org/mutt/muttrc/macros.html
+* http://rhonda.deb.at/config/mutt/keys
+* http://wcm1.web.rice.edu/mutt-tips.html
+* http://dev.mutt.org/trac/wiki/MuttGuide/Macros
+* http://www.mutt.org/doc/manual/manual-2.html
+* http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts
+* http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts
+
+### Non-mutt-kz mutt stuff
+
 * Mutt + Notmuch
   (non- http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] style)
 ** http://stevelosh.com/blog/2012/10/the-homely-mutt/
 *** may get replaced by mutt-kz, but other things possibly still useful:
 **** http://stevelosh.com/blog/2012/10/the-homely-mutt/#full-text-searching
+
 * mutt in general
 ** http://wcm1.web.rice.edu/mutt-tips.html
 ** http://www.guckes.net/Mutt/setup.html
 ** http://objectmix.com/mutt/202060-whaaah-cant-see-svens-setup-page.html
 * http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
+
+### Misc
+
+* http://dbp.io/essays/2013-06-21-hackers-replacement-for-gmail.html
+
 
 {blank}
 {blank}
