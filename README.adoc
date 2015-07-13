@@ -500,6 +500,7 @@ Can a Notmuch-based system do this?
 * http://notmuchmail.org/vimtips/#index1h2[Notmuch: Addressbook management
   and vim]
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts[mutt + contacts]
+* http://notmuchmail.org/vimtips/#index1h2[Notmuch: Addressbook management and vim]
 
 ### Highlight folders with unread or new emails
 
