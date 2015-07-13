@@ -715,7 +715,7 @@ general reference; maybe others will find these references useful.)
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#contacts
 * http://stevelosh.com/blog/2012/10/the-homely-mutt/#postponing-drafts
 * http://people.redhat.com/kzak/mutt-kz/muttrc
-* http://bit.ly/1HqwVD8
+* http://bit.ly/1HqwVD8[google: mutt-kz .muttrc example]
 
 ### Non-mutt-kz mutt stuff
 
