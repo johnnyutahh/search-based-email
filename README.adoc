@@ -187,6 +187,13 @@ My comparison analysis:
       performance difference is remarkable, generating concerns about
       correct application setup, environment.
 
+   ** 2015-07-13 Update: mu employs a .noupdate feature designed to
+      mitigate this problem. I'm invesitgating if Notmuch does something
+      similar. More details:
+
+   *** https://github.com/djcb/mu/issues/22
+   *** http://notmuchmail.org/pipermail/notmuch/2015/020755.html
+
 2. mu can embed its metadata (tags, etc) "natively" into
    the IMAP content/messages. Notmuch can not. However,
    http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
