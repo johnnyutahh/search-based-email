@@ -191,8 +191,11 @@ My comparison analysis:
       mitigate this problem. I'm invesitgating if Notmuch does something
       similar. More details:
 
-   *** https://github.com/djcb/mu/issues/22
-   *** http://notmuchmail.org/pipermail/notmuch/2015/020755.html
+   *** https://groups.google.com/d/msg/mu-discuss/Lgaf4anZjxc/ahqOBAH3V6kJ[mu
+       performance discussion]
+   *** https://github.com/djcb/mu/issues/22[mu's .noupdate feature]
+   *** http://notmuchmail.org/pipermail/notmuch/2015/020755.html[Any
+       related (to mu's .noupdate) Notmuch feature?]
 
 2. mu can embed its metadata (tags, etc) "natively" into
    the IMAP content/messages. Notmuch can not. However,
