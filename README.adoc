@@ -322,6 +322,15 @@ an Emacs front-end.
     examples might go a long way to solve this problem, and boost alot's
     "new user uptake" populartiy.
 
+*** https://github.com/pazz/alot/issues/776[Related discussion at alot's
+    github project page]
+
+*** https://github.com/pazz/configs/blob/master/.config/alot/config[Pazz's
+    alot configuration-file example]
+
+*** https://github.com/johnnyutahh/search-based-email/issues/1[fowlslegs'
+    comparison of alot and mutt-kz]
+
 * Emacs front-end(s)
 
 ** Since <<my_user_profile,I'm a vim user>>, I've initially shied away an
