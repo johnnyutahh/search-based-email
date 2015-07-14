@@ -325,7 +325,7 @@ an Emacs front-end.
 *** https://github.com/pazz/alot/issues/776[Related discussion at alot's
     github project page]
 
-*** https://github.com/pazz/configs/blob/master/.config/alot/config[Pazz's
+*** https://github.com/pazz/configs/blob/master/.config/alot/config[pazz's
     alot configuration-file example]
 
 *** https://github.com/johnnyutahh/search-based-email/issues/1[fowlslegs'
