@@ -713,6 +713,7 @@ general reference; maybe others will find these references useful.)
 ### mutt-kz-applicable configuration
 
 * https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
+** https://github.com/karelzak/mutt-kz
 * http://notmuchmail.org/mutttips/#index2h1
 * https://github.com/karelzak/mutt-kz/blob/master/contrib/sample.muttrc
 * http://www.davep.org/mutt/muttrc/macros.html
