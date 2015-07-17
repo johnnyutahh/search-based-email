@@ -239,6 +239,7 @@ I've currently chosen http://isync.sourceforge.net/[mbsync, aka isync].
   the above? http://pyropus.ca/software/getmail[getmail's
   website] seems to primarily (?) pitch it as a
   http://sourceforge.net/projects/fetchmail/[fetchmail] replacement.
+* A seemingly-popuplar reference: http://blog.ezyang.com/2012/08/offlineimap-sucks/["OfflineIMAP sucks," 2012-08-30]
 
 ### Notmuch initial + automated tagging
 
@@ -740,6 +741,12 @@ general reference; maybe others will find these references useful.)
 ** http://objectmix.com/mutt/202060-whaaah-cant-see-svens-setup-page.html
 * http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
 * http://muttrcbuilder.org/[muttrc builder]
+* http://reluctanthacker.rollett.org/content/using-quicklook-image-viewer-mutt[quicklook image viewer]
+** https://twitter.com/paulcbetts/status/308344358409756672
+* https://github.com/ttsiodras/dotfiles/blob/master/.muttrc
+* http://www.suffix.be/blog/mutt
+* http://www.benfrancom.com/2014/11/24/mutt-offline-with-mbsync/
+** https://twitter.com/benfrancom/status/536749911736209408
 
 ### Misc
 
