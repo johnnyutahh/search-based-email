@@ -739,7 +739,7 @@ general reference; maybe others will find these references useful.)
 ** http://www.guckes.net/Mutt/setup.html
 ** http://objectmix.com/mutt/202060-whaaah-cant-see-svens-setup-page.html
 * http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
-* http://muttrcbuilder.org/page[muttrc builder]
+* http://muttrcbuilder.org/[muttrc builder]
 
 ### Misc
 
