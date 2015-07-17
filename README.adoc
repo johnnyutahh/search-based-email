@@ -726,7 +726,7 @@ general reference; maybe others will find these references useful.)
 * http://people.redhat.com/kzak/mutt-kz/muttrc
 * http://bit.ly/1HqwVD8[google: mutt-kz .muttrc example]
 
-### Non-mutt-kz mutt stuff
+### generic-mutt stuff
 
 * Mutt + Notmuch
   (non- http://kzak.redcrew.org/doku.php?id=mutt:start[mutt-kz] style)
@@ -739,6 +739,7 @@ general reference; maybe others will find these references useful.)
 ** http://www.guckes.net/Mutt/setup.html
 ** http://objectmix.com/mutt/202060-whaaah-cant-see-svens-setup-page.html
 * http://bit.ly/notmuch--how-i-learned-to-stop-worrying-and-love-the-mail
+* http://muttrcbuilder.org/page[muttrc builder]
 
 ### Misc
 
