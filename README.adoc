@@ -512,6 +512,9 @@ Example potential solutions, not yet tested:
 
 [id='IMAP_folders_as_tags',reftext='IMAP folders as tags']
 ### IMAP folders as tags
+
+* https://afew.readthedocs.org/en/latest/filters.html#foldernamefilter
+
 * http://notmuchmail.org/pipermail/notmuch/2010/003249.html
 ** http://notmuchmail.org/pipermail/notmuch/2010/003250.html
 
