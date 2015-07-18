@@ -461,6 +461,10 @@ replicate in my <<MUA_choice,new MUA>>.
    forever, regardless of wherever I put said message. Is this the way
    it works "out of the box" with Notmuch-based systems?
 
+### Viewing HTML email
+
+* http://jasonwryan.com/blog/2012/05/12/mutt/[Mutt and HTML email]
+
 [id='folder_based_searching']
 ### MUA folder-based searching with name auto-completion
 
