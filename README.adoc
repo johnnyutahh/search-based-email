@@ -764,14 +764,15 @@ general reference; maybe others will find these references useful.)
 * http://www.techrepublic.com/article/10-helpful-tips-for-mutt-e-mail-client-power-users/
 * http://elw.sdf.org/docs/howto/mutt.txt[HowTo: Use mutt as your every day mail client]
 * http://therandymon.com/woodnotes/mutt/node1.html
+* http://lifehacker.com/5574557/how-to-use-the-fast-and-powerful-mutt-email-client-with-gmail
 
 #### mutt and Maildir
 
 * http://www.elho.net/mutt/maildir/[Mutt & Maildir Mini-HOWTO]
 * http://dev.mutt.org/trac/wiki/MuttFaq/Maildir
 ** http://dev.mutt.org/trac/wiki/ExtendedMaildirFormat
-* http://www.elho.net/mutt/maildir/
 * http://superuser.com/a/557981/98033
+* http://isync-devel.narkive.com/JBOhUDxx/rethinking-subfolder-naming-flatten-option[mbsync: Flatten]
 
 ##### mbsync + mutt
 
