@@ -759,8 +759,32 @@ general reference; maybe others will find these references useful.)
 ** https://twitter.com/benfrancom/status/536749911736209408
 * http://jasonwryan.com/blog/2012/05/12/mutt/[Mutt and HTML email]
 * http://www.techrepublic.com/article/10-helpful-tips-for-mutt-e-mail-client-power-users/
+* http://elw.sdf.org/docs/howto/mutt.txt[HowTo: Use mutt as your every day mail client]
+* http://therandymon.com/woodnotes/mutt/node1.html
+
+#### mutt and Maildir
+
 * http://www.elho.net/mutt/maildir/[Mutt & Maildir Mini-HOWTO]
-* http://elw.sdf.org/docs/howto/mutt.txt[HOWTO: USE MUTT AS YOUR EVERY DAY MAIL CLIENT]
+* http://dev.mutt.org/trac/wiki/MuttFaq/Maildir
+** http://dev.mutt.org/trac/wiki/ExtendedMaildirFormat
+* http://www.elho.net/mutt/maildir/
+* http://superuser.com/a/557981/98033
+
+##### mbsync + mutt
+
+From the mbsync(1) man page as of 2015-07:
+
+   Flatten delim
+
+          Flatten the hierarchy within this Store by substituting
+          the canonical hierarchy delimiter / with delim. This can
+          be useful when the MUA used to access the Store provides
+          suboptimal handling of hierarchical mailboxes, as is the
+          case with Mutt. A common choice for the delimiter is ..
+          Note that flattened sub-folders of the INBOX always end up
+          under Path, including the "INBOXdelim" prefix.
+
+Does this mean mutt does not work with Maildir hierarchical subfolders?
 
 ### Misc
 
