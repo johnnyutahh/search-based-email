@@ -752,6 +752,7 @@ general reference; maybe others will find these references useful.)
 * http://www.suffix.be/blog/mutt
 * http://www.benfrancom.com/2014/11/24/mutt-offline-with-mbsync/
 ** https://twitter.com/benfrancom/status/536749911736209408
+* http://jasonwryan.com/blog/2012/05/12/mutt/[Mutt and HTML email]
 
 ### Misc
 
