@@ -711,6 +711,10 @@ https://www.mozilla.org/en-US/thunderbird[Thunderbird].
 this doc are not duplicated here. The following is provided here for my
 general reference; maybe others will find these references useful.)
 
+### More Notmuch stuff
+
+* https://github.com/domo141/nottoomuch
+
 ### mutt-kz-applicable configuration
 
 * https://raw.githubusercontent.com/karelzak/mutt-kz/master/README.notmuch
