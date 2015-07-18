@@ -464,6 +464,7 @@ replicate in my <<MUA_choice,new MUA>>.
 ### Viewing HTML-formatted messages
 
 * http://jasonwryan.com/blog/2012/05/12/mutt/[Mutt and HTML email]
+* http://www.mutt.org/doc/manual/manual-5.html[Mutt's MIME Support]
 
 [id='folder_based_searching']
 ### MUA folder-based searching with name auto-completion
