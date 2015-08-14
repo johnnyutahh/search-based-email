@@ -19,7 +19,7 @@ author github.com@johnnyutahh.com
 0.1, June 2015:
 Last updated {docdate} {doctime}
 
-# toc::[]
+// toc::[]
 
 <<<
 :numbered:
