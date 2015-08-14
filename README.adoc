@@ -1,7 +1,7 @@
 // vim: set syntax=asciidoc:
 
 // set asciidoc attributes
-:toc:       left
+:toc:       macro
 :numbered:  1
 :data-uri:  1
 :icons:     1
@@ -19,7 +19,7 @@ author github.com@johnnyutahh.com
 0.1, June 2015:
 Last updated {docdate} {doctime}
 
-// toc::[]
+toc::[]
 
 <<<
 :numbered:
