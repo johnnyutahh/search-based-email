@@ -1,7 +1,7 @@
 // vim: set syntax=asciidoc:
 
 // set asciidoc attributes
-:toc:       1
+:toc:       left
 :numbered:  1
 :data-uri:  1
 :icons:     1
