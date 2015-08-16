@@ -200,8 +200,10 @@ My comparison analysis:
    the IMAP content/messages. Notmuch can not. However,
    http://www.muchsync.org/[muchsync] (maybe other tools?) can replicate
    this metadata, but it takes additional process+infrastructure.
+
 3. #1 greatly outweighs #2. Because of this, Notmuch "wins" (with me),
-   pending feedback from others.
+   pending the retest results of #1 (above) and additional feedback from
+   others.
 
 What other trade-offs might motivate me to employ
 http://www.djcbsoftware.nl/code/mu[mu] over
