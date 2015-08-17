@@ -375,19 +375,11 @@ Emacs-based paradigm?
    efficient to be forced to copy the data, but this may be
    unavoidable), but claims to do it as efficiently as possible.
 
-** Problem: muchsync is not yet ported to <<my_existing_environment,Mac
-   OS X (I'm running Mavericks/10.9.5)>>. I've dabbled a little with the
-   porting, but don't yet have an error-free build.
-
-*** first: http://stackoverflow.com/a/6725161/605356[overcame lack of
-    clock_gettime in Mac OS X]
-
-*** next: trying to fix the compiler's inability to resolve
-    http://lists.apple.com/archives/darwin-dev/2011/May/msg00002.html[
-    openat()] in the build. I don't yet have a
-    solution, other than maybe upgrading my OS to
-    http://en.wikipedia.org/wiki/OS_X_Yosemite[Yosemite/10.10], which I
-    really don't want to do right now.
+** Problem solved: the muchsync author ported to Mac
+   OS 10.9.5 (at least) as of 2015-08-16 although this port may not yet
+   be fully, empirically tested.
+   https://github.com/johnnyutahh/search-based-email/issues/2[Details
+   here].
 
 * Others
 ** http://notmuchmail.org/pipermail/notmuch/2010/003249.html
