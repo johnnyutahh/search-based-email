@@ -1,0 +1,364 @@
+# mutt keybindings
+
+#--------------------------------------------------------------------------
+# personally added macros
+#--------------------------------------------------------------------------
+ macro generic  A  "!vim $HOME/etc/mutt/aliases\n:source $HOME/etc/mutt/aliases\n"  "Edit alias-file and reread"
+ macro index    A  "!vim $HOME/etc/mutt/aliases\n:source $HOME/etc/mutt/aliases\n"  "Edit alias-file and reread"
+ macro pager    A  "!vim $HOME/etc/mutt/aliases\n:source $HOME/etc/mutt/aliases\n"  "Edit alias-file and reread"
+
+ macro index  \cb  "|urlview\n"  "call urlview to extract URLs out of a message"
+ macro pager  \cb  "|urlview\n"  "call urlview to extract URLs out of a message"
+
+ macro generic  <f1>  "!w3m /usr/share/doc/mutt/manual.txt.gz\n"  "Show Mutt documentation"
+ macro index    <f1>  "!w3m /usr/share/doc/mutt/manual.txt.gz\n"  "Show Mutt documentation"
+ macro pager    <f1>  "!w3m /usr/share/doc/mutt/manual.txt.gz\n"  "Show Mutt documentation"
+
+ macro generic  [11~  "!w3m /usr/share/doc/mutt/manual.txt.gz\n"  "Show Mutt documentation"
+
+# toggle TOFU protection with ESC-0 and ESC-1
+macro generic \e0 ":unset display_filter\n"                                                                        "Turn TOFU protection off"
+macro generic \e1 ":set display_filter='t-prot -cmektlS --bigq --pgp-short --pgp-move-vrf -Mmutt -L/home/alfie/etc/mutt/listfooters/'\n" "Turn TOFU protection on"
+macro generic \e2 ":set display_filter='t-prot -cmektl --bigq --pgp-short --pgp-move-vrf -Mmutt -L/home/alfie/etc/mutt/listfooters/'\n"  "Turn TOFU protection on (except signature)"
+# same in pager mode - ugly but what the hell...
+macro pager \e0 ":unset display_filter; exec exit\n:exec display-message\n"                                                                        "Turn TOFU protection off"
+macro pager \e1 ":set display_filter='t-prot -cmektlS --bigq --pgp-short --pgp-move-vrf -Mmutt -L/home/alfie/etc/mutt/listfooters/'; exec exit\n:exec display-message\n" "Turn TOFU protection on"
+macro pager \e2 ":set display_filter='t-prot -cmektl --bigq --pgp-short --pgp-move-vrf -Mmutt -L/home/alfie/etc/mutt/listfooters/'; exec exit\n:exec display-message\n"  "Turn TOFU protection on (except signature)"
+
+
+
+
+#--------------------------------------------------------------------------
+# generic bindings
+#--------------------------------------------------------------------------
+ bind generic L    "bottom-page"       # move to the bottom of the page
+#bind generic      "current-bottom"    # move current entry to bottom of page
+#bind generic      "current-middle"    # move current entry to middle of page
+#bind generic      "current-top"       # move current entry to top of page
+ bind generic :    "enter-command"     # enter a muttrc command
+ bind generic q    "exit"              # exit this menu
+ bind generic =    "first-entry"       # move to the first entry
+ bind generic ]    "half-down"         # scroll down 1/2 page
+ bind generic [    "half-up"           # scroll up 1/2 page
+ bind generic ?    "help"              # this screen
+ bind generic 1    "jump"              # jump to an index number
+ bind generic 2    "jump"              # jump to an index number
+ bind generic 3    "jump"              # jump to an index number
+ bind generic 4    "jump"              # jump to an index number
+ bind generic 5    "jump"              # jump to an index number
+ bind generic 6    "jump"              # jump to an index number
+ bind generic 7    "jump"              # jump to an index number
+ bind generic 8    "jump"              # jump to an index number
+ bind generic 9    "jump"              # jump to an index number
+ bind generic *    "last-entry"        # move to the last entry
+ bind generic M    "middle-page"       # move to the middle of the page
+ bind generic j    "next-entry"        # move to the next entry
+ bind generic >    "next-line"         # scroll down one line
+ bind generic z    "next-page"         # move to the next page
+ bind generic k    "previous-entry"    # move to the previous entry
+ bind generic <    "previous-line"     # scroll up one line
+ bind generic Z    "previous-page"     # move to the previous page
+ bind generic \cL  "refresh"           # clear and redraw the screen
+ bind generic /    "search"            # search for a regular expression
+ bind generic n    "search-next"       # search for next match
+#bind generic      "search-opposite"   # search for next match in opposite direction
+ bind generic \e/  "search-reverse"    # search backwards for a regular expression
+ bind generic <enter>  "select-entry"  # select the current entry
+ bind generic !    "shell-escape"      # run a program in a subshell
+ bind generic t    "tag-entry"         # toggle the tag on the current entry
+ bind generic ';'  "tag-prefix"        # apply next command to tagged entries
+ bind generic H    "top-page"          # move to the top of the page
+
+
+#--------------------------------------------------------------------------
+# index bindings
+#--------------------------------------------------------------------------
+ bind index b    "bounce-message"       # remail a message to another user
+ bind index c    "change-folder"        # open a different folder
+ bind index \ec  "change-folder-readonly"  # open a different folder in read only mode
+ bind index \eP  "check-traditional-pgp"   # check for classic pgp
+ bind index W    "clear-flag"           # clear a status flag from a message
+ bind index C    "copy-message"         # copy a message to a file/mailbox
+ bind index a    "create-alias"         # create an alias from a message sender
+ bind index \eC  "decode-copy"          # decode a message and copy it to a file/mailbox
+ bind index \es  "decode-save"          # decode a message and save it to a file/mailbox
+ bind index d    "delete-message"       # delete the current entry
+ bind index D    "delete-pattern"       # delete messages matching a pattern
+ bind index \ed  "delete-subthread"     # delete all messages in subthread
+ bind index \cD  "delete-thread"        # delete all messages in thread
+ bind index @    "display-address"      # display full address of sender
+ bind index h    "display-toggle-weed"  # display message and toggle header weeding
+ bind index <enter>  "display-message"  # display a message
+ bind index e    "edit"                 # edit the current message
+ bind index \cE  "edit-type"            # edit the current message's Content-Type
+ bind index x    "exit"                 # exit without saving changes
+ bind index \cK  "extract-keys"         # extract PGP public keys
+ bind index G    "fetch-mail"           # retrieve mail from POP server
+ bind index F    "flag-message"         # toggle a message's 'important' flag
+ bind index \cF  "forget-passphrase"    # wipe PGP passphrase from memory
+ bind index f    "forward-message"      # forward a message with comments
+ bind index g    "group-reply"          # reply to all recipients
+ bind index l    "limit"                # show only messages matching a pattern
+ bind index L    "list-reply"           # reply to specified mailing list
+ bind index m    "mail"                 # compose a new mail message
+ bind index \ek  "mail-key"             # mail a PGP public key
+ bind index \t   "next-new"             # jump to the next new message
+ bind index \en  "next-subthread"       # jump to the next subthread
+ bind index \cN  "next-thread"          # jump to the next thread
+ bind index j    "next-undeleted"       # move to the next undeleted message
+#bind index      "next-unread"          # jump to the next unread message
+ bind index P    "parent-message"       # jump to parent message in thread
+ bind index |    "pipe-message"         # pipe message/attachment to a shell command
+ bind index \e\t "previous-new"         # jump to the previous new message
+ bind index Z    "previous-page"        # move to the previous page
+ bind index \ep  "previous-subthread"   # jump to previous subthread
+ bind index \cP  "previous-thread"      # jump to previous thread
+ bind index k    "previous-undeleted"   # move to the last undelete message
+#bind index      "previous-unread"      # jump to the previous unread message
+ bind index p    "print-message"        # print the current entry
+ bind index Q    "query"                # query external program for addresses
+ bind index q    "quit"                 # save changes to mailbox and quit
+ bind index \er  "read-subthread"       # mark the current subthread as read
+ bind index \cR  "read-thread"          # mark the current thread as read
+ bind index R    "recall-message"       # recall a postponed message
+ bind index r    "reply"                # reply to a message
+ bind index \ee  "resend-message"       # resend message and preserve MIME structure
+ bind index s    "save-message"         # save message/attachment to a file
+ bind index w    "set-flag"             # set a status flag on a message
+ bind index V    "show-version"         # show the Mutt version number and date
+ bind index \el  "show-limit"           # show currently active limit pattern, if any
+ bind index o    "sort-mailbox"         # sort messages
+ bind index O    "sort-reverse"         # sort messages in reverse order
+ bind index $    "sync-mailbox"         # save changes to mailbox
+ bind index T    "tag-pattern"          # tag messages matching a pattern
+ bind index \et  "tag-thread"           # tag/untag all messages in the current thread
+ bind index N    "toggle-new"           # toggle a message's 'new' flag
+ bind index %    "toggle-write"         # toggle whether the mailbox will be rewritten
+ bind index u    "undelete-message"     # undelete the current entry
+ bind index U    "undelete-pattern"     # undelete messages matching a pattern
+ bind index \eu  "undelete-subthread"   # undelete all messages in subthread
+ bind index \cU  "undelete-thread"      # undelete all messages in thread
+ bind index \cT  "untag-pattern"        # untag messages matching a pattern
+ bind index v    "view-attachments"     # show MIME attachments
+
+
+#--------------------------------------------------------------------------
+# pager bindings
+#--------------------------------------------------------------------------
+#bind pager      "bottom"                  # jump to the bottom of the message
+ bind pager b    "bounce-message"          # remail a message to another user
+ bind pager c    "change-folder"           # open a different folder
+ bind pager \ec  "change-folder-readonly"  # open a different folder in read only mode
+ bind index \eP  "check-traditional-pgp"   # check for classic pgp
+ bind pager C    "copy-message"            # copy a message to a file/mailbox
+ bind pager a    "create-alias"            # create an alias from a message sender
+ bind pager \eC  "decode-copy"             # decode a message and copy it to a file/mailbox
+ bind pager \es  "decode-save"             # decode a message and save it to a file/mailbox
+ bind pager d    "delete-message"          # delete the current entry
+ bind pager \ed  "delete-subthread"        # delete all messages in subthread
+ bind pager \cD  "delete-thread"           # delete all messages in thread
+ bind pager @    "display-address"         # display full address of sender
+ bind pager h    "display-toggle-weed"     # display message and toggle header weeding
+ bind pager e    "edit"                    # edit the current message
+ bind pager \cE  "edit-type"               # edit the current message's Content-Type
+ bind pager :    "enter-command"           # enter a muttrc command
+ bind pager i    "exit"                    # return to the main-menu
+ bind pager \cK  "extract-keys"            # extract PGP public keys
+ bind pager F    "flag-message"            # toggle a message's 'important' flag
+ bind pager \cF  "forget-passphrase"       # wipe PGP passphrase from memory
+ bind pager f    "forward-message"         # forward a message with comments
+ bind pager g    "group-reply"             # reply to all recipients
+#bind pager      "half-up"                 # move up one-half page
+#bind pager      "half-down"               # move down one-half page
+ bind pager ?    "help"                    # this screen
+ bind pager L    "list-reply"              # reply to specified mailing list
+ bind pager m    "mail"                    # compose a new mail message
+ bind pager \ek  "mail-key"                # mail a PGP public key
+ bind pager N    "mark-as-new"             # toggle a message's 'new' flag
+ bind pager RET  "next-line"               # scroll down one line
+ bind pager J    "next-entry"              # move to the next entry
+ bind pager TAB  "next-new"                # jump to the next new message
+ bind pager ' '  "next-page"               # move to the next page
+ bind pager \en  "next-subthread"          # jump to the next subthread
+ bind pager \cN  "next-thread"             # jump to the next thread
+ bind pager j    "next-undeleted"          # move to the next undeleted message
+#bind pager      "next-unread"             # jump to the next unread message
+ bind pager P    "parent-message"          # jump to parent message in thread
+ bind pager |    "pipe-message"            # pipe message/attachment to a shell command
+ bind pager <backspace>  "previous-line"   # scroll up one line
+ bind pager K    "previous-entry"          # move to the previous entry
+#bind pager      "previous-new"            # jump to the previous new message
+ bind pager -    "previous-page"           # move to the previous page
+ bind pager \ep  "previous-subthread"      # jump to previous subthread
+ bind pager \cP  "previous-thread"         # jump to previous thread
+ bind pager k    "previous-undeleted"      # move to the last undelete message
+#bind pager      "previous-unread"         # jump to the previous unread message
+ bind pager p    "print-message"           # print the current entry
+ bind pager Q    "quit"                    # save changes to mailbox and quit
+ bind pager \er  "read-subthread"          # mark the current subthread as read
+ bind pager \cR  "read-thread"             # mark the current thread as read
+ bind pager R    "recall-message"          # recall a postponed message
+ bind pager \cL  "redraw-screen"           # clear and redraw the screen
+ bind pager r    "reply"                   # reply to a message
+ bind pager s    "save-message"            # save message/attachment to a file
+ bind pager /    "search"                  # search for a regular expression
+ bind pager n    "search-next"             # search for next match
+#bind pager      "search-opposite"         # search for next match in opposite direction
+ bind pager \e/  "search-reverse"          # search backwards for a regular expression
+ bind pager \    "search-toggle"           # toggle search pattern coloring
+ bind pager !    "shell-escape"            # invoke a command in a subshell
+ bind pager V    "show-version"            # show the Mutt version number and date
+ bind pager S    "skip-quoted"             # skip beyond quoted text
+ bind pager $    "sync-mailbox"            # save changes to mailbox
+ bind pager t    "tag-message"             # tag a message
+ bind pager T    "toggle-quoted"           # toggle display of quoted text
+ bind pager ^    "top"                     # jump to the top of the message
+ bind pager u    "undelete-message"        # undelete the current entry
+ bind pager \eu  "undelete-subthread"      # undelete all messages in subthread
+ bind pager \cU  "undelete-thread"         # undelete all messages in thread
+ bind pager v    "view-attachments"        # show MIME attachments
+
+
+#--------------------------------------------------------------------------
+# alias bindings
+#--------------------------------------------------------------------------
+ bind alias /    "search"          # search for a regular expression
+ bind alias n    "search-next"     # search for next match
+ bind alias \e/  "search-reverse"  # search backwards for a regular expression
+
+
+#--------------------------------------------------------------------------
+# query bindings
+#--------------------------------------------------------------------------
+ bind query a    "create-alias"     # create an alias from a message sender
+ bind query m    "mail"             # compose a new mail message
+ bind query Q    "query"            # query external program for addresses
+ bind query A    "query-append"     # append new query results to current results
+ bind query /    "search"           # search for a regular expression
+ bind query n    "search-next"      # search for next match
+#bind query      "search-opposite"  # search for next match in opposite direction
+ bind query \e/  "search-reverse"   # search backwards for a regular expression
+
+
+#--------------------------------------------------------------------------
+# attach bindings
+#--------------------------------------------------------------------------
+ bind attach b    "bounce-message"       # remail a message to another user
+ bind attach v    "collapse-parts"       # toggle display of subparts
+ bind attach d    "delete-entry"         # delete the current entry
+ bind attach h    "display-toggle-weed"  # display message and toggle header weeding
+ bind attach \cE  "edit-type"            # edit the current entry's Content-Type
+ bind attach \cK  "extract-keys"         # extract PGP public keys
+ bind attach f    "forward-message"      # forward a message with comments
+ bind attach g    "group-reply"          # reply to all recipients
+ bind attach L    "list-reply"           # reply to specified mailing list
+ bind attach |    "pipe-entry"           # pipe message/attachment to a shell command
+ bind attach p    "print-entry"          # print the current entry
+ bind attach r    "reply"                # reply to a message
+ bind attach \ee  "resend-message"       # resend message and preserve MIME structure
+ bind attach s    "save-entry"           # save message/attachment to a file
+ bind attach u    "undelete-entry"       # undelete the current entry
+ bind attach <enter>  "view-attach"      # view attachment using mailcap entry if necessary
+ bind attach m    "view-mailcap"         # force viewing of attachment using mailcap
+ bind attach T    "view-text"            # view attachment as text
+
+
+#--------------------------------------------------------------------------
+# compose bindings
+#--------------------------------------------------------------------------
+ bind compose a     "attach-file"          # attach a file(s) to this message
+ bind compose A     "attach-message"       # attach message(s) to this message
+ bind compose \ek   "attach-key"           # attach a PGP public key
+ bind compose C     "copy-file"            # save message/attachment to a file
+ bind compose D     "detach-file"          # delete the current entry
+ bind compose h     "display-toggle-weed"  # display message and toggle header weeding
+ bind compose b     "edit-bcc"             # edit the BCC list
+ bind compose c     "edit-cc"              # edit the CC list
+ bind compose d     "edit-description"     # edit attachment description
+ bind compose \cE   "edit-encoding"        # edit attachment transfer-encoding
+ bind compose f     "edit-fcc"             # enter a file to save a copy of this message in
+ bind compose \ef   "edit-from"            # edit the from: field
+ bind compose \cXe  "edit-file"            # edit the file to be attached
+ bind compose E     "edit-headers"         # edit the message with headers
+# XXX documentation says "edit" for the next function
+ bind compose e     "edit-message"         # edit the message
+ bind compose m     "edit-mime"            # edit attachment using mailcap entry
+ bind compose r     "edit-reply-to"        # edit the Reply-To field
+ bind compose s     "edit-subject"         # edit the subject of this message
+ bind compose t     "edit-to"              # edit the TO list
+ bind compose \cT   "edit-type"            # edit attachment type
+ bind compose F     "filter-entry"         # filter attachment through a shell command
+ bind compose \cF   "forget-passphrase"    # wipe PGP passphrase from memory
+ bind compose i     "ispell"               # run ispell on the message
+ bind compose n     "new-mime"             # compose new attachment using mailcap entry
+ bind compose p     "pgp-menu"             # show PGP options
+ bind compose |     "pipe-entry"           # pipe message/attachment to a shell command
+ bind compose P     "postpone-message"     # save this message to send later
+ bind compose l     "print-entry"          # print the current entry
+ bind compose R     "rename-file"          # rename/move an attached file
+ bind compose y     "send-message"         # send the message
+ bind compose u     "toggle-unlink"        # toggle whether to delete file after sending it
+ bind compose <enter>  "view-attach"       # view attachment using mailcap entry if necessary
+ bind compose w     "write-fcc"            # write the message to a folder
+
+
+#--------------------------------------------------------------------------
+# postpone bindings
+#--------------------------------------------------------------------------
+ bind postpone d  "delete-entry"     # delete the current entry
+ bind postpone u  "undelete-entry"   # undelete the current entry
+
+
+#--------------------------------------------------------------------------
+# browser bindings
+#--------------------------------------------------------------------------
+ bind browser c    "change-dir"         # change directories
+ bind browser \t   "check-new"          # check mailboxes for new mail
+ bind browser m    "enter-mask"         # enter a file mask
+ bind browser /    "search"             # search for a regexp
+ bind browser n    "search-next"        # search for next match
+ bind browser \e/  "search-reverse"     # search backwards for a regexp
+ bind browser N    "select-new"         # select a new file in this directory
+ bind browser o    "sort"               # sort messages
+ bind browser O    "sort-reverse"       # sort messages in reverse order
+ bind browser \t   "toggle-mailboxes"   # toggle whether to browse mailboxes or all files
+ bind browser ' '  "view-file"          # view file
+ bind browser s    "subscribe"          # subscribe to current mailbox (IMAP Only)
+ bind browser u    "unsubscribe"        # unsubscribe to current mailbox (IMAP Only)
+ bind browser T    "toggle-subscribed"  # toggle view all/subscribed mailboxes (IMAP Only)
+
+
+#--------------------------------------------------------------------------
+# pgp bindings
+#--------------------------------------------------------------------------
+ bind pgp  %  "view-name"    # view the key's user id
+ bind pgp  c  "verify-key"   # verify a PGP public key
+
+
+#--------------------------------------------------------------------------
+# editor bindings
+#--------------------------------------------------------------------------
+ bind editor <backspace>  "backspace"  # delete the char in front of the cursor
+ bind editor \cB  "backward-char"      # move the cursor one character to the left
+ bind editor \eb  "backward-word"      # move the cursor to the previous word
+ bind editor \cA  "bol"                # jump to the beginning of the line
+ bind editor ' '  "buffy-cycle"        # cycle among incoming mailboxes
+ bind editor \ec  "capitalize-word"    # uppercase the first character in the word
+ bind editor \t   "complete"           # complete filename or alias
+ bind editor \cT  "complete-query"     # complete address with query
+ bind editor \cD  "delete-char"        # delete the char under the cursor
+ bind editor \el  "downcase-word"      # lowercase all characters in current word
+ bind editor \cE  "eol"                # jump to the end of the line
+ bind editor \cF  "forward-char"       # move the cursor one character to the right
+ bind editor \ef  "forward-word"       # move the cursor to the next word
+#bind editor      "history-down"       # scroll down through the history list
+#bind editor      "history-up"         # scroll up through the history list
+ bind editor \cK  "kill-eol"           # delete chars from cursor to end of line
+ bind editor \ed  "kill-eow"           # delete chars from cursor to end of word
+ bind editor \cU  "kill-line"          # delete all chars on the line
+ bind editor \cW  "kill-word"          # delete the word in front of the cursor
+ bind editor \cV  "quote-char"         # quote the next typed key
+#bind editor      "transpose-chars"    # transpose character under cursor with previous
+ bind editor \eu  "upcase-word"        # uppercase all characters in current word
+
+# vim: set ft=muttrc tw=0 nowrap:
